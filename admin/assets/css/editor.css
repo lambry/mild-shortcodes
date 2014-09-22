@@ -1,0 +1,9 @@
+/* =Editor
+-------------------------------------------------------------- */
+
+.mce-i-m_shortcodes {
+	font-family: dashicons !important;
+}
+.mce-i-m_shortcodes:before {
+    content: "\f475";
+}

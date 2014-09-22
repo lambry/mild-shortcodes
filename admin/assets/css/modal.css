@@ -1,0 +1,123 @@
+/* =Editor popup
+-------------------------------------------------------------- */
+
+/* General */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	color: #404040;
+    margin: 0;
+	padding: 1.5em;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Typography */
+h2 {
+	margin: 0 0 1.5em;
+	padding: 0.25em;
+	text-align: center;
+	border-bottom: 1px solid #efefef;
+}
+a {
+	color: #606060;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+.home {
+	float: left;
+	cursor: pointer;
+    line-height: 1.5em;	
+}
+.home:hover {
+	color: #21759B;
+}
+
+/* Shortcode links */
+.shortcode {
+	display: none;
+}
+.shortcode, 
+.shortcode-links {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-transform: translateX(-1em);
+	-moz-transform: translateX(-1em);
+	-ms-transform: translateX(-1em);
+	transform: translateX(-1em);
+}
+.shortcode-link {
+	margin: 1.5em 2% 0;
+}
+.is-visible {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+/* Form */
+.field-group {
+	width: 50%;
+	float: left;
+	margin-bottom: 1.25em;
+}
+.field {
+	width: 52%;
+	color: #505050;
+	display: inline-block;
+	padding: 0.35em 0.4em;
+	line-height: 1.4;
+	border-bottom: 1px solid #CCCCCC;
+}
+label {
+	width: 40%;
+    padding: 0.45em 0.4em;
+	font-size: 0.95em;
+    display: inline-block;
+	background-color: #eee;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+input[type=text], select {
+	width: 100%;
+	margin: 0;
+	border: 1px solid #FFFFFF;
+}
+input[type=radio] {
+	margin: 0 0.75em 0 0;
+}
+button {
+    width: 46%;
+    color: #FFFFFF;
+	padding: 1em;
+    float: left;
+    margin: 1.75em 0 0.5em 0;
+    font-weight: bold;
+    background-color: #1E8CBE;
+	border: 1px solid #0074A2;
+	box-shadow: 0 1px 0 rgba(120, 200, 230, 0.6) inset;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.clone {
+	color: #555;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0.6em;
+	border-color: #CCC;
+	display: inline-block;
+	background-color: #F7F7F7;
+	box-shadow: 0 1px 0 #FFF inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+.submit {
+    width: 100%;
+    float: none;
+}
