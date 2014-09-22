@@ -1,0 +1,15 @@
+{
+    "name": "lambry/mild-shortcodes",
+    "description": "A simple set of shortcodes.",
+    "homepage": "https://github.com/lambry/mild-shortcodes",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "David Featherston",
+            "email": "david@lambry.com"
+        }
+    ],
+    "keywords": [
+        "wordpress", "plugin"
+    ]
+}
