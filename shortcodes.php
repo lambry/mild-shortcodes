@@ -21,6 +21,9 @@ class Init {
 	* Construct
 	*/
     public function __construct() {
+        
+        // Load text domain.
+        load_plugin_textdomain( 'mild-sc', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 		// Include the shortcodes.
 		$this->shortcodes();

@@ -12,6 +12,11 @@ if ( ! defined( 'WPINC' ) ) die;
 class Generator {
 
 	/*
+	* Variables
+	*/
+	static $tabs = [];
+
+	/*
 	* Construct
 	*/
     public function __construct() {
@@ -22,8 +27,10 @@ class Generator {
 		add_shortcode( __( 'icon', 'mild-sc' ),      [ $this, 'icon' ] );
 		add_shortcode( __( 'button', 'mild-sc' ),    [ $this, 'button' ] );
 		add_shortcode( __( 'panel', 'mild-sc' ),     [ $this, 'panel' ] );
-		add_shortcode( __( 'align', 'mild-sc' ),     [ $this, 'align' ] );
+		add_shortcode( __( 'tabs', 'mild-sc' ), 	 [ $this, 'tabs' ] );
+		add_shortcode( __( 'tab', 'mild-sc' ), 	 	 [ $this, 'tab' ] );
 		add_shortcode( __( 'accordion', 'mild-sc' ), [ $this, 'accordion' ] );
+		add_shortcode( __( 'align', 'mild-sc' ),     [ $this, 'align' ] );
 		add_shortcode( __( 'posts', 'mild-sc' ),     [ $this, 'posts' ] );
 		add_shortcode( __( 'login', 'mild-sc' ),     [ $this, 'login' ] );
 		add_shortcode( __( 'sitemap', 'mild-sc' ),   [ $this, 'sitemap' ] );
@@ -107,15 +114,38 @@ class Generator {
 	}
 
 	/*
-	* Align shortcode
+	* Tabs shortcode
 	*/
-	public function align( $params, $content = null ) {
+	public function tabs( $params, $content = null ) {
 	    extract( shortcode_atts([
-	        'align' => '',
-	        'width' => '4',
 	        'class' => ''
 	    ], $params) );
-	    return "<div class='align align{$align} col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
+	    $panes = do_shortcode( $content );
+		$nav = '<ul class="tabs-nav">';
+		foreach ( self::$tabs as $tab ) {
+			$icon = self::create_icon( $tab['icon'] );
+			$nav .= "<li class='{$class}' data-tab='{$tab['id']}'>{$icon}{$tab['title']}</li>";
+		}
+		$nav .= '</ul>';
+	    return "<div class='tabs {$class}'>{$nav}<div class='tab-panes'>{$panes}</div></div>";
+	}
+
+	/*
+	* Tab shortcode
+	*/
+	public function tab( $params, $content = null ) {
+	    extract( shortcode_atts([
+	        'title' => '',
+	        'icon'  => '',
+	        'class' => ''
+	    ], $params) );
+	    $id = sanitize_title_with_dashes( $title );
+	    self::$tabs[] = [
+	    	'id' => $id,
+	    	'title' => $title,
+	    	'icon' => $icon
+	    ];
+	    return "<div id='{$id}' class='tab {$class}'>" . do_shortcode( $content ) . "</div>";
 	}
 
 	/*
@@ -134,6 +164,18 @@ class Generator {
 		    		<h3 class='accordion-title'><a href='#{$id}'>{$icon}{$title}{$icon_plus}</a></h3>
 		            <div class='accordion-content'>" . do_shortcode( $content ) . "</div>
 	            </div>";
+	}
+
+	/*
+	* Align shortcode
+	*/
+	public function align( $params, $content = null ) {
+	    extract( shortcode_atts([
+	        'align' => '',
+	        'width' => '4',
+	        'class' => ''
+	    ], $params) );
+	    return "<div class='align align{$align} col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
 	}
 
 	/*

@@ -24,11 +24,12 @@ class Setup extends Defaults {
         $shortcodes = [
             'row'      => [
                 'heading' => __( 'Columns', 'mild-sc' ),
-                'wrap'    => false,
-                'clone'  => true,
+                'wrap'   => true,
+                'clone'   => true,
+                'child'   => 'col',
                 'icon'    => 'columns',
                 'fields'  => [
-                    'col' => [
+                    'width' => [
                         'name'   => __( 'Width', 'mild-sc' ),
                         'type'   => 'select',
                         'values' => parent::grid()
@@ -37,7 +38,6 @@ class Setup extends Defaults {
             ],
             'icon'      => [
                 'heading' => __( 'Icon', 'mild-sc' ),
-                'wrap'    => false,
                 'icon'    => 'star',
                 'fields'  => [
                     'color' => [
@@ -136,6 +136,41 @@ class Setup extends Defaults {
 					]
                 ]
             ],
+            'tabs' => [
+                'heading'   => __( 'Tabs', 'mild-sc' ),
+                'wrap'   => true,
+                'clone'  => true,
+                'child'   => 'tab',
+                'icon'   => 'folder',
+                'fields' => [
+                    'title' => [
+                        'name'   => __( 'Title', 'mild-sc' ),
+                        'type'   => 'text'
+                    ],
+                    'icon' => [
+                        'name'   => __( 'Icon', 'mild-sc' ),
+                        'type'   => 'select',
+                        'values' => parent::icons()
+                    ]
+                ]
+            ],
+            'accordion' => [
+                'heading'   => __( 'Accordion', 'mild-sc' ),
+                'clone'  => true,
+                'child'   => 'accordion',
+                'icon'   => 'plus',
+                'fields' => [
+                    'title' => [
+                        'name'   => __( 'Title', 'mild-sc' ),
+                        'type'   => 'text'
+                    ],
+                    'icon' => [
+                        'name'   => __( 'Icon', 'mild-sc' ),
+                        'type'   => 'select',
+                        'values' => parent::icons()
+                    ]
+                ]
+            ],
             'align'     => [
                 'heading'   => __( 'Alignment', 'mild-sc' ),
                 'wrap'   => true,
@@ -153,25 +188,8 @@ class Setup extends Defaults {
                     ]
                 ]
             ],
-            'accordion' => [
-                'heading'   => __( 'Accordion', 'mild-sc' ),
-                'wrap'   => true,
-                'icon'   => 'plus',
-                'fields' => [
-                    'title' => [
-                        'name'   => __( 'Title', 'mild-sc' ),
-                        'type'   => 'text'
-                    ],
-                    'icon' => [
-                        'name'   => __( 'Icon', 'mild-sc' ),
-                        'type'   => 'select',
-                        'values' => parent::icons()
-                    ]
-                ]
-            ],
             'posts'     => [
                 'heading'   => __( 'Posts', 'mild-sc' ),
-                'wrap'   => false,
                 'icon'   => 'newspaper-o',
                 'fields' => [
                     'cat' => [
@@ -206,7 +224,6 @@ class Setup extends Defaults {
             ],
             'login'     => [
                 'heading'   => __( 'Login Form', 'mild-sc' ),
-                'wrap'   => false,
                 'icon'   => 'lock',
                 'fields' => [
                     'redirect' => [
@@ -226,7 +243,6 @@ class Setup extends Defaults {
             ],
             'sitemap'   => [
                 'heading'   => __( 'Sitemap', 'mild-sc' ),
-                'wrap'   => false,
                 'icon'   => 'sitemap',
                 'fields' => [
                     'menus' => [
@@ -245,7 +261,6 @@ class Setup extends Defaults {
             ],
             'map'       => [
                 'heading'   => __( 'Google Map', 'mild-sc' ),
-                'wrap'   => false,
                 'icon'   => 'map-marker',
                 'fields' => [
                     'location' => [
@@ -267,7 +282,6 @@ class Setup extends Defaults {
             ],
             'iframe'    => [
                 'heading'   => __( 'iFrame', 'mild-sc' ),
-                'wrap'   => false,
                 'icon'   => 'square-o',
                 'fields' => [
                     'url' => [

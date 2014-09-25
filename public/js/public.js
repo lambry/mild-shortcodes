@@ -2,24 +2,31 @@
 ----------------------------------------------- */
 (function( $ ) {
 
+    // Tabs
+        // Nav tabs
+    var tabs = $( '.tabs' );
+    if ( tabs.length > 0 ) {
+        var tabNav = tabs.find( '.tabs-nav li' ),
+            tabPanes = $( '.tab' );
+        tabNav.first().addClass( 'tab-active' );
+        tabPanes.hide().first().show().addClass( 'tab-active' );
+        tabNav.on('click', function() {
+            $this = $(this);
+            var tab = $this.data( 'tab' );
+            tabNav.removeClass( 'tab-active' );
+            $this.addClass( 'tab-active' );
+            tabPanes.removeClass( 'tab-active' ).hide();
+            $( '#' + tab ).addClass( 'tab-active' ).show();
+        });
+    }
+
     // Accordian
     var accordion = $( '.accordion' );
     if ( accordion.length > 0 ) {
         accordion.on( 'click', '.accordion-title a', function(e) {
             e.preventDefault();
-            var hash = $( this ).attr( 'href' );
             $( this ).parents( '.accordion' ).find( '.accordion-content' ).slideToggle();
-            if( history.pushState ) {
-                history.pushState( null, null, hash );
-            }
-            else {
-                location.hash = hash;
-            }
         });
-        var urlHash = window.location.hash;
-        if ( urlHash ) {
-            $( urlHash ).find( 'a' ).trigger( 'click' );
-        }
     }
 
     // Inline login

@@ -45,8 +45,7 @@
 		cloneFields: function() {
 			$this = $(this);
 			var fields = $this.parents( '.shortcode' ).find( '.fields:first-of-type' );
-
-			fields.each(function(index, val) {
+			fields.each(function( index, el ) {
 				$(this).clone().insertBefore( $this );
 			});
 		},
@@ -58,16 +57,22 @@
 				edActive = ed.activeEditor,
 				code = $this.data( 'code' ),
 				wrap = $this.data( 'wrap' ),
+				child = $this.data( 'child' )
 				shortcode = '';
+
+			// Wrap content
+			if ( wrap === 1 && child ) {
+				shortcode += '[' + code + ']<br>';
+			}
 			// Create shortcode
-			if ( code === 'row' ) {
-				shortcode += Shortcodes.createRows( $this );
+			if ( child ) {
+				shortcode += Shortcodes.createCodes( $this, code, child );
 			} else {
 				shortcode += Shortcodes.createAttributes( $this, code );
 			}
 			// Wrap content
 			if ( wrap === 1 ) {
-				shortcode += ' ' + edActive.selection.getContent() + ' [/'+code+']';
+				shortcode += ' ' + edActive.selection.getContent() + ' [/' + code + ']';
 			}
 			// Insert shortcode
 	        if ( ed ) {
@@ -75,25 +80,24 @@
 	            edActive.windowManager.close();
 			}
 		},
-		createRows: function( $this ) {
-			var col = '';
-			// Create cols
-			$this.find( '.input' ).each( function( index, elm ) {
-				val = $(elm).val();
-				if ( val )
-					col += '[col width="' + val + '"] [/col]<br>';
+		createCodes: function( $this, code, child ) {
+			var codes = '';
+			// Create codes
+			$this.find( '.fields' ).each( function( index, el ) {
+				codes += Shortcodes.createAttributes( $(this), child );
+				codes += ' [/' + child + ']<br>';
 			});
-			// Return row
-			return '[row]<br>' + col + '[/row]<br>';
+			// Return shortcode
+			return codes;
 		},
 		createAttributes: function( $this, code ) {
 			var attr = '';
 			// Get attributes
-			$this.find( '.input, .check:checked' ).each( function( index, elm ) {
-				console.log(elm);
-				var val = $(elm).val();
-				if ( val )
-					attr += ' ' + elm.name + '="' + val + '"';
+			$this.find( '.input, .check:checked' ).each( function( index, el ) {
+				var val = $(el).val();
+				if ( val ) {
+					attr += ' ' + el.name + '="' + val + '"';
+				}
 			});
 			// Return shortcode
 			return '[' + code + attr + ']';
