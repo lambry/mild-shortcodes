@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mild-sc\n"
-"POT-Creation-Date: 2014-09-25 19:04+1000\n"
-"PO-Revision-Date: 2014-09-25 19:05+1000\n"
+"POT-Creation-Date: 2014-10-10 16:55+1000\n"
+"PO-Revision-Date: 2014-10-10 16:55+1000\n"
 "Last-Translator: David Featherston\n"
 "Language-Team: \n"
 "Language: en_AU\n"
@@ -1615,7 +1615,7 @@ msgstr ""
 msgid "Signal"
 msgstr ""
 
-#: admin/includes/defaults.php:483 admin/includes/setup.php:245
+#: admin/includes/defaults.php:483 admin/includes/setup.php:249
 msgid "Sitemap"
 msgstr ""
 
@@ -2064,7 +2064,7 @@ msgid "Youtube Square"
 msgstr ""
 
 #: admin/includes/setup.php:33 admin/includes/setup.php:185
-#: admin/includes/setup.php:272 admin/includes/setup.php:293
+#: admin/includes/setup.php:276 admin/includes/setup.php:297
 msgid "Width"
 msgstr ""
 
@@ -2125,8 +2125,8 @@ msgstr ""
 msgid "Alignment"
 msgstr ""
 
-#: admin/includes/setup.php:192 admin/includes/setup.php:253
-#: public/generator.php:278
+#: admin/includes/setup.php:192 admin/includes/setup.php:257
+#: public/generator.php:280
 msgid "Posts"
 msgstr ""
 
@@ -2171,42 +2171,46 @@ msgid "Redirect To"
 msgstr ""
 
 #: admin/includes/setup.php:235
-msgid "Style"
-msgstr ""
-
-#: admin/includes/setup.php:238
-msgid "Block"
+msgid "Register Link"
 msgstr ""
 
 #: admin/includes/setup.php:239
+msgid "Style"
+msgstr ""
+
+#: admin/includes/setup.php:242
+msgid "Block"
+msgstr ""
+
+#: admin/includes/setup.php:243
 msgid "Inline"
 msgstr ""
 
-#: admin/includes/setup.php:249 public/generator.php:258
+#: admin/includes/setup.php:253 public/generator.php:260
 msgid "Menus"
 msgstr ""
 
-#: admin/includes/setup.php:257 public/generator.php:266
+#: admin/includes/setup.php:261 public/generator.php:268
 msgid "Pages"
 msgstr ""
 
-#: admin/includes/setup.php:263
+#: admin/includes/setup.php:267
 msgid "Google Map"
 msgstr ""
 
-#: admin/includes/setup.php:267
+#: admin/includes/setup.php:271
 msgid "Location"
 msgstr ""
 
-#: admin/includes/setup.php:277 admin/includes/setup.php:298
+#: admin/includes/setup.php:281 admin/includes/setup.php:302
 msgid "Height"
 msgstr ""
 
-#: admin/includes/setup.php:284
+#: admin/includes/setup.php:288
 msgid "iFrame"
 msgstr ""
 
-#: admin/includes/setup.php:288
+#: admin/includes/setup.php:292
 msgid "Url"
 msgstr ""
 

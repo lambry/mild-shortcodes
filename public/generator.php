@@ -220,6 +220,7 @@ class Generator {
 	public function login( $params ) {
 	    extract( shortcode_atts([
 	        'redirect' => '',
+            'register' => '',
 	        'display'  => 'block',
 	        'class'    => ''
 	    ], $params) );
@@ -232,6 +233,7 @@ class Generator {
         $html = "<div class='login login-style-{$display} {$class}'>";
             if ( ! is_user_logged_in() ) {
                 $html .= wp_login_form( $login_options );
+                $html .= ( $register ) ? wp_register( '<p><i class="fa fa-angle-double-right"></i> ', '</p>', false ) : '';
             } else {
                 $html .= '<a href="' . wp_logout_url() .'" title="Logout" class="button">Logout</a>';
             }
@@ -274,7 +276,7 @@ class Generator {
 	    }
 
 	    if ( $posts ) {
-	        $posts = get_posts();
+	        $posts = get_posts( [ 'posts_per_page' => -1 ] );
             $html .= "<h4>" . __( 'Posts', 'mild-sc' ) . "</h4>";
 	        $html .= "<ul class='sitemap sitemap-posts'>";
 	            foreach ( $posts as $post ) {
@@ -339,7 +341,7 @@ class Generator {
 	*/
 	public function link( $params, $content = null ) {
 	    extract( shortcode_atts([
-	        'link'   => '#',
+	        'to'   => '#',
 	        'class'  => '',
 	        'target' => 'self'
 	    ], $params) );

@@ -33,7 +33,7 @@ class Defaults {
             'white'  => __( 'White', 'mild-sc' )
         ];
 
-        return apply_filters( 'mild_shortcodes_colors', $colors );
+        return apply_filters( 'mild_sc_colors', $colors );
 
     }
 
@@ -49,7 +49,7 @@ class Defaults {
             'huge'   => __( 'Huge', 'mild-sc' )
         ];
 
-        return apply_filters( 'mild_shortcodes_sizes', $sizes );
+        return apply_filters( 'mild_sc_sizes', $sizes );
 
     }
 
@@ -73,7 +73,7 @@ class Defaults {
             '12' => __( 'Twelve Twelths', 'mild-sc' )
         ];
 
-        return apply_filters( 'mild_shortcodes_grid', $grid );
+        return apply_filters( 'mild_sc_grid', $grid );
 
     }
 
@@ -89,7 +89,7 @@ class Defaults {
 			'one'    => __( 'One', 'mild-sc' )
 		];
 
-		return apply_filters( 'mild_shortcodes_align', $align );
+		return apply_filters( 'mild_sc_align', $align );
 
 	}
 
@@ -103,7 +103,7 @@ class Defaults {
             'blank' => __( 'New Window', 'mild-sc' )
         ];
 
-        return apply_filters( 'mild_shortcodes_target', $target );
+        return apply_filters( 'mild_sc_target', $target );
 
     }
 
@@ -594,7 +594,7 @@ class Defaults {
             'youtube-square' => __( 'Youtube Square', 'mild-sc' )
         ];
 
-        return apply_filters( 'mild_shortcodes_icons', $icons );
+        return apply_filters( 'mild_sc_icons', $icons );
 
 	}
 

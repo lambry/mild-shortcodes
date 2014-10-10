@@ -231,6 +231,10 @@ class Setup extends Defaults {
                         'type'   => 'text',
                         'placeholder' => 'http://example-url.com'
                     ],
+                    'register' => [
+                        'name'   => __( 'Register Link', 'mild-sc' ),
+                        'type'   => 'checkbox'
+                    ],
                     'display' => [
                         'name'   => __( 'Style', 'mild-sc' ),
                         'type'   => 'select',
@@ -303,7 +307,7 @@ class Setup extends Defaults {
             ]
         ];
 
-        return apply_filters( 'mild_shortcodes_setup', $shortcodes );
+        return apply_filters( 'mild_sc_setup', $shortcodes );
 
     }
 

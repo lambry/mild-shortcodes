@@ -59,7 +59,7 @@ class Fields {
      */
     private static function text( $name, $field ) {
 
-        if ( empty( $field['placeholder'] ) ) $field['placeholder'] = '';
+        if ( ! isset( $field['placeholder'] ) ) $field['placeholder'] = '';
 
         return "<input name='{$name}' id='{$name}' class='input' placeholder='{$field['placeholder']}' type='text'>";
 

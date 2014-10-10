@@ -24,7 +24,7 @@ require 'includes/bootstrap.php'; ?>
             <?php endforeach; ?>
         </div><!-- .shortcode-links -->
         <?php foreach( $shortcodes as $id => $shortcode ) : ?>
-            <form class="shortcode" id="<?php echo $id; ?>" data-code="<?php echo $id; ?>" data-wrap="<?php echo ( array_key_exists( 'wrap', $shortcode ) ) ? $shortcode['wrap'] : ''; ?>"  data-child="<?php echo ( array_key_exists( 'child', $shortcode ) ) ? $shortcode['child'] : ''; ?>">
+            <form class="shortcode" id="<?php echo $id; ?>" data-code="<?php echo $id; ?>" data-wrap="<?php echo ( isset( $shortcode['wrap'] ) ) ? $shortcode['wrap'] : ''; ?>"  data-child="<?php echo ( isset( $shortcode['child'] ) ) ? $shortcode['child'] : ''; ?>">
                 <h2><?php echo $shortcode['heading']; ?> <i class="home fa fa-chevron-circle-left"></i></h2>
                 <div class="fields">
                     <?php foreach( $shortcode['fields'] as $name => $field ) : ?>
@@ -38,7 +38,7 @@ require 'includes/bootstrap.php'; ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
-                <?php if ( array_key_exists( 'clone', $shortcode ) ) : ?>
+                <?php if ( isset( $shortcode['clone'] ) ) : ?>
                     <button class="clone" type="button"><?php _e( 'Add New', 'mild-sc'); ?></button>
                 <?php endif; ?>
                 <button type="submit" class="submit">
