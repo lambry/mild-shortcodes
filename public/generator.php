@@ -27,8 +27,8 @@ class Generator {
 		add_shortcode( __( 'icon', 'mild-sc' ),      [ $this, 'icon' ] );
 		add_shortcode( __( 'button', 'mild-sc' ),    [ $this, 'button' ] );
 		add_shortcode( __( 'panel', 'mild-sc' ),     [ $this, 'panel' ] );
-		add_shortcode( __( 'tabs', 'mild-sc' ), 	 [ $this, 'tabs' ] );
-		add_shortcode( __( 'tab', 'mild-sc' ), 	 	 [ $this, 'tab' ] );
+		add_shortcode( __( 'tabs', 'mild-sc' ),      [ $this, 'tabs' ] );
+		add_shortcode( __( 'tab', 'mild-sc' ),       [ $this, 'tab' ] );
 		add_shortcode( __( 'accordion', 'mild-sc' ), [ $this, 'accordion' ] );
 		add_shortcode( __( 'align', 'mild-sc' ),     [ $this, 'align' ] );
 		add_shortcode( __( 'posts', 'mild-sc' ),     [ $this, 'posts' ] );
@@ -70,7 +70,7 @@ class Generator {
 	        'icon'   => '',
 	        'color'  => '',
 	        'size'   => '',
-            'align'  => '',
+	        'align'  => '',
 	        'link'   => '',
 	        'target' => 'self',
 	        'class'  => ''
@@ -87,7 +87,7 @@ class Generator {
 	        'icon'   => '',
 	        'color'  => '',
 	        'size'   => '',
-            'align'  => '',
+	        'align'  => '',
 	        'link'   => '',
 	        'target' => 'self',
 	        'class'  => ''
@@ -106,7 +106,7 @@ class Generator {
 	        'icon'  => '',
 	        'color' => '',
 	        'size'  => '',
-            'align' => '',
+	        'align' => '',
 	        'class' => ''
 	    ], $params) );
 	    $icon = self::create_icon( $icon );
@@ -117,17 +117,17 @@ class Generator {
 	* Tabs shortcode
 	*/
 	public function tabs( $params, $content = null ) {
-	    extract( shortcode_atts([
-	        'class' => ''
-	    ], $params) );
-	    $panes = do_shortcode( $content );
+		extract( shortcode_atts([
+			'class' => ''
+		], $params) );
+		$panes = do_shortcode( $content );
 		$nav = '<ul class="tabs-nav">';
 		foreach ( self::$tabs as $tab ) {
 			$icon = self::create_icon( $tab['icon'] );
-			$nav .= "<li class='{$class}' data-tab='{$tab['id']}'>{$icon}{$tab['title']}</li>";
+			$nav .= "<li class='{$class} tab-item' data-tab='{$tab['id']}'>{$icon}{$tab['title']}</li>";
 		}
 		$nav .= '</ul>';
-	    return "<div class='tabs {$class}'>{$nav}<div class='tab-panes'>{$panes}</div></div>";
+		return "<div class='tabs {$class}'>{$nav}<div class='tab-panes'>{$panes}</div></div>";
 	}
 
 	/*
@@ -141,9 +141,9 @@ class Generator {
 	    ], $params) );
 	    $id = sanitize_title_with_dashes( $title );
 	    self::$tabs[] = [
-	    	'id' => $id,
-	    	'title' => $title,
-	    	'icon' => $icon
+			'id' => $id,
+			'title' => $title,
+			'icon' => $icon
 	    ];
 	    return "<div id='{$id}' class='tab {$class}'>" . do_shortcode( $content ) . "</div>";
 	}
@@ -157,7 +157,7 @@ class Generator {
 	        'icon'  => '',
 	        'class' => ''
 	    ], $params) );
-        $id = sanitize_title_with_dashes( $title );
+	    $id = sanitize_title_with_dashes( $title );
 	    $icon = self::create_icon( $icon );
 	    $icon_plus = self::create_icon( 'plus' );
 	    return "<div id='{$id}' class='accordion {$class}'>
@@ -202,8 +202,7 @@ class Generator {
 
 	    $html = "<div class='posts post-{$type} {$class}'>";
 	        while( $query->have_posts() ) : $query->the_post();
-	            $html .= "<div class='post'>
-	                        <h4 class='post-title'><a href='" . get_permalink() . "'>" . get_the_title() . "</a></h4>";
+	            $html .= "<div class='post'><h4 class='post-title'><a href='" . get_permalink() . "'>" . get_the_title() . "</a></h4>";
 	            if ( $date ) $html .= "<div class='post-date'>" . get_the_date() . "</div>";
 	            if ( $image ) $html .= "<a href='" . get_permalink() . "' class='post-image'>" . get_the_post_thumbnail( $query->post->ID, 'thumbnail' ) . "</a>";
 	            $html .= "<div class='post-content'>" . get_the_excerpt() . "</div></div>";
@@ -219,8 +218,8 @@ class Generator {
 	*/
 	public function login( $params ) {
 	    extract( shortcode_atts([
-	        'redirect' => '',
-            'register' => '',
+	        'register' => '',
+	        'redirect' => home_url(),
 	        'display'  => 'block',
 	        'class'    => ''
 	    ], $params) );
@@ -235,7 +234,9 @@ class Generator {
                 $html .= wp_login_form( $login_options );
                 $html .= ( $register ) ? wp_register( '<p><i class="fa fa-angle-double-right"></i> ', '</p>', false ) : '';
             } else {
-                $html .= '<a href="' . wp_logout_url() .'" title="Logout" class="button">Logout</a>';
+                $current_user = wp_get_current_user();
+                $html .= '<span class="loggedin-message">' . __( 'Hello ', 'mild-sc' ) . $current_user->user_login .'</span>, ';
+                $html .= '<a href="' . wp_logout_url() .'" title="Logout" class="logout-button">' . __( 'Logout', 'mild-sc' ) . '</a>';
             }
         $html .= '</div>';
 
@@ -247,10 +248,10 @@ class Generator {
 	*/
 	public function sitemap( $params ) {
 	    extract( shortcode_atts([
-            'posts' => false,
-            'pages' => false,
-            'menus' => false,
-	        'class' => ''
+			'posts' => false,
+			'pages' => false,
+			'menus' => false,
+			'class' => ''
 	    ], $params) );
 
 	    $html = "<nav class='site-map {$class}'>";
@@ -265,7 +266,7 @@ class Generator {
 
 	    if ( $pages ) {
 	        $pages = get_pages();
-            $html .= "<h4>" . __( 'Pages', 'mild-sc' ) . "</h4>";
+	        $html .= "<h4>" . __( 'Pages', 'mild-sc' ) . "</h4>";
 	        $html .= "<ul class='sitemap sitemap-pages'>";
 	            foreach ( $pages as $page ) {
 	                $html .= "<li><a href='" . get_permalink( $page->ID ) . "'>";
@@ -277,7 +278,7 @@ class Generator {
 
 	    if ( $posts ) {
 	        $posts = get_posts( [ 'posts_per_page' => -1 ] );
-            $html .= "<h4>" . __( 'Posts', 'mild-sc' ) . "</h4>";
+	        $html .= "<h4>" . __( 'Posts', 'mild-sc' ) . "</h4>";
 	        $html .= "<ul class='sitemap sitemap-posts'>";
 	            foreach ( $posts as $post ) {
 	                $html .= "<li><a href='" . get_permalink( $post->ID ) . "'>";

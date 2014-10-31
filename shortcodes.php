@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Mild Shortcodes
- * Plugin URI: https://github.com/bluecure/mild-shortcodes
+ * Plugin URI: https://github.com/lambry/mild-shortcodes
  * Description: A set of simple shortcodes
  * Version: 0.1.0
  * Author: David Featherston

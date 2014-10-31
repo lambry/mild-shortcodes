@@ -16,8 +16,11 @@ Note: This is a work in progress and can break at anytime.
 * Login
 * Sitemap
 * Google Map
-* Iframe
+* iFrame
 
 ####Supplementary Shortcodes (handy in widgets)
 * Image
 * Link
+
+####ToDo:
+* Add Icon previews

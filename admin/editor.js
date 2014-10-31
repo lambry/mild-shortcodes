@@ -30,14 +30,13 @@
 
         /**
          * Returns information about the plugin as a name/value array.
-         * The current keys are longname, author, authorurl, infourl and version.
          *
          * @return {Object} Name/value array containing information about the plugin.
          */
         getInfo : function() {
             return {
-                    longname : 'Mild Shortcodes',
-                    version : "0.1.0"
+                longname : 'Mild Shortcodes',
+                version : '0.1.0'
             };
         }
     });
