@@ -19,7 +19,7 @@ class Setup extends Defaults {
     /**
      * Get Shortcodes
      */
-    public static function getShortcodes() {
+    public static function get_shortcodes() {
 
         $shortcodes = [
             'row'      => [
@@ -307,7 +307,7 @@ class Setup extends Defaults {
             ]
         ];
 
-        return apply_filters( 'mild_sc_setup', $shortcodes );
+        return apply_filters( 'mild_sc_shortcodes', $shortcodes );
 
     }
 

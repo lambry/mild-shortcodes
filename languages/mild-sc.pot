@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mild-sc\n"
-"POT-Creation-Date: 2014-10-10 16:55+1000\n"
-"PO-Revision-Date: 2014-10-10 16:55+1000\n"
+"POT-Creation-Date: 2014-11-11 18:30+1000\n"
+"PO-Revision-Date: 2014-11-11 18:30+1000\n"
 "Last-Translator: David Featherston\n"
 "Language-Team: \n"
 "Language: en_AU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -2126,7 +2126,7 @@ msgid "Alignment"
 msgstr ""
 
 #: admin/includes/setup.php:192 admin/includes/setup.php:257
-#: public/generator.php:280
+#: public/generator.php:283
 msgid "Posts"
 msgstr ""
 
@@ -2186,11 +2186,11 @@ msgstr ""
 msgid "Inline"
 msgstr ""
 
-#: admin/includes/setup.php:253 public/generator.php:260
+#: admin/includes/setup.php:253 public/generator.php:263
 msgid "Menus"
 msgstr ""
 
-#: admin/includes/setup.php:261 public/generator.php:268
+#: admin/includes/setup.php:261 public/generator.php:271
 msgid "Pages"
 msgstr ""
 
@@ -2276,4 +2276,12 @@ msgstr ""
 
 #: public/generator.php:40
 msgid "link"
+msgstr ""
+
+#: public/generator.php:240
+msgid "Hello "
+msgstr ""
+
+#: public/generator.php:241
+msgid "Logout"
 msgstr ""

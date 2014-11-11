@@ -26,5 +26,5 @@ require 'includes/setup.php';
 require 'includes/fields.php';
 
 // Set variables
-$shortcodes = Setup::getShortcodes();
+$shortcodes = Setup::get_shortcodes();
 $fields = new Fields;

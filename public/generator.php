@@ -182,6 +182,7 @@ class Generator {
 	* Posts shortcode
 	*/
 	public function posts( $params ) {
+        global $post;
 	    extract( shortcode_atts([
 	        'cat'   => '',
 	        'tag'   => '',
@@ -189,25 +190,26 @@ class Generator {
 	        'type'  => 'post',
 	        'date'  => false,
 	        'image' => false,
+	        'size'  => 'thumbnail',
 	        'class' => ''
 	    ], $params) );
 
 	    $args = [
-	        'category_name'  => $cat,
-	        'tag'            => $tag,
+	        'category_name'  => sanitize_title_with_dashes( $cat ),
+	        'tag'            => sanitize_title_with_dashes( $tag ),
 	        'post_type'      => $type,
 	        'posts_per_page' => $no
 	    ];
-	    $query = new \WP_Query( $args );
+	    $posts = get_posts( $args );
 
 	    $html = "<div class='posts post-{$type} {$class}'>";
-	        while( $query->have_posts() ) : $query->the_post();
-	            $html .= "<div class='post'><h4 class='post-title'><a href='" . get_permalink() . "'>" . get_the_title() . "</a></h4>";
+	        foreach ( $posts as $post ) : setup_postdata( $post );
+	            $html .= '<div class="post">';
+	            if ( $image ) $html .= '<a href="' . get_permalink() . '" class="post-image">' . get_the_post_thumbnail( $post->ID, $size ) . '</a>';
+	            $html .= '<h4 class="post-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4>';
 	            if ( $date ) $html .= "<div class='post-date'>" . get_the_date() . "</div>";
-	            if ( $image ) $html .= "<a href='" . get_permalink() . "' class='post-image'>" . get_the_post_thumbnail( $query->post->ID, 'thumbnail' ) . "</a>";
-	            $html .= "<div class='post-content'>" . get_the_excerpt() . "</div></div>";
-	        endwhile;
-	        wp_reset_query();
+	            $html .= '<div class="post-content">' . get_the_excerpt() . '</div></div>';
+	        endforeach; wp_reset_postdata();
 	    $html .= '</div>';
 
 	    return $html;
@@ -258,7 +260,7 @@ class Generator {
 
 	    if ( $menus ) {
 	        $menus = get_terms( 'nav_menu', [ 'hide_empty' => true ] );
-	        $html .= "<h4>" . __( 'Menus', 'mild-sc' ) . "</h4>";
+	        $html .= '<h4>' . __( 'Menus', 'mild-sc' ) . '</h4>';
 	        foreach ( $menus as $menu ) {
 	            $html .= wp_nav_menu( [ 'menu' => $menu->name, 'echo' => false ] );
 	        }
@@ -266,29 +268,29 @@ class Generator {
 
 	    if ( $pages ) {
 	        $pages = get_pages();
-	        $html .= "<h4>" . __( 'Pages', 'mild-sc' ) . "</h4>";
-	        $html .= "<ul class='sitemap sitemap-pages'>";
+	        $html .= '<h4>' . __( 'Pages', 'mild-sc' ) . '</h4>';
+	        $html .= '<ul class="sitemap sitemap-pages">';
 	            foreach ( $pages as $page ) {
-	                $html .= "<li><a href='" . get_permalink( $page->ID ) . "'>";
+	                $html .= '<li><a href="' . get_permalink( $page->ID ) . '">';
 	                $html .= $page->post_title;
-	                $html .= "</a></li>";
+	                $html .= '</a></li>';
 	            }
-	        $html .= "</ul>";
+	        $html .= '</ul>';
 	    }
 
 	    if ( $posts ) {
 	        $posts = get_posts( [ 'posts_per_page' => -1 ] );
-	        $html .= "<h4>" . __( 'Posts', 'mild-sc' ) . "</h4>";
-	        $html .= "<ul class='sitemap sitemap-posts'>";
+	        $html .= '<h4>' . __( 'Posts', 'mild-sc' ) . '</h4>';
+	        $html .= '<ul class="sitemap sitemap-posts">';
 	            foreach ( $posts as $post ) {
-	                $html .= "<li><a href='" . get_permalink( $post->ID ) . "'>";
+	                $html .= '<li><a href="' . get_permalink( $post->ID ) . '">';
 	                $html .= $post->post_title;
-	                $html .= "</a></li>";
+	                $html .= '</a></li>';
 	            }
-	        $html .= "</ul>";
+	        $html .= '</ul>';
 	    }
 
-	    $html .= "</nav>";
+	    $html .= '</nav>';
 
 	    return $html;
 	}
