@@ -43,7 +43,7 @@ class Init {
 		new Generator;
 
         // Load public js.
-        wp_enqueue_script( 'mild-sc-pjs', plugin_dir_url( __FILE__ ) . 'public/js/public.js', ['jquery'], '0.1.0', true );
+        wp_enqueue_script( 'mild-sc-pjs', plugin_dir_url( __FILE__ ) . 'public/scripts/public.js', ['jquery'], '0.1.0', true );
 
 	}
 
@@ -55,10 +55,10 @@ class Init {
 	    if ( ! is_admin() ) return;
 
 	    // Add editor style sheet.
-	    wp_enqueue_style( 'shortcodes', plugin_dir_url( __FILE__ ) . 'admin/assets/css/editor.css' );
+	    wp_enqueue_style( 'shortcodes', plugin_dir_url( __FILE__ ) . 'admin/assets/styles/editor.css' );
 
         // Add editor content css.
-	    add_editor_style( plugin_dir_url( __FILE__ ) . 'admin/assets/css/content.css' );
+	    add_editor_style( plugin_dir_url( __FILE__ ) . 'admin/assets/styles/content.css' );
 
 		// Add editor js.
 	    add_filter( 'mce_external_plugins', function( $plugin_array ) {

@@ -11,7 +11,7 @@ require 'includes/bootstrap.php'; ?>
     <title>Shortcodes</title>
     <!-- Load styles -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/modal.css" rel="stylesheet">
+    <link href="assets/styles/modal.css" rel="stylesheet">
 </head>
 <body>
     <div class="shortcodes">
@@ -50,6 +50,6 @@ require 'includes/bootstrap.php'; ?>
     </div><!-- .shortcodes -->
 <!-- Load scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="assets/js/modal.js"></script>
+<script src="assets/scripts/modal.js"></script>
 </body>
 </html>
