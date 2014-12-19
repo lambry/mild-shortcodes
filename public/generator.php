@@ -300,14 +300,13 @@ class Generator {
 	*/
 	public function map( $params ) {
 	    extract( shortcode_atts([
-	        'width'    => '400',
-	        'height'   => '300',
 	        'location' => 'Australia',
+	        'width'    => '',
 	        'align'    => '',
 	        'class'    => ''
 	    ], $params) );
 	    $location = str_replace( ' ', '+', $location );
-	    return "<div class='fluid-iframe align{$align} {$class}'><iframe src='https://maps.google.com/maps?q={$location}&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' width='{$width}px' height='{$height}px'></iframe></div>";
+	    return "<div style='max-width:{$width}px;'><div class='fluid-iframe align{$align} {$class}'><iframe src='https://maps.google.com/maps?q={$location}&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe></div></div>";
 	}
 
 	/*
@@ -316,12 +315,11 @@ class Generator {
 	public function iframe( $params ) {
 	    extract( shortcode_atts([
 	        'url'    => '',
-	        'width'  => '400',
-	        'height' => '300',
+	        'width'  => '',
 	        'align'  => '',
 	        'class'  => ''
 	    ], $params) );
-	    return "<div class='fluid-iframe align{$align} {$class}'><iframe src='{$url}' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' width='{$width}px' height='{$height}px'></iframe></div>";
+	    return "<div style='max-width:{$width}px;'><div class='fluid-iframe align{$align} {$class}'><iframe src='{$url}' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe></div></div>";
 	}
 
 	/*

@@ -270,17 +270,12 @@ class Setup extends Defaults {
                     'location' => [
                         'name'   => __( 'Location', 'mild-sc' ),
                         'type'   => 'text',
-                        'placeholder' => 'i.e. 5 Lee Street, Brunswick, Melbourne'
+                        'placeholder' => 'i.e. 5 Lee Street, Melbourne'
                     ],
                     'width' => [
                         'name'   => __( 'Width', 'mild-sc' ),
                         'type'   => 'text',
-                        'placeholder' => '400'
-                    ],
-                    'height' => [
-                        'name'   => __( 'Height', 'mild-sc' ),
-                        'type'   => 'text',
-                        'placeholder' => '300'
+                        'placeholder' => '500'
                     ]
                 ]
             ],
@@ -291,17 +286,12 @@ class Setup extends Defaults {
                     'url' => [
                         'name'   => __( 'Url', 'mild-sc' ),
                         'type'   => 'text',
-                        'placeholder' => 'i.e. http://myiframeurl.com'
+                        'placeholder' => 'i.e. http://iframe.com'
                     ],
                     'width' => [
                         'name'   => __( 'Width', 'mild-sc' ),
                         'type'   => 'text',
-                        'placeholder' => '400'
-                    ],
-                    'height' => [
-                        'name'   => __( 'Height', 'mild-sc' ),
-                        'type'   => 'text',
-                        'placeholder' => '300'
+                        'placeholder' => '500'
                     ]
                 ]
             ]
