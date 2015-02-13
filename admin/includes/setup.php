@@ -10,13 +10,6 @@ namespace Mild\Shortcodes;
 class Setup extends Defaults {
 
     /**
-	 * Constructor
-	 */
-	function __construct() {
-
-    }
-
-    /**
      * Get Shortcodes
      */
     public static function get_shortcodes() {
@@ -193,14 +186,14 @@ class Setup extends Defaults {
                 'icon'   => 'newspaper-o',
                 'fields' => [
                     'cat' => [
-                        'name'        => __( 'Categories', 'mild-sc' ),
+                        'name'        => __( 'Category', 'mild-sc' ),
                         'type'        => 'text',
-                        'placeholder' => __( 'i.e. news,other', 'mild-sc' )
+                        'placeholder' => __( 'i.e. News', 'mild-sc' )
                     ],
                     'tag' => [
-                        'name'        => __( 'Tags', 'mild-sc' ),
+                        'name'        => __( 'Tag', 'mild-sc' ),
                         'type'        => 'text',
-                        'placeholder' => __( 'i.e. featured', 'mild-sc' )
+                        'placeholder' => __( 'i.e. Featured', 'mild-sc' )
                     ],
                     'no' => [
                         'name'        => __( 'Number', 'mild-sc' ),

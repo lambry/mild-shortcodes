@@ -10,13 +10,6 @@ namespace Mild\Shortcodes;
 class Fields {
 
     /**
-	 * Constructor
-	 */
-	function __construct() {
-
-    }
-
-    /**
      * Generate
      *
      * Generate the required field

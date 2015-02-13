@@ -10,13 +10,6 @@ namespace Mild\Shortcodes;
 class Defaults {
 
     /**
-	 * Constructor
-	 */
-	function __construct() {
-
-    }
-
-    /**
      * Colors
      */
     public static function colors() {

@@ -3,7 +3,6 @@
 (function( $ ) {
 
     // Tabs
-        // Nav tabs
     var tabs = $( '.tabs' );
     if ( tabs.length > 0 ) {
         var tabNav = tabs.find( '.tabs-nav li' ),
