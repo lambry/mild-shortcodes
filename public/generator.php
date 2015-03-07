@@ -1,6 +1,8 @@
 <?php
 /**
  * Generator
+ *
+ * @package Mild
  */
 
 namespace Mild\Shortcodes;
@@ -12,13 +14,13 @@ if ( ! defined( 'WPINC' ) ) die;
 class Generator {
 
 	/*
-	* Variables
-	*/
-	static $tabs = [];
+	 * Variables
+	 */
+	private static $tabs = [];
 
 	/*
-	* Construct
-	*/
+	 * Construct
+	 */
     public function __construct() {
 
 		// Add shortcodes
@@ -42,8 +44,13 @@ class Generator {
     }
 
 	/*
-	* Row shortcode
-	*/
+	 * Row shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $row
+	 */
 	public function row( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'class' => ''
@@ -52,8 +59,13 @@ class Generator {
 	}
 
 	/*
-	* Col shortcode
-	*/
+	 * Col shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $col
+	 */
 	public function col( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'width' => '6',
@@ -63,8 +75,13 @@ class Generator {
 	}
 
 	/*
-	* Icon shortcode
-	*/
+	 * Icon shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $icon
+	 */
 	public function icon( $params ) {
 	    extract( shortcode_atts([
 	        'icon'   => '',
@@ -80,8 +97,13 @@ class Generator {
 	}
 
 	/*
-	* Button shortcode
-	*/
+	 * Button shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $button
+	 */
 	public function button( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'icon'   => '',
@@ -99,8 +121,13 @@ class Generator {
 	}
 
 	/*
-	* Panel shortcode
-	*/
+	 * Panel shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $panel
+	 */
 	public function panel( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'icon'  => '',
@@ -114,8 +141,13 @@ class Generator {
 	}
 
 	/*
-	* Tabs shortcode
-	*/
+	 * Tabs shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $tabs
+	 */
 	public function tabs( $params, $content = null ) {
 		extract( shortcode_atts([
 			'class' => ''
@@ -131,8 +163,13 @@ class Generator {
 	}
 
 	/*
-	* Tab shortcode
-	*/
+	 * Tab shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $tab
+	 */
 	public function tab( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'title' => '',
@@ -149,8 +186,13 @@ class Generator {
 	}
 
 	/*
-	* Accordian shortcode
-	*/
+	 * Accordion shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $accordion
+	 */
 	public function accordion( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'title' => '',
@@ -167,8 +209,13 @@ class Generator {
 	}
 
 	/*
-	* Align shortcode
-	*/
+	 * Align shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $align
+	 */
 	public function align( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'align' => '',
@@ -179,8 +226,13 @@ class Generator {
 	}
 
 	/*
-	* Posts shortcode
-	*/
+	 * Posts shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $posts
+	 */
 	public function posts( $params ) {
         global $post;
 	    extract( shortcode_atts([
@@ -216,8 +268,13 @@ class Generator {
 	}
 
 	/*
-	* Login shortcode
-	*/
+	 * Login shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $login
+	 */
 	public function login( $params ) {
 	    extract( shortcode_atts([
 	        'register' => '',
@@ -246,8 +303,13 @@ class Generator {
 	}
 
 	/*
-	* Sitemap shortcode
-	*/
+	 * Sitemap shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $sitemap
+	 */
 	public function sitemap( $params ) {
 	    extract( shortcode_atts([
 			'posts' => false,
@@ -296,8 +358,13 @@ class Generator {
 	}
 
 	/*
-	* Map shortcode
-	*/
+	 * Map shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $map
+	 */
 	public function map( $params ) {
 	    extract( shortcode_atts([
 	        'location' => 'Australia',
@@ -310,8 +377,13 @@ class Generator {
 	}
 
 	/*
-	* iFrame shortcode
-	*/
+	 * Iframe shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $iframe
+	 */
 	public function iframe( $params ) {
 	    extract( shortcode_atts([
 	        'url'    => '',
@@ -323,8 +395,13 @@ class Generator {
 	}
 
 	/*
-	* Image shortcode
-	*/
+	 * Image shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $image
+	 */
 	public function image( $params ) {
 	    extract( shortcode_atts([
 	        'url'    => '',
@@ -338,8 +415,13 @@ class Generator {
 	}
 
 	/*
-	* Link shortcode
-	*/
+	 * Link shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @param string $content
+	 * @return string $link
+	 */
 	public function link( $params, $content = null ) {
 	    extract( shortcode_atts([
 	        'to'   => '#',
@@ -350,15 +432,25 @@ class Generator {
 	}
 
 	/*
-	* Wrap with anchor helper
-	*/
+	 * Wrap with anchor helper
+	 *
+	 * @access public
+	 * @param string $link
+	 * @param string $target
+	 * @param string $html
+	 * @return string $anchor
+	 */
 	private function wrap_with_anchor( $link, $target, $html ) {
 	    return ( $link ) ? "<a href='{$link}' target='_{$target}'>{$html}</a>" : $html;
 	}
 
 	/*
-	* Create icon helper
-	*/
+	 * Create icon helper
+	 *
+	 * @access public
+	 * @param string $icon
+	 * @return string $icon
+	 */
 	private function create_icon( $icon ) {
 	    return ( $icon ) ? "<i class='fa fa-{$icon}'></i>" : '';
 	}

@@ -2,6 +2,7 @@
 /**
  * Shortcode Fields
  *
+ * @package Mild
  */
 
 namespace Mild\Shortcodes;
@@ -12,12 +13,12 @@ class Fields {
     /**
      * Generate
      *
-     * Generate the required field
+     * Generate the required field.
      *
      * @access public
-     * @param  string  $name
-     * @param  array   $field
-     * @return hmtl    $html
+     * @param  string $name
+     * @param  array  $field
+     * @return null
      */
 	public static function generate( $name, $field ) {
 
@@ -44,11 +45,12 @@ class Fields {
     /**
      * Text
      *
-     * Generates a text field
+     * Generates a text field.
      *
      * @access private
-     * @param  array   $field
-     * @return html    $html
+     * @param  string $name
+     * @param  array  $field
+     * @return string $text
      */
     private static function text( $name, $field ) {
 
@@ -61,11 +63,12 @@ class Fields {
     /**
      * Select
      *
-     * Generates a select box
+     * Generates a select box.
      *
      * @access private
-     * @param  array   $field
-     * @return html    $html
+     * @param  string $name
+     * @param  array  $field
+     * @return string $select
      */
 	private static function select( $name, $field ) {
 
@@ -83,11 +86,12 @@ class Fields {
     /**
      * Checkbox
      *
-     * Generates a checkbox
+     * Generates a checkbox.
      *
      * @access private
-     * @param  array   $field
-     * @return html    $html
+     * @param  string $name
+     * @param  array  $field
+     * @return string $checkbox
      */
     private static function checkbox( $name, $field ) {
 

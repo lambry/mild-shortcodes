@@ -57,7 +57,7 @@
 				edActive = ed.activeEditor,
 				code = $this.data( 'code' ),
 				wrap = $this.data( 'wrap' ),
-				child = $this.data( 'child' )
+				child = $this.data( 'child'),
 				shortcode = '';
 
 			// Wrap content

@@ -2,6 +2,7 @@
 /**
  * Shortcode defaults
  *
+ * @package Mild
  */
 
 namespace Mild\Shortcodes;
@@ -11,6 +12,9 @@ class Defaults {
 
     /**
      * Colors
+     *
+     * @assess public
+     * @return array $colors
      */
     public static function colors() {
 
@@ -32,6 +36,9 @@ class Defaults {
 
     /**
      * Sizes
+     *
+     * @assess public
+     * @return array $sizes
      */
     public static function sizes() {
 
@@ -48,6 +55,9 @@ class Defaults {
 
     /**
      * Grid
+     *
+     * @assess public
+     * @return array $grid
      */
     public static function grid() {
 
@@ -71,8 +81,11 @@ class Defaults {
     }
 
 	/**
-	* Align
-	*/
+	 * Align
+	 *
+	 * @assess public
+	 * @return array $align
+	 */
 	public static function align() {
 
 		$align = [
@@ -88,6 +101,9 @@ class Defaults {
 
     /**
      * Target
+     *
+     * @assess public
+     * @return array $target
      */
     public static function target() {
 
@@ -102,6 +118,9 @@ class Defaults {
 
     /**
 	 * Icons
+     *
+     * @assess public
+     * @return array $icons
 	 */
 	public static function icons() {
 
@@ -150,6 +169,7 @@ class Defaults {
             'bar-chart' => __( 'Bar Chart', 'mild-sc' ),
             'barcode' => __( 'Barcode', 'mild-sc' ),
             'bars' => __( 'Bars', 'mild-sc' ),
+            'bed' => __( 'Bed', 'mild-sc' ),
             'beer' => __( 'Beer', 'mild-sc' ),
             'behance' => __( 'Behance', 'mild-sc' ),
             'behance-square' => __( 'Behance Square', 'mild-sc' ),
@@ -176,6 +196,7 @@ class Defaults {
             'bullhorn' => __( 'Bullhorn', 'mild-sc' ),
             'bullseye' => __( 'Bullseye', 'mild-sc' ),
             'bus' => __( 'Bus', 'mild-sc' ),
+            'buysellads' => __( 'Buysellads', 'mild-sc' ),
             'calculator' => __( 'Calculator', 'mild-sc' ),
             'calendar' => __( 'Calendar', 'mild-sc' ),
             'calendar-o' => __( 'Calendar O', 'mild-sc' ),
@@ -190,6 +211,8 @@ class Defaults {
             'caret-square-o-right' => __( 'Caret Square O Right', 'mild-sc' ),
             'caret-square-o-up' => __( 'Caret Square O Up', 'mild-sc' ),
             'caret-up' => __( 'Caret Up', 'mild-sc' ),
+            'cart-arrow-down' => __( 'Cart Arrow Down', 'mild-sc' ),
+            'cart-plus' => __( 'Cart Plus', 'mild-sc' ),
             'cc' => __( 'Cc', 'mild-sc' ),
             'cc-amex' => __( 'Cc Amex', 'mild-sc' ),
             'cc-discover' => __( 'Cc Discover', 'mild-sc' ),
@@ -235,6 +258,7 @@ class Defaults {
             'comments-o' => __( 'Comments O', 'mild-sc' ),
             'compass' => __( 'Compass', 'mild-sc' ),
             'compress' => __( 'Compress', 'mild-sc' ),
+            'connectdevelop' => __( 'Connectdevelop', 'mild-sc' ),
             'copyright' => __( 'Copyright', 'mild-sc' ),
             'credit-card' => __( 'Credit Card', 'mild-sc' ),
             'crop' => __( 'Crop', 'mild-sc' ),
@@ -243,10 +267,12 @@ class Defaults {
             'cube' => __( 'Cube', 'mild-sc' ),
             'cubes' => __( 'Cubes', 'mild-sc' ),
             'cutlery' => __( 'Cutlery', 'mild-sc' ),
+            'dashcube' => __( 'Dashcube', 'mild-sc' ),
             'database' => __( 'Database', 'mild-sc' ),
             'delicious' => __( 'Delicious', 'mild-sc' ),
             'desktop' => __( 'Desktop', 'mild-sc' ),
             'deviantart' => __( 'Deviantart', 'mild-sc' ),
+            'diamond' => __( 'Diamond', 'mild-sc' ),
             'digg' => __( 'Digg', 'mild-sc' ),
             'dot-circle-o' => __( 'Dot Circle O', 'mild-sc' ),
             'download' => __( 'Download', 'mild-sc' ),
@@ -273,6 +299,7 @@ class Defaults {
             'eye-slash' => __( 'Eye Slash', 'mild-sc' ),
             'eyedropper' => __( 'Eyedropper', 'mild-sc' ),
             'facebook' => __( 'Facebook', 'mild-sc' ),
+            'facebook-official' => __( 'Facebook Official', 'mild-sc' ),
             'facebook-square' => __( 'Facebook Square', 'mild-sc' ),
             'fast-backward' => __( 'Fast Backward', 'mild-sc' ),
             'fast-forward' => __( 'Fast Forward', 'mild-sc' ),
@@ -308,6 +335,7 @@ class Defaults {
             'folder-open' => __( 'Folder Open', 'mild-sc' ),
             'folder-open-o' => __( 'Folder Open O', 'mild-sc' ),
             'font' => __( 'Font', 'mild-sc' ),
+            'forumbee' => __( 'Forumbee', 'mild-sc' ),
             'forward' => __( 'Forward', 'mild-sc' ),
             'foursquare' => __( 'Foursquare', 'mild-sc' ),
             'frown-o' => __( 'Frown O', 'mild-sc' ),
@@ -321,7 +349,6 @@ class Defaults {
             'github' => __( 'Github', 'mild-sc' ),
             'github-alt' => __( 'Github Alt', 'mild-sc' ),
             'github-square' => __( 'Github Square', 'mild-sc' ),
-            'gittip' => __( 'Gittip', 'mild-sc' ),
             'glass' => __( 'Glass', 'mild-sc' ),
             'globe' => __( 'Globe', 'mild-sc' ),
             'google' => __( 'Google', 'mild-sc' ),
@@ -329,6 +356,7 @@ class Defaults {
             'google-plus-square' => __( 'Google Plus Square', 'mild-sc' ),
             'google-wallet' => __( 'Google Wallet', 'mild-sc' ),
             'graduation-cap' => __( 'Graduation Cap', 'mild-sc' ),
+            'gratipay' => __( 'Gratipay', 'mild-sc' ),
             'h-square' => __( 'H Square', 'mild-sc' ),
             'hacker-news' => __( 'Hacker News', 'mild-sc' ),
             'hand-o-down' => __( 'Hand O Down', 'mild-sc' ),
@@ -340,6 +368,7 @@ class Defaults {
             'headphones' => __( 'Headphones', 'mild-sc' ),
             'heart' => __( 'Heart', 'mild-sc' ),
             'heart-o' => __( 'Heart O', 'mild-sc' ),
+            'heartbeat' => __( 'Heartbeat', 'mild-sc' ),
             'history' => __( 'History', 'mild-sc' ),
             'home' => __( 'Home', 'mild-sc' ),
             'hospital-o' => __( 'Hospital O', 'mild-sc' ),
@@ -364,6 +393,7 @@ class Defaults {
             'lastfm' => __( 'Lastfm', 'mild-sc' ),
             'lastfm-square' => __( 'Lastfm Square', 'mild-sc' ),
             'leaf' => __( 'Leaf', 'mild-sc' ),
+            'leanpub' => __( 'Leanpub', 'mild-sc' ),
             'lemon-o' => __( 'Lemon O', 'mild-sc' ),
             'level-down' => __( 'Level Down', 'mild-sc' ),
             'level-up' => __( 'Level Up', 'mild-sc' ),
@@ -388,10 +418,17 @@ class Defaults {
             'magnet' => __( 'Magnet', 'mild-sc' ),
             'male' => __( 'Male', 'mild-sc' ),
             'map-marker' => __( 'Map Marker', 'mild-sc' ),
+            'mars' => __( 'Mars', 'mild-sc' ),
+            'mars-double' => __( 'Mars Double', 'mild-sc' ),
+            'mars-stroke' => __( 'Mars Stroke', 'mild-sc' ),
+            'mars-stroke-h' => __( 'Mars Stroke H', 'mild-sc' ),
+            'mars-stroke-v' => __( 'Mars Stroke V', 'mild-sc' ),
             'maxcdn' => __( 'Maxcdn', 'mild-sc' ),
             'meanpath' => __( 'Meanpath', 'mild-sc' ),
+            'medium' => __( 'Medium', 'mild-sc' ),
             'medkit' => __( 'Medkit', 'mild-sc' ),
             'meh-o' => __( 'Meh O', 'mild-sc' ),
+            'mercury' => __( 'Mercury', 'mild-sc' ),
             'microphone' => __( 'Microphone', 'mild-sc' ),
             'microphone-slash' => __( 'Microphone Slash', 'mild-sc' ),
             'minus' => __( 'Minus', 'mild-sc' ),
@@ -401,7 +438,9 @@ class Defaults {
             'mobile' => __( 'Mobile', 'mild-sc' ),
             'money' => __( 'Money', 'mild-sc' ),
             'moon-o' => __( 'Moon O', 'mild-sc' ),
+            'motorcycle' => __( 'Motorcycle', 'mild-sc' ),
             'music' => __( 'Music', 'mild-sc' ),
+            'neuter' => __( 'Neuter', 'mild-sc' ),
             'newspaper-o' => __( 'Newspaper O', 'mild-sc' ),
             'openid' => __( 'Openid', 'mild-sc' ),
             'outdent' => __( 'Outdent', 'mild-sc' ),
@@ -424,6 +463,7 @@ class Defaults {
             'pied-piper' => __( 'Pied Piper', 'mild-sc' ),
             'pied-piper-alt' => __( 'Pied Piper Alt', 'mild-sc' ),
             'pinterest' => __( 'Pinterest', 'mild-sc' ),
+            'pinterest-p' => __( 'Pinterest P', 'mild-sc' ),
             'pinterest-square' => __( 'Pinterest Square', 'mild-sc' ),
             'plane' => __( 'Plane', 'mild-sc' ),
             'play' => __( 'Play', 'mild-sc' ),
@@ -463,17 +503,23 @@ class Defaults {
             'search' => __( 'Search', 'mild-sc' ),
             'search-minus' => __( 'Search Minus', 'mild-sc' ),
             'search-plus' => __( 'Search Plus', 'mild-sc' ),
+            'sellsy' => __( 'Sellsy', 'mild-sc' ),
+            'server' => __( 'Server', 'mild-sc' ),
             'share' => __( 'Share', 'mild-sc' ),
             'share-alt' => __( 'Share Alt', 'mild-sc' ),
             'share-alt-square' => __( 'Share Alt Square', 'mild-sc' ),
             'share-square' => __( 'Share Square', 'mild-sc' ),
             'share-square-o' => __( 'Share Square O', 'mild-sc' ),
             'shield' => __( 'Shield', 'mild-sc' ),
+            'ship' => __( 'Ship', 'mild-sc' ),
+            'shirtsinbulk' => __( 'Shirtsinbulk', 'mild-sc' ),
             'shopping-cart' => __( 'Shopping Cart', 'mild-sc' ),
             'sign-in' => __( 'Sign In', 'mild-sc' ),
             'sign-out' => __( 'Sign Out', 'mild-sc' ),
             'signal' => __( 'Signal', 'mild-sc' ),
+            'simplybuilt' => __( 'Simplybuilt', 'mild-sc' ),
             'sitemap' => __( 'Sitemap', 'mild-sc' ),
+            'skyatlas' => __( 'Skyatlas', 'mild-sc' ),
             'skype' => __( 'Skype', 'mild-sc' ),
             'slack' => __( 'Slack', 'mild-sc' ),
             'sliders' => __( 'Sliders', 'mild-sc' ),
@@ -507,10 +553,12 @@ class Defaults {
             'step-forward' => __( 'Step Forward', 'mild-sc' ),
             'stethoscope' => __( 'Stethoscope', 'mild-sc' ),
             'stop' => __( 'Stop', 'mild-sc' ),
+            'street-view' => __( 'Street View', 'mild-sc' ),
             'strikethrough' => __( 'Strikethrough', 'mild-sc' ),
             'stumbleupon' => __( 'Stumbleupon', 'mild-sc' ),
             'stumbleupon-circle' => __( 'Stumbleupon Circle', 'mild-sc' ),
             'subscript' => __( 'Subscript', 'mild-sc' ),
+            'subway' => __( 'Subway', 'mild-sc' ),
             'suitcase' => __( 'Suitcase', 'mild-sc' ),
             'sun-o' => __( 'Sun O', 'mild-sc' ),
             'superscript' => __( 'Superscript', 'mild-sc' ),
@@ -540,6 +588,9 @@ class Defaults {
             'tint' => __( 'Tint', 'mild-sc' ),
             'toggle-off' => __( 'Toggle Off', 'mild-sc' ),
             'toggle-on' => __( 'Toggle On', 'mild-sc' ),
+            'train' => __( 'Train', 'mild-sc' ),
+            'transgender' => __( 'Transgender', 'mild-sc' ),
+            'transgender-alt' => __( 'Transgender Alt', 'mild-sc' ),
             'trash' => __( 'Trash', 'mild-sc' ),
             'trash-o' => __( 'Trash O', 'mild-sc' ),
             'tree' => __( 'Tree', 'mild-sc' ),
@@ -563,7 +614,14 @@ class Defaults {
             'usd' => __( 'Usd', 'mild-sc' ),
             'user' => __( 'User', 'mild-sc' ),
             'user-md' => __( 'User Md', 'mild-sc' ),
+            'user-plus' => __( 'User Plus', 'mild-sc' ),
+            'user-secret' => __( 'User Secret', 'mild-sc' ),
+            'user-times' => __( 'User Times', 'mild-sc' ),
             'users' => __( 'Users', 'mild-sc' ),
+            'venus' => __( 'Venus', 'mild-sc' ),
+            'venus-double' => __( 'Venus Double', 'mild-sc' ),
+            'venus-mars' => __( 'Venus Mars', 'mild-sc' ),
+            'viacoin' => __( 'Viacoin', 'mild-sc' ),
             'video-camera' => __( 'Video Camera', 'mild-sc' ),
             'vimeo-square' => __( 'Vimeo Square', 'mild-sc' ),
             'vine' => __( 'Vine', 'mild-sc' ),
@@ -573,6 +631,7 @@ class Defaults {
             'volume-up' => __( 'Volume Up', 'mild-sc' ),
             'weibo' => __( 'Weibo', 'mild-sc' ),
             'weixin' => __( 'Weixin', 'mild-sc' ),
+            'whatsapp' => __( 'Whatsapp', 'mild-sc' ),
             'wheelchair' => __( 'Wheelchair', 'mild-sc' ),
             'wifi' => __( 'Wifi', 'mild-sc' ),
             'windows' => __( 'Windows', 'mild-sc' ),

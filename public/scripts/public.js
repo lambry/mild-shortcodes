@@ -19,7 +19,7 @@
         });
     }
 
-    // Accordian
+    // Accordion
     var accordion = $( '.accordion' );
     if ( accordion.length > 0 ) {
         accordion.on( 'click', '.accordion-title a', function(e) {

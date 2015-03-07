@@ -1,10 +1,12 @@
 <?php
 /**
  * Bootstrap
+ *
+ * @package Mild
  */
 namespace Mild\Shortcodes;
 
-// Get blog header path for include.
+// Get blog header path for include
 $ref = explode( '/', $_SERVER['REQUEST_URI'] );
 $path = '/';
 

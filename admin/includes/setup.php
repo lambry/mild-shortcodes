@@ -2,6 +2,7 @@
 /**
  * Shortcodes Setup
  *
+ * @package Mild
  */
 
 namespace Mild\Shortcodes;

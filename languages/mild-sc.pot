@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mild-sc\n"
-"POT-Creation-Date: 2014-12-01 10:24+1000\n"
-"PO-Revision-Date: 2014-12-01 10:24+1000\n"
-"Last-Translator: David Featherston\n"
+"POT-Creation-Date: 2015-03-07 14:04+1000\n"
+"PO-Revision-Date: 2015-03-07 14:04+1000\n"
+"Last-Translator: BSO\n"
 "Language-Team: \n"
 "Language: en_AU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -23,39 +23,39 @@ msgstr ""
 msgid "Insert Shortcode"
 msgstr ""
 
-#: ../admin/includes/defaults.php:25
+#: ../admin/includes/defaults.php:22
 msgid "Blue"
 msgstr ""
 
-#: ../admin/includes/defaults.php:26
+#: ../admin/includes/defaults.php:23
 msgid "Green"
 msgstr ""
 
-#: ../admin/includes/defaults.php:27
+#: ../admin/includes/defaults.php:24
 msgid "Orange"
 msgstr ""
 
-#: ../admin/includes/defaults.php:28
+#: ../admin/includes/defaults.php:25
 msgid "Yellow"
 msgstr ""
 
-#: ../admin/includes/defaults.php:29
+#: ../admin/includes/defaults.php:26
 msgid "Red"
 msgstr ""
 
-#: ../admin/includes/defaults.php:30
+#: ../admin/includes/defaults.php:27
 msgid "Silver"
 msgstr ""
 
-#: ../admin/includes/defaults.php:31
+#: ../admin/includes/defaults.php:28
 msgid "Grey"
 msgstr ""
 
-#: ../admin/includes/defaults.php:32
+#: ../admin/includes/defaults.php:29
 msgid "Black"
 msgstr ""
 
-#: ../admin/includes/defaults.php:33
+#: ../admin/includes/defaults.php:30
 msgid "White"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Small"
 msgstr ""
 
-#: ../admin/includes/defaults.php:47
+#: ../admin/includes/defaults.php:47 ../admin/includes/defaults.php:428
 msgid "Medium"
 msgstr ""
 
@@ -75,2213 +75,2365 @@ msgstr ""
 msgid "Huge"
 msgstr ""
 
-#: ../admin/includes/defaults.php:62
+#: ../admin/includes/defaults.php:65
 msgid "One Twelth"
 msgstr ""
 
-#: ../admin/includes/defaults.php:63
+#: ../admin/includes/defaults.php:66
 msgid "Two Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:64
+#: ../admin/includes/defaults.php:67
 msgid "Three Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:65
+#: ../admin/includes/defaults.php:68
 msgid "Four Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:66
+#: ../admin/includes/defaults.php:69
 msgid "Five Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:67
+#: ../admin/includes/defaults.php:70
 msgid "Six Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:68
+#: ../admin/includes/defaults.php:71
 msgid "Seven Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:69
+#: ../admin/includes/defaults.php:72
 msgid "Eight Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:70
+#: ../admin/includes/defaults.php:73
 msgid "Nine Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:71
+#: ../admin/includes/defaults.php:74
 msgid "Ten Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:72
+#: ../admin/includes/defaults.php:75
 msgid "Eleven Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:73
+#: ../admin/includes/defaults.php:76
 msgid "Twelve Twelths"
 msgstr ""
 
-#: ../admin/includes/defaults.php:86
+#: ../admin/includes/defaults.php:92
 msgid "Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:87
+#: ../admin/includes/defaults.php:93
 msgid "Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:88
+#: ../admin/includes/defaults.php:94
 msgid "Center"
 msgstr ""
 
-#: ../admin/includes/defaults.php:89
+#: ../admin/includes/defaults.php:95
 msgid "One"
 msgstr ""
 
-#: ../admin/includes/defaults.php:102
+#: ../admin/includes/defaults.php:111
 msgid "Default"
 msgstr ""
 
-#: ../admin/includes/defaults.php:103
+#: ../admin/includes/defaults.php:112
 msgid "New Window"
 msgstr ""
 
-#: ../admin/includes/defaults.php:116
+#: ../admin/includes/defaults.php:128
 msgid "Adjust"
 msgstr ""
 
-#: ../admin/includes/defaults.php:117
+#: ../admin/includes/defaults.php:129
 msgid "Adn"
 msgstr ""
 
-#: ../admin/includes/defaults.php:118
+#: ../admin/includes/defaults.php:130
 msgid "Align Center"
 msgstr ""
 
-#: ../admin/includes/defaults.php:119
+#: ../admin/includes/defaults.php:131
 msgid "Align Justify"
 msgstr ""
 
-#: ../admin/includes/defaults.php:120
+#: ../admin/includes/defaults.php:132
 msgid "Align Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:121
+#: ../admin/includes/defaults.php:133
 msgid "Align Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:122
+#: ../admin/includes/defaults.php:134
 msgid "Ambulance"
 msgstr ""
 
-#: ../admin/includes/defaults.php:123
+#: ../admin/includes/defaults.php:135
 msgid "Anchor"
 msgstr ""
 
-#: ../admin/includes/defaults.php:124
+#: ../admin/includes/defaults.php:136
 msgid "Android"
 msgstr ""
 
-#: ../admin/includes/defaults.php:125
+#: ../admin/includes/defaults.php:137
 msgid "Angellist"
 msgstr ""
 
-#: ../admin/includes/defaults.php:126
+#: ../admin/includes/defaults.php:138
 msgid "Angle Double Down"
 msgstr ""
 
-#: ../admin/includes/defaults.php:127
+#: ../admin/includes/defaults.php:139
 msgid "Angle Double Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:128
+#: ../admin/includes/defaults.php:140
 msgid "Angle Double Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:129
+#: ../admin/includes/defaults.php:141
 msgid "Angle Double Up"
 msgstr ""
 
-#: ../admin/includes/defaults.php:130
+#: ../admin/includes/defaults.php:142
 msgid "Angle Down"
 msgstr ""
 
-#: ../admin/includes/defaults.php:131
+#: ../admin/includes/defaults.php:143
 msgid "Angle Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:132
+#: ../admin/includes/defaults.php:144
 msgid "Angle Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:133
+#: ../admin/includes/defaults.php:145
 msgid "Angle Up"
 msgstr ""
 
-#: ../admin/includes/defaults.php:134
+#: ../admin/includes/defaults.php:146
 msgid "Apple"
 msgstr ""
 
-#: ../admin/includes/defaults.php:135
+#: ../admin/includes/defaults.php:147
 msgid "Archive"
 msgstr ""
 
-#: ../admin/includes/defaults.php:136
+#: ../admin/includes/defaults.php:148
 msgid "Area Chart"
 msgstr ""
 
-#: ../admin/includes/defaults.php:137
+#: ../admin/includes/defaults.php:149
 msgid "Arrow Circle Down"
 msgstr ""
 
-#: ../admin/includes/defaults.php:138
+#: ../admin/includes/defaults.php:150
 msgid "Arrow Circle Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:139
+#: ../admin/includes/defaults.php:151
 msgid "Arrow Circle O Down"
 msgstr ""
 
-#: ../admin/includes/defaults.php:140
+#: ../admin/includes/defaults.php:152
 msgid "Arrow Circle O Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:141
+#: ../admin/includes/defaults.php:153
 msgid "Arrow Circle O Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:142
+#: ../admin/includes/defaults.php:154
 msgid "Arrow Circle O Up"
 msgstr ""
 
-#: ../admin/includes/defaults.php:143
+#: ../admin/includes/defaults.php:155
 msgid "Arrow Circle Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:144
+#: ../admin/includes/defaults.php:156
 msgid "Arrow Circle Up"
 msgstr ""
 
-#: ../admin/includes/defaults.php:145
+#: ../admin/includes/defaults.php:157
 msgid "Arrow Down"
 msgstr ""
 
-#: ../admin/includes/defaults.php:146
+#: ../admin/includes/defaults.php:158
 msgid "Arrow Left"
 msgstr ""
 
-#: ../admin/includes/defaults.php:147
+#: ../admin/includes/defaults.php:159
 msgid "Arrow Right"
 msgstr ""
 
-#: ../admin/includes/defaults.php:148
+#: ../admin/includes/defaults.php:160
 msgid "Arrow Up"
 msgstr ""
 
-#: ../admin/includes/defaults.php:149
+#: ../admin/includes/defaults.php:161
 msgid "Arrows"
 msgstr ""
 
-#: ../admin/includes/defaults.php:150
+#: ../admin/includes/defaults.php:162
 msgid "Arrows Alt"
 msgstr ""
 
-#: ../admin/includes/defaults.php:151
+#: ../admin/includes/defaults.php:163
 msgid "Arrows H"
 msgstr ""
 
-#: ../admin/includes/defaults.php:152
+#: ../admin/includes/defaults.php:164
 msgid "Arrows V"
 msgstr ""
 
-#: ../admin/includes/defaults.php:153
+#: ../admin/includes/defaults.php:165
 msgid "Asterisk"
 msgstr ""
 
-#: ../admin/includes/defaults.php:154
+#: ../admin/includes/defaults.php:166
 msgid "At"
 msgstr ""
 
-#: ../admin/includes/defaults.php:155
+#: ../admin/includes/defaults.php:167
 msgid "Backward"
 msgstr ""
 
-#: ../admin/includes/defaults.php:156
+#: ../admin/includes/defaults.php:168
 msgid "Ban"
 msgstr ""
 
-#: ../admin/includes/defaults.php:157
+#: ../admin/includes/defaults.php:169
 msgid "Bar Chart"
 msgstr ""
 
-#: ../admin/includes/defaults.php:158
+#: ../admin/includes/defaults.php:170
 msgid "Barcode"
 msgstr ""
 
-#: ../admin/includes/defaults.php:159
+#: ../admin/includes/defaults.php:171
 msgid "Bars"
 msgstr ""
 
-#: ../admin/includes/defaults.php:160
-msgid "Beer"
-msgstr ""
-
-#: ../admin/includes/defaults.php:161
-msgid "Behance"
-msgstr ""
-
-#: ../admin/includes/defaults.php:162
-msgid "Behance Square"
-msgstr ""
-
-#: ../admin/includes/defaults.php:163
-msgid "Bell"
-msgstr ""
-
-#: ../admin/includes/defaults.php:164
-msgid "Bell O"
-msgstr ""
-
-#: ../admin/includes/defaults.php:165
-msgid "Bell Slash"
-msgstr ""
-
-#: ../admin/includes/defaults.php:166
-msgid "Bell Slash O"
-msgstr ""
-
-#: ../admin/includes/defaults.php:167
-msgid "Bicycle"
-msgstr ""
-
-#: ../admin/includes/defaults.php:168
-msgid "Binoculars"
-msgstr ""
-
-#: ../admin/includes/defaults.php:169
-msgid "Birthday Cake"
-msgstr ""
-
-#: ../admin/includes/defaults.php:170
-msgid "Bitbucket"
-msgstr ""
-
-#: ../admin/includes/defaults.php:171
-msgid "Bitbucket Square"
-msgstr ""
-
 #: ../admin/includes/defaults.php:172
-msgid "Bold"
+msgid "Bed"
 msgstr ""
 
 #: ../admin/includes/defaults.php:173
-msgid "Bolt"
+msgid "Beer"
 msgstr ""
 
 #: ../admin/includes/defaults.php:174
-msgid "Bomb"
+msgid "Behance"
 msgstr ""
 
 #: ../admin/includes/defaults.php:175
-msgid "Book"
+msgid "Behance Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:176
-msgid "Bookmark"
+msgid "Bell"
 msgstr ""
 
 #: ../admin/includes/defaults.php:177
-msgid "Bookmark O"
+msgid "Bell O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:178
-msgid "Briefcase"
+msgid "Bell Slash"
 msgstr ""
 
 #: ../admin/includes/defaults.php:179
-msgid "Btc"
+msgid "Bell Slash O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:180
-msgid "Bug"
+msgid "Bicycle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:181
-msgid "Building"
+msgid "Binoculars"
 msgstr ""
 
 #: ../admin/includes/defaults.php:182
-msgid "Building O"
+msgid "Birthday Cake"
 msgstr ""
 
 #: ../admin/includes/defaults.php:183
-msgid "Bullhorn"
+msgid "Bitbucket"
 msgstr ""
 
 #: ../admin/includes/defaults.php:184
-msgid "Bullseye"
+msgid "Bitbucket Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:185
-msgid "Bus"
+msgid "Bold"
 msgstr ""
 
 #: ../admin/includes/defaults.php:186
-msgid "Calculator"
+msgid "Bolt"
 msgstr ""
 
 #: ../admin/includes/defaults.php:187
-msgid "Calendar"
+msgid "Bomb"
 msgstr ""
 
 #: ../admin/includes/defaults.php:188
-msgid "Calendar O"
+msgid "Book"
 msgstr ""
 
 #: ../admin/includes/defaults.php:189
-msgid "Camera"
+msgid "Bookmark"
 msgstr ""
 
 #: ../admin/includes/defaults.php:190
-msgid "Camera Retro"
+msgid "Bookmark O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:191
-msgid "Car"
+msgid "Briefcase"
 msgstr ""
 
 #: ../admin/includes/defaults.php:192
-msgid "Caret Down"
+msgid "Btc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:193
-msgid "Caret Left"
+msgid "Bug"
 msgstr ""
 
 #: ../admin/includes/defaults.php:194
-msgid "Caret Right"
+msgid "Building"
 msgstr ""
 
 #: ../admin/includes/defaults.php:195
-msgid "Caret Square O Down"
+msgid "Building O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:196
-msgid "Caret Square O Left"
+msgid "Bullhorn"
 msgstr ""
 
 #: ../admin/includes/defaults.php:197
-msgid "Caret Square O Right"
+msgid "Bullseye"
 msgstr ""
 
 #: ../admin/includes/defaults.php:198
-msgid "Caret Square O Up"
+msgid "Bus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:199
-msgid "Caret Up"
+msgid "Buysellads"
 msgstr ""
 
 #: ../admin/includes/defaults.php:200
-msgid "Cc"
+msgid "Calculator"
 msgstr ""
 
 #: ../admin/includes/defaults.php:201
-msgid "Cc Amex"
+msgid "Calendar"
 msgstr ""
 
 #: ../admin/includes/defaults.php:202
-msgid "Cc Discover"
+msgid "Calendar O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:203
-msgid "Cc Mastercard"
+msgid "Camera"
 msgstr ""
 
 #: ../admin/includes/defaults.php:204
-msgid "Cc Paypal"
+msgid "Camera Retro"
 msgstr ""
 
 #: ../admin/includes/defaults.php:205
-msgid "Cc Stripe"
+msgid "Car"
 msgstr ""
 
 #: ../admin/includes/defaults.php:206
-msgid "Cc Visa"
+msgid "Caret Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:207
-msgid "Certificate"
+msgid "Caret Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:208
-msgid "Chain Broken"
+msgid "Caret Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:209
-msgid "Check"
+msgid "Caret Square O Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:210
-msgid "Check Circle"
+msgid "Caret Square O Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:211
-msgid "Check Circle O"
+msgid "Caret Square O Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:212
-msgid "Check Square"
+msgid "Caret Square O Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:213
-msgid "Check Square O"
+msgid "Caret Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:214
-msgid "Chevron Circle Down"
+msgid "Cart Arrow Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:215
-msgid "Chevron Circle Left"
+msgid "Cart Plus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:216
-msgid "Chevron Circle Right"
+msgid "Cc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:217
-msgid "Chevron Circle Up"
+msgid "Cc Amex"
 msgstr ""
 
 #: ../admin/includes/defaults.php:218
-msgid "Chevron Down"
+msgid "Cc Discover"
 msgstr ""
 
 #: ../admin/includes/defaults.php:219
-msgid "Chevron Left"
+msgid "Cc Mastercard"
 msgstr ""
 
 #: ../admin/includes/defaults.php:220
-msgid "Chevron Right"
+msgid "Cc Paypal"
 msgstr ""
 
 #: ../admin/includes/defaults.php:221
-msgid "Chevron Up"
+msgid "Cc Stripe"
 msgstr ""
 
 #: ../admin/includes/defaults.php:222
-msgid "Child"
+msgid "Cc Visa"
 msgstr ""
 
 #: ../admin/includes/defaults.php:223
-msgid "Circle"
+msgid "Certificate"
 msgstr ""
 
 #: ../admin/includes/defaults.php:224
-msgid "Circle O"
+msgid "Chain Broken"
 msgstr ""
 
 #: ../admin/includes/defaults.php:225
-msgid "Circle O Notch"
+msgid "Check"
 msgstr ""
 
 #: ../admin/includes/defaults.php:226
-msgid "Circle Thin"
+msgid "Check Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:227
-msgid "Clipboard"
+msgid "Check Circle O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:228
-msgid "Clock O"
+msgid "Check Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:229
-msgid "Cloud"
+msgid "Check Square O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:230
-msgid "Cloud Download"
+msgid "Chevron Circle Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:231
-msgid "Cloud Upload"
+msgid "Chevron Circle Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:232
-msgid "Code"
+msgid "Chevron Circle Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:233
-msgid "Code Fork"
+msgid "Chevron Circle Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:234
-msgid "Codepen"
+msgid "Chevron Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:235
-msgid "Coffee"
+msgid "Chevron Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:236
-msgid "Cog"
+msgid "Chevron Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:237
-msgid "Cogs"
+msgid "Chevron Up"
 msgstr ""
 
-#: ../admin/includes/defaults.php:238 ../admin/includes/setup.php:26
-msgid "Columns"
+#: ../admin/includes/defaults.php:238
+msgid "Child"
 msgstr ""
 
 #: ../admin/includes/defaults.php:239
-msgid "Comment"
+msgid "Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:240
-msgid "Comment O"
+msgid "Circle O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:241
-msgid "Comments"
+msgid "Circle O Notch"
 msgstr ""
 
 #: ../admin/includes/defaults.php:242
-msgid "Comments O"
+msgid "Circle Thin"
 msgstr ""
 
 #: ../admin/includes/defaults.php:243
-msgid "Compass"
+msgid "Clipboard"
 msgstr ""
 
 #: ../admin/includes/defaults.php:244
-msgid "Compress"
+msgid "Clock O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:245
-msgid "Copyright"
+msgid "Cloud"
 msgstr ""
 
 #: ../admin/includes/defaults.php:246
-msgid "Credit Card"
+msgid "Cloud Download"
 msgstr ""
 
 #: ../admin/includes/defaults.php:247
-msgid "Crop"
+msgid "Cloud Upload"
 msgstr ""
 
 #: ../admin/includes/defaults.php:248
-msgid "Crosshairs"
+msgid "Code"
 msgstr ""
 
 #: ../admin/includes/defaults.php:249
-msgid "Css3"
+msgid "Code Fork"
 msgstr ""
 
 #: ../admin/includes/defaults.php:250
-msgid "Cube"
+msgid "Codepen"
 msgstr ""
 
 #: ../admin/includes/defaults.php:251
-msgid "Cubes"
+msgid "Coffee"
 msgstr ""
 
 #: ../admin/includes/defaults.php:252
-msgid "Cutlery"
+msgid "Cog"
 msgstr ""
 
 #: ../admin/includes/defaults.php:253
-msgid "Database"
+msgid "Cogs"
 msgstr ""
 
-#: ../admin/includes/defaults.php:254
-msgid "Delicious"
+#: ../admin/includes/defaults.php:254 ../admin/includes/setup.php:20
+msgid "Columns"
 msgstr ""
 
 #: ../admin/includes/defaults.php:255
-msgid "Desktop"
+msgid "Comment"
 msgstr ""
 
 #: ../admin/includes/defaults.php:256
-msgid "Deviantart"
+msgid "Comment O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:257
-msgid "Digg"
+msgid "Comments"
 msgstr ""
 
 #: ../admin/includes/defaults.php:258
-msgid "Dot Circle O"
+msgid "Comments O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:259
-msgid "Download"
+msgid "Compass"
 msgstr ""
 
 #: ../admin/includes/defaults.php:260
-msgid "Dribbble"
+msgid "Compress"
 msgstr ""
 
 #: ../admin/includes/defaults.php:261
-msgid "Dropbox"
+msgid "Connectdevelop"
 msgstr ""
 
 #: ../admin/includes/defaults.php:262
-msgid "Drupal"
+msgid "Copyright"
 msgstr ""
 
 #: ../admin/includes/defaults.php:263
-msgid "Eject"
+msgid "Credit Card"
 msgstr ""
 
 #: ../admin/includes/defaults.php:264
-msgid "Ellipsis H"
+msgid "Crop"
 msgstr ""
 
 #: ../admin/includes/defaults.php:265
-msgid "Ellipsis V"
+msgid "Crosshairs"
 msgstr ""
 
 #: ../admin/includes/defaults.php:266
-msgid "Empire"
+msgid "Css3"
 msgstr ""
 
 #: ../admin/includes/defaults.php:267
-msgid "Envelope"
+msgid "Cube"
 msgstr ""
 
 #: ../admin/includes/defaults.php:268
-msgid "Envelope O"
+msgid "Cubes"
 msgstr ""
 
 #: ../admin/includes/defaults.php:269
-msgid "Envelope Square"
+msgid "Cutlery"
 msgstr ""
 
 #: ../admin/includes/defaults.php:270
-msgid "Eraser"
+msgid "Dashcube"
 msgstr ""
 
 #: ../admin/includes/defaults.php:271
-msgid "Eur"
+msgid "Database"
 msgstr ""
 
 #: ../admin/includes/defaults.php:272
-msgid "Exchange"
+msgid "Delicious"
 msgstr ""
 
 #: ../admin/includes/defaults.php:273
-msgid "Exclamation"
+msgid "Desktop"
 msgstr ""
 
 #: ../admin/includes/defaults.php:274
-msgid "Exclamation Circle"
+msgid "Deviantart"
 msgstr ""
 
 #: ../admin/includes/defaults.php:275
-msgid "Exclamation Triangle"
+msgid "Diamond"
 msgstr ""
 
 #: ../admin/includes/defaults.php:276
-msgid "Expand"
+msgid "Digg"
 msgstr ""
 
 #: ../admin/includes/defaults.php:277
-msgid "External Link"
+msgid "Dot Circle O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:278
-msgid "External Link Square"
+msgid "Download"
 msgstr ""
 
 #: ../admin/includes/defaults.php:279
-msgid "Eye"
+msgid "Dribbble"
 msgstr ""
 
 #: ../admin/includes/defaults.php:280
-msgid "Eye Slash"
+msgid "Dropbox"
 msgstr ""
 
 #: ../admin/includes/defaults.php:281
-msgid "Eyedropper"
+msgid "Drupal"
 msgstr ""
 
 #: ../admin/includes/defaults.php:282
-msgid "Facebook"
+msgid "Eject"
 msgstr ""
 
 #: ../admin/includes/defaults.php:283
-msgid "Facebook Square"
+msgid "Ellipsis H"
 msgstr ""
 
 #: ../admin/includes/defaults.php:284
-msgid "Fast Backward"
+msgid "Ellipsis V"
 msgstr ""
 
 #: ../admin/includes/defaults.php:285
-msgid "Fast Forward"
+msgid "Empire"
 msgstr ""
 
 #: ../admin/includes/defaults.php:286
-msgid "Fax"
+msgid "Envelope"
 msgstr ""
 
 #: ../admin/includes/defaults.php:287
-msgid "Female"
+msgid "Envelope O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:288
-msgid "Fighter Jet"
+msgid "Envelope Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:289
-msgid "File"
+msgid "Eraser"
 msgstr ""
 
 #: ../admin/includes/defaults.php:290
-msgid "File Archive O"
+msgid "Eur"
 msgstr ""
 
 #: ../admin/includes/defaults.php:291
-msgid "File Audio O"
+msgid "Exchange"
 msgstr ""
 
 #: ../admin/includes/defaults.php:292
-msgid "File Code O"
+msgid "Exclamation"
 msgstr ""
 
 #: ../admin/includes/defaults.php:293
-msgid "File Excel O"
+msgid "Exclamation Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:294
-msgid "File Image O"
+msgid "Exclamation Triangle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:295
-msgid "File O"
+msgid "Expand"
 msgstr ""
 
 #: ../admin/includes/defaults.php:296
-msgid "File Pdf O"
+msgid "External Link"
 msgstr ""
 
 #: ../admin/includes/defaults.php:297
-msgid "File Powerpoint O"
+msgid "External Link Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:298
-msgid "File Text"
+msgid "Eye"
 msgstr ""
 
 #: ../admin/includes/defaults.php:299
-msgid "File Text O"
+msgid "Eye Slash"
 msgstr ""
 
 #: ../admin/includes/defaults.php:300
-msgid "File Video O"
+msgid "Eyedropper"
 msgstr ""
 
 #: ../admin/includes/defaults.php:301
-msgid "File Word O"
+msgid "Facebook"
 msgstr ""
 
 #: ../admin/includes/defaults.php:302
-msgid "Files O"
+msgid "Facebook Official"
 msgstr ""
 
 #: ../admin/includes/defaults.php:303
-msgid "Film"
+msgid "Facebook Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:304
-msgid "Filter"
+msgid "Fast Backward"
 msgstr ""
 
 #: ../admin/includes/defaults.php:305
-msgid "Fire"
+msgid "Fast Forward"
 msgstr ""
 
 #: ../admin/includes/defaults.php:306
-msgid "Fire Extinguisher"
+msgid "Fax"
 msgstr ""
 
 #: ../admin/includes/defaults.php:307
-msgid "Flag"
+msgid "Female"
 msgstr ""
 
 #: ../admin/includes/defaults.php:308
-msgid "Flag Checkered"
+msgid "Fighter Jet"
 msgstr ""
 
 #: ../admin/includes/defaults.php:309
-msgid "Flag O"
+msgid "File"
 msgstr ""
 
 #: ../admin/includes/defaults.php:310
-msgid "Flask"
+msgid "File Archive O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:311
-msgid "Flickr"
+msgid "File Audio O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:312
-msgid "Floppy O"
+msgid "File Code O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:313
-msgid "Folder"
+msgid "File Excel O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:314
-msgid "Folder O"
+msgid "File Image O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:315
-msgid "Folder Open"
+msgid "File O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:316
-msgid "Folder Open O"
+msgid "File Pdf O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:317
-msgid "Font"
+msgid "File Powerpoint O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:318
-msgid "Forward"
+msgid "File Text"
 msgstr ""
 
 #: ../admin/includes/defaults.php:319
-msgid "Foursquare"
+msgid "File Text O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:320
-msgid "Frown O"
+msgid "File Video O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:321
-msgid "Futbol O"
+msgid "File Word O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:322
-msgid "Gamepad"
+msgid "Files O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:323
-msgid "Gavel"
+msgid "Film"
 msgstr ""
 
 #: ../admin/includes/defaults.php:324
-msgid "Gbp"
+msgid "Filter"
 msgstr ""
 
 #: ../admin/includes/defaults.php:325
-msgid "Gift"
+msgid "Fire"
 msgstr ""
 
 #: ../admin/includes/defaults.php:326
-msgid "Git"
+msgid "Fire Extinguisher"
 msgstr ""
 
 #: ../admin/includes/defaults.php:327
-msgid "Git Square"
+msgid "Flag"
 msgstr ""
 
 #: ../admin/includes/defaults.php:328
-msgid "Github"
+msgid "Flag Checkered"
 msgstr ""
 
 #: ../admin/includes/defaults.php:329
-msgid "Github Alt"
+msgid "Flag O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:330
-msgid "Github Square"
+msgid "Flask"
 msgstr ""
 
 #: ../admin/includes/defaults.php:331
-msgid "Gittip"
+msgid "Flickr"
 msgstr ""
 
 #: ../admin/includes/defaults.php:332
-msgid "Glass"
+msgid "Floppy O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:333
-msgid "Globe"
+msgid "Folder"
 msgstr ""
 
 #: ../admin/includes/defaults.php:334
-msgid "Google"
+msgid "Folder O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:335
-msgid "Google Plus"
+msgid "Folder Open"
 msgstr ""
 
 #: ../admin/includes/defaults.php:336
-msgid "Google Plus Square"
+msgid "Folder Open O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:337
-msgid "Google Wallet"
+msgid "Font"
 msgstr ""
 
 #: ../admin/includes/defaults.php:338
-msgid "Graduation Cap"
+msgid "Forumbee"
 msgstr ""
 
 #: ../admin/includes/defaults.php:339
-msgid "H Square"
+msgid "Forward"
 msgstr ""
 
 #: ../admin/includes/defaults.php:340
-msgid "Hacker News"
+msgid "Foursquare"
 msgstr ""
 
 #: ../admin/includes/defaults.php:341
-msgid "Hand O Down"
+msgid "Frown O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:342
-msgid "Hand O Left"
+msgid "Futbol O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:343
-msgid "Hand O Right"
+msgid "Gamepad"
 msgstr ""
 
 #: ../admin/includes/defaults.php:344
-msgid "Hand O Up"
+msgid "Gavel"
 msgstr ""
 
 #: ../admin/includes/defaults.php:345
-msgid "Hdd O"
+msgid "Gbp"
 msgstr ""
 
 #: ../admin/includes/defaults.php:346
-msgid "Header"
+msgid "Gift"
 msgstr ""
 
 #: ../admin/includes/defaults.php:347
-msgid "Headphones"
+msgid "Git"
 msgstr ""
 
 #: ../admin/includes/defaults.php:348
-msgid "Heart"
+msgid "Git Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:349
-msgid "Heart O"
+msgid "Github"
 msgstr ""
 
 #: ../admin/includes/defaults.php:350
-msgid "History"
+msgid "Github Alt"
 msgstr ""
 
 #: ../admin/includes/defaults.php:351
-msgid "Home"
+msgid "Github Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:352
-msgid "Hospital O"
+msgid "Glass"
 msgstr ""
 
 #: ../admin/includes/defaults.php:353
-msgid "Html5"
+msgid "Globe"
 msgstr ""
 
 #: ../admin/includes/defaults.php:354
-msgid "Ils"
+msgid "Google"
 msgstr ""
 
 #: ../admin/includes/defaults.php:355
-msgid "Inbox"
+msgid "Google Plus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:356
-msgid "Indent"
+msgid "Google Plus Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:357
-msgid "Info"
+msgid "Google Wallet"
 msgstr ""
 
 #: ../admin/includes/defaults.php:358
-msgid "Info Circle"
+msgid "Graduation Cap"
 msgstr ""
 
 #: ../admin/includes/defaults.php:359
-msgid "Inr"
+msgid "Gratipay"
 msgstr ""
 
 #: ../admin/includes/defaults.php:360
-msgid "Instagram"
+msgid "H Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:361
-msgid "Ioxhost"
+msgid "Hacker News"
 msgstr ""
 
 #: ../admin/includes/defaults.php:362
-msgid "Italic"
+msgid "Hand O Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:363
-msgid "Joomla"
+msgid "Hand O Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:364
-msgid "Jpy"
+msgid "Hand O Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:365
-msgid "Jsfiddle"
+msgid "Hand O Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:366
-msgid "Key"
+msgid "Hdd O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:367
-msgid "Keyboard O"
+msgid "Header"
 msgstr ""
 
 #: ../admin/includes/defaults.php:368
-msgid "Krw"
+msgid "Headphones"
 msgstr ""
 
 #: ../admin/includes/defaults.php:369
-msgid "Language"
+msgid "Heart"
 msgstr ""
 
 #: ../admin/includes/defaults.php:370
-msgid "Laptop"
+msgid "Heart O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:371
-msgid "Lastfm"
+msgid "Heartbeat"
 msgstr ""
 
 #: ../admin/includes/defaults.php:372
-msgid "Lastfm Square"
+msgid "History"
 msgstr ""
 
 #: ../admin/includes/defaults.php:373
-msgid "Leaf"
+msgid "Home"
 msgstr ""
 
 #: ../admin/includes/defaults.php:374
-msgid "Lemon O"
+msgid "Hospital O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:375
-msgid "Level Down"
+msgid "Html5"
 msgstr ""
 
 #: ../admin/includes/defaults.php:376
-msgid "Level Up"
+msgid "Ils"
 msgstr ""
 
 #: ../admin/includes/defaults.php:377
-msgid "Life Ring"
+msgid "Inbox"
 msgstr ""
 
 #: ../admin/includes/defaults.php:378
-msgid "Lightbulb O"
+msgid "Indent"
 msgstr ""
 
 #: ../admin/includes/defaults.php:379
-msgid "Line Chart"
+msgid "Info"
 msgstr ""
 
 #: ../admin/includes/defaults.php:380
-msgid "Link"
+msgid "Info Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:381
-msgid "Linkedin"
+msgid "Inr"
 msgstr ""
 
 #: ../admin/includes/defaults.php:382
-msgid "Linkedin Square"
+msgid "Instagram"
 msgstr ""
 
 #: ../admin/includes/defaults.php:383
-msgid "Linux"
+msgid "Ioxhost"
 msgstr ""
 
 #: ../admin/includes/defaults.php:384
-msgid "List"
+msgid "Italic"
 msgstr ""
 
 #: ../admin/includes/defaults.php:385
-msgid "List Alt"
+msgid "Joomla"
 msgstr ""
 
 #: ../admin/includes/defaults.php:386
-msgid "List Ol"
+msgid "Jpy"
 msgstr ""
 
 #: ../admin/includes/defaults.php:387
-msgid "List Ul"
+msgid "Jsfiddle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:388
-msgid "Location Arrow"
+msgid "Key"
 msgstr ""
 
 #: ../admin/includes/defaults.php:389
-msgid "Lock"
+msgid "Keyboard O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:390
-msgid "Long Arrow Down"
+msgid "Krw"
 msgstr ""
 
 #: ../admin/includes/defaults.php:391
-msgid "Long Arrow Left"
+msgid "Language"
 msgstr ""
 
 #: ../admin/includes/defaults.php:392
-msgid "Long Arrow Right"
+msgid "Laptop"
 msgstr ""
 
 #: ../admin/includes/defaults.php:393
-msgid "Long Arrow Up"
+msgid "Lastfm"
 msgstr ""
 
 #: ../admin/includes/defaults.php:394
-msgid "Magic"
+msgid "Lastfm Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:395
-msgid "Magnet"
+msgid "Leaf"
 msgstr ""
 
 #: ../admin/includes/defaults.php:396
-msgid "Male"
+msgid "Leanpub"
 msgstr ""
 
 #: ../admin/includes/defaults.php:397
-msgid "Map Marker"
+msgid "Lemon O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:398
-msgid "Maxcdn"
+msgid "Level Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:399
-msgid "Meanpath"
+msgid "Level Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:400
-msgid "Medkit"
+msgid "Life Ring"
 msgstr ""
 
 #: ../admin/includes/defaults.php:401
-msgid "Meh O"
+msgid "Lightbulb O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:402
-msgid "Microphone"
+msgid "Line Chart"
 msgstr ""
 
 #: ../admin/includes/defaults.php:403
-msgid "Microphone Slash"
+msgid "Link"
 msgstr ""
 
 #: ../admin/includes/defaults.php:404
-msgid "Minus"
+msgid "Linkedin"
 msgstr ""
 
 #: ../admin/includes/defaults.php:405
-msgid "Minus Circle"
+msgid "Linkedin Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:406
-msgid "Minus Square"
+msgid "Linux"
 msgstr ""
 
 #: ../admin/includes/defaults.php:407
-msgid "Minus Square O"
+msgid "List"
 msgstr ""
 
 #: ../admin/includes/defaults.php:408
-msgid "Mobile"
+msgid "List Alt"
 msgstr ""
 
 #: ../admin/includes/defaults.php:409
-msgid "Money"
+msgid "List Ol"
 msgstr ""
 
 #: ../admin/includes/defaults.php:410
-msgid "Moon O"
+msgid "List Ul"
 msgstr ""
 
 #: ../admin/includes/defaults.php:411
-msgid "Music"
+msgid "Location Arrow"
 msgstr ""
 
 #: ../admin/includes/defaults.php:412
-msgid "Newspaper O"
+msgid "Lock"
 msgstr ""
 
 #: ../admin/includes/defaults.php:413
-msgid "Openid"
+msgid "Long Arrow Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:414
-msgid "Outdent"
+msgid "Long Arrow Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:415
-msgid "Pagelines"
+msgid "Long Arrow Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:416
-msgid "Paint Brush"
+msgid "Long Arrow Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:417
-msgid "Paper Plane"
+msgid "Magic"
 msgstr ""
 
 #: ../admin/includes/defaults.php:418
-msgid "Paper Plane O"
+msgid "Magnet"
 msgstr ""
 
 #: ../admin/includes/defaults.php:419
-msgid "Paperclip"
+msgid "Male"
 msgstr ""
 
 #: ../admin/includes/defaults.php:420
-msgid "Paragraph"
+msgid "Map Marker"
 msgstr ""
 
 #: ../admin/includes/defaults.php:421
-msgid "Pause"
+msgid "Mars"
 msgstr ""
 
 #: ../admin/includes/defaults.php:422
-msgid "Paw"
+msgid "Mars Double"
 msgstr ""
 
 #: ../admin/includes/defaults.php:423
-msgid "Paypal"
+msgid "Mars Stroke"
 msgstr ""
 
 #: ../admin/includes/defaults.php:424
-msgid "Pencil"
+msgid "Mars Stroke H"
 msgstr ""
 
 #: ../admin/includes/defaults.php:425
-msgid "Pencil Square"
+msgid "Mars Stroke V"
 msgstr ""
 
 #: ../admin/includes/defaults.php:426
-msgid "Pencil Square O"
+msgid "Maxcdn"
 msgstr ""
 
 #: ../admin/includes/defaults.php:427
-msgid "Phone"
-msgstr ""
-
-#: ../admin/includes/defaults.php:428
-msgid "Phone Square"
+msgid "Meanpath"
 msgstr ""
 
 #: ../admin/includes/defaults.php:429
-msgid "Picture O"
+msgid "Medkit"
 msgstr ""
 
 #: ../admin/includes/defaults.php:430
-msgid "Pie Chart"
+msgid "Meh O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:431
-msgid "Pied Piper"
+msgid "Mercury"
 msgstr ""
 
 #: ../admin/includes/defaults.php:432
-msgid "Pied Piper Alt"
+msgid "Microphone"
 msgstr ""
 
 #: ../admin/includes/defaults.php:433
-msgid "Pinterest"
+msgid "Microphone Slash"
 msgstr ""
 
 #: ../admin/includes/defaults.php:434
-msgid "Pinterest Square"
+msgid "Minus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:435
-msgid "Plane"
+msgid "Minus Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:436
-msgid "Play"
+msgid "Minus Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:437
-msgid "Play Circle"
+msgid "Minus Square O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:438
-msgid "Play Circle O"
+msgid "Mobile"
 msgstr ""
 
 #: ../admin/includes/defaults.php:439
-msgid "Plug"
+msgid "Money"
 msgstr ""
 
 #: ../admin/includes/defaults.php:440
-msgid "Plus"
+msgid "Moon O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:441
-msgid "Plus Circle"
+msgid "Motorcycle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:442
-msgid "Plus Square"
+msgid "Music"
 msgstr ""
 
 #: ../admin/includes/defaults.php:443
-msgid "Plus Square O"
+msgid "Neuter"
 msgstr ""
 
 #: ../admin/includes/defaults.php:444
-msgid "Power Off"
+msgid "Newspaper O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:445
-msgid "Print"
+msgid "Openid"
 msgstr ""
 
 #: ../admin/includes/defaults.php:446
-msgid "Puzzle Piece"
+msgid "Outdent"
 msgstr ""
 
 #: ../admin/includes/defaults.php:447
-msgid "Qq"
+msgid "Pagelines"
 msgstr ""
 
 #: ../admin/includes/defaults.php:448
-msgid "Qrcode"
+msgid "Paint Brush"
 msgstr ""
 
 #: ../admin/includes/defaults.php:449
-msgid "Question"
+msgid "Paper Plane"
 msgstr ""
 
 #: ../admin/includes/defaults.php:450
-msgid "Question Circle"
+msgid "Paper Plane O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:451
-msgid "Quote Left"
+msgid "Paperclip"
 msgstr ""
 
 #: ../admin/includes/defaults.php:452
-msgid "Quote Right"
+msgid "Paragraph"
 msgstr ""
 
 #: ../admin/includes/defaults.php:453
-msgid "Random"
+msgid "Pause"
 msgstr ""
 
 #: ../admin/includes/defaults.php:454
-msgid "Rebel"
+msgid "Paw"
 msgstr ""
 
 #: ../admin/includes/defaults.php:455
-msgid "Recycle"
+msgid "Paypal"
 msgstr ""
 
 #: ../admin/includes/defaults.php:456
-msgid "Reddit"
+msgid "Pencil"
 msgstr ""
 
 #: ../admin/includes/defaults.php:457
-msgid "Reddit Square"
+msgid "Pencil Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:458
-msgid "Refresh"
+msgid "Pencil Square O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:459
-msgid "Renren"
+msgid "Phone"
 msgstr ""
 
 #: ../admin/includes/defaults.php:460
-msgid "Repeat"
+msgid "Phone Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:461
-msgid "Reply"
+msgid "Picture O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:462
-msgid "Reply All"
+msgid "Pie Chart"
 msgstr ""
 
 #: ../admin/includes/defaults.php:463
-msgid "Retweet"
+msgid "Pied Piper"
 msgstr ""
 
 #: ../admin/includes/defaults.php:464
-msgid "Road"
+msgid "Pied Piper Alt"
 msgstr ""
 
 #: ../admin/includes/defaults.php:465
-msgid "Rocket"
+msgid "Pinterest"
 msgstr ""
 
 #: ../admin/includes/defaults.php:466
-msgid "Rss"
+msgid "Pinterest P"
 msgstr ""
 
 #: ../admin/includes/defaults.php:467
-msgid "Rss Square"
+msgid "Pinterest Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:468
-msgid "Rub"
+msgid "Plane"
 msgstr ""
 
 #: ../admin/includes/defaults.php:469
-msgid "Scissors"
+msgid "Play"
 msgstr ""
 
 #: ../admin/includes/defaults.php:470
-msgid "Search"
+msgid "Play Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:471
-msgid "Search Minus"
+msgid "Play Circle O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:472
-msgid "Search Plus"
+msgid "Plug"
 msgstr ""
 
 #: ../admin/includes/defaults.php:473
-msgid "Share"
+msgid "Plus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:474
-msgid "Share Alt"
+msgid "Plus Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:475
-msgid "Share Alt Square"
+msgid "Plus Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:476
-msgid "Share Square"
+msgid "Plus Square O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:477
-msgid "Share Square O"
+msgid "Power Off"
 msgstr ""
 
 #: ../admin/includes/defaults.php:478
-msgid "Shield"
+msgid "Print"
 msgstr ""
 
 #: ../admin/includes/defaults.php:479
-msgid "Shopping Cart"
+msgid "Puzzle Piece"
 msgstr ""
 
 #: ../admin/includes/defaults.php:480
-msgid "Sign In"
+msgid "Qq"
 msgstr ""
 
 #: ../admin/includes/defaults.php:481
-msgid "Sign Out"
+msgid "Qrcode"
 msgstr ""
 
 #: ../admin/includes/defaults.php:482
-msgid "Signal"
+msgid "Question"
 msgstr ""
 
-#: ../admin/includes/defaults.php:483 ../admin/includes/setup.php:249
-msgid "Sitemap"
+#: ../admin/includes/defaults.php:483
+msgid "Question Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:484
-msgid "Skype"
+msgid "Quote Left"
 msgstr ""
 
 #: ../admin/includes/defaults.php:485
-msgid "Slack"
+msgid "Quote Right"
 msgstr ""
 
 #: ../admin/includes/defaults.php:486
-msgid "Sliders"
+msgid "Random"
 msgstr ""
 
 #: ../admin/includes/defaults.php:487
-msgid "Slideshare"
+msgid "Rebel"
 msgstr ""
 
 #: ../admin/includes/defaults.php:488
-msgid "Smile O"
+msgid "Recycle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:489
-msgid "Sort"
+msgid "Reddit"
 msgstr ""
 
 #: ../admin/includes/defaults.php:490
-msgid "Sort Alpha Asc"
+msgid "Reddit Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:491
-msgid "Sort Alpha Desc"
+msgid "Refresh"
 msgstr ""
 
 #: ../admin/includes/defaults.php:492
-msgid "Sort Amount Asc"
+msgid "Renren"
 msgstr ""
 
 #: ../admin/includes/defaults.php:493
-msgid "Sort Amount Desc"
+msgid "Repeat"
 msgstr ""
 
 #: ../admin/includes/defaults.php:494
-msgid "Sort Asc"
+msgid "Reply"
 msgstr ""
 
 #: ../admin/includes/defaults.php:495
-msgid "Sort Desc"
+msgid "Reply All"
 msgstr ""
 
 #: ../admin/includes/defaults.php:496
-msgid "Sort Numeric Asc"
+msgid "Retweet"
 msgstr ""
 
 #: ../admin/includes/defaults.php:497
-msgid "Sort Numeric Desc"
+msgid "Road"
 msgstr ""
 
 #: ../admin/includes/defaults.php:498
-msgid "Soundcloud"
+msgid "Rocket"
 msgstr ""
 
 #: ../admin/includes/defaults.php:499
-msgid "Space Shuttle"
+msgid "Rss"
 msgstr ""
 
 #: ../admin/includes/defaults.php:500
-msgid "Spinner"
+msgid "Rss Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:501
-msgid "Spoon"
+msgid "Rub"
 msgstr ""
 
 #: ../admin/includes/defaults.php:502
-msgid "Spotify"
+msgid "Scissors"
 msgstr ""
 
 #: ../admin/includes/defaults.php:503
-msgid "Square"
+msgid "Search"
 msgstr ""
 
 #: ../admin/includes/defaults.php:504
-msgid "Square O"
+msgid "Search Minus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:505
-msgid "Stack Exchange"
+msgid "Search Plus"
 msgstr ""
 
 #: ../admin/includes/defaults.php:506
-msgid "Stack Overflow"
+msgid "Sellsy"
 msgstr ""
 
 #: ../admin/includes/defaults.php:507
-msgid "Star"
+msgid "Server"
 msgstr ""
 
 #: ../admin/includes/defaults.php:508
-msgid "Star Half"
+msgid "Share"
 msgstr ""
 
 #: ../admin/includes/defaults.php:509
-msgid "Star Half O"
+msgid "Share Alt"
 msgstr ""
 
 #: ../admin/includes/defaults.php:510
-msgid "Star O"
+msgid "Share Alt Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:511
-msgid "Steam"
+msgid "Share Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:512
-msgid "Steam Square"
+msgid "Share Square O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:513
-msgid "Step Backward"
+msgid "Shield"
 msgstr ""
 
 #: ../admin/includes/defaults.php:514
-msgid "Step Forward"
+msgid "Ship"
 msgstr ""
 
 #: ../admin/includes/defaults.php:515
-msgid "Stethoscope"
+msgid "Shirtsinbulk"
 msgstr ""
 
 #: ../admin/includes/defaults.php:516
-msgid "Stop"
+msgid "Shopping Cart"
 msgstr ""
 
 #: ../admin/includes/defaults.php:517
-msgid "Strikethrough"
+msgid "Sign In"
 msgstr ""
 
 #: ../admin/includes/defaults.php:518
-msgid "Stumbleupon"
+msgid "Sign Out"
 msgstr ""
 
 #: ../admin/includes/defaults.php:519
-msgid "Stumbleupon Circle"
+msgid "Signal"
 msgstr ""
 
 #: ../admin/includes/defaults.php:520
-msgid "Subscript"
+msgid "Simplybuilt"
 msgstr ""
 
-#: ../admin/includes/defaults.php:521
-msgid "Suitcase"
+#: ../admin/includes/defaults.php:521 ../admin/includes/setup.php:243
+msgid "Sitemap"
 msgstr ""
 
 #: ../admin/includes/defaults.php:522
-msgid "Sun O"
+msgid "Skyatlas"
 msgstr ""
 
 #: ../admin/includes/defaults.php:523
-msgid "Superscript"
+msgid "Skype"
 msgstr ""
 
 #: ../admin/includes/defaults.php:524
-msgid "Table"
+msgid "Slack"
 msgstr ""
 
 #: ../admin/includes/defaults.php:525
-msgid "Tablet"
+msgid "Sliders"
 msgstr ""
 
 #: ../admin/includes/defaults.php:526
-msgid "Tachometer"
+msgid "Slideshare"
 msgstr ""
 
 #: ../admin/includes/defaults.php:527
-msgid "Tag"
+msgid "Smile O"
 msgstr ""
 
-#: ../admin/includes/defaults.php:528 ../admin/includes/setup.php:201
-msgid "Tags"
+#: ../admin/includes/defaults.php:528
+msgid "Sort"
 msgstr ""
 
 #: ../admin/includes/defaults.php:529
-msgid "Tasks"
+msgid "Sort Alpha Asc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:530
-msgid "Taxi"
+msgid "Sort Alpha Desc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:531
-msgid "Tencent Weibo"
+msgid "Sort Amount Asc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:532
-msgid "Terminal"
+msgid "Sort Amount Desc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:533
-msgid "Text Height"
+msgid "Sort Asc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:534
-msgid "Text Width"
+msgid "Sort Desc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:535
-msgid "Th"
+msgid "Sort Numeric Asc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:536
-msgid "Th Large"
+msgid "Sort Numeric Desc"
 msgstr ""
 
 #: ../admin/includes/defaults.php:537
-msgid "Th List"
+msgid "Soundcloud"
 msgstr ""
 
 #: ../admin/includes/defaults.php:538
-msgid "Thumb Tack"
+msgid "Space Shuttle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:539
-msgid "Thumbs Down"
+msgid "Spinner"
 msgstr ""
 
 #: ../admin/includes/defaults.php:540
-msgid "Thumbs O Down"
+msgid "Spoon"
 msgstr ""
 
 #: ../admin/includes/defaults.php:541
-msgid "Thumbs O Up"
+msgid "Spotify"
 msgstr ""
 
 #: ../admin/includes/defaults.php:542
-msgid "Thumbs Up"
+msgid "Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:543
-msgid "Ticket"
+msgid "Square O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:544
-msgid "Times"
+msgid "Stack Exchange"
 msgstr ""
 
 #: ../admin/includes/defaults.php:545
-msgid "Times Circle"
+msgid "Stack Overflow"
 msgstr ""
 
 #: ../admin/includes/defaults.php:546
-msgid "Times Circle O"
+msgid "Star"
 msgstr ""
 
 #: ../admin/includes/defaults.php:547
-msgid "Tint"
+msgid "Star Half"
 msgstr ""
 
 #: ../admin/includes/defaults.php:548
-msgid "Toggle Off"
+msgid "Star Half O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:549
-msgid "Toggle On"
+msgid "Star O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:550
-msgid "Trash"
+msgid "Steam"
 msgstr ""
 
 #: ../admin/includes/defaults.php:551
-msgid "Trash O"
+msgid "Steam Square"
 msgstr ""
 
 #: ../admin/includes/defaults.php:552
-msgid "Tree"
+msgid "Step Backward"
 msgstr ""
 
 #: ../admin/includes/defaults.php:553
-msgid "Trello"
+msgid "Step Forward"
 msgstr ""
 
 #: ../admin/includes/defaults.php:554
-msgid "Trophy"
+msgid "Stethoscope"
 msgstr ""
 
 #: ../admin/includes/defaults.php:555
-msgid "Truck"
+msgid "Stop"
 msgstr ""
 
 #: ../admin/includes/defaults.php:556
-msgid "Try"
+msgid "Street View"
 msgstr ""
 
 #: ../admin/includes/defaults.php:557
-msgid "Tty"
+msgid "Strikethrough"
 msgstr ""
 
 #: ../admin/includes/defaults.php:558
-msgid "Tumblr"
+msgid "Stumbleupon"
 msgstr ""
 
 #: ../admin/includes/defaults.php:559
-msgid "Tumblr Square"
+msgid "Stumbleupon Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:560
-msgid "Twitch"
+msgid "Subscript"
 msgstr ""
 
 #: ../admin/includes/defaults.php:561
-msgid "Twitter"
+msgid "Subway"
 msgstr ""
 
 #: ../admin/includes/defaults.php:562
-msgid "Twitter Square"
+msgid "Suitcase"
 msgstr ""
 
 #: ../admin/includes/defaults.php:563
-msgid "Umbrella"
+msgid "Sun O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:564
-msgid "Underline"
+msgid "Superscript"
 msgstr ""
 
 #: ../admin/includes/defaults.php:565
-msgid "Undo"
+msgid "Table"
 msgstr ""
 
 #: ../admin/includes/defaults.php:566
-msgid "University"
+msgid "Tablet"
 msgstr ""
 
 #: ../admin/includes/defaults.php:567
-msgid "Unlock"
+msgid "Tachometer"
 msgstr ""
 
-#: ../admin/includes/defaults.php:568
-msgid "Unlock Alt"
+#: ../admin/includes/defaults.php:568 ../admin/includes/setup.php:195
+msgid "Tag"
 msgstr ""
 
 #: ../admin/includes/defaults.php:569
-msgid "Upload"
+msgid "Tags"
 msgstr ""
 
 #: ../admin/includes/defaults.php:570
-msgid "Usd"
+msgid "Tasks"
 msgstr ""
 
 #: ../admin/includes/defaults.php:571
-msgid "User"
+msgid "Taxi"
 msgstr ""
 
 #: ../admin/includes/defaults.php:572
-msgid "User Md"
+msgid "Tencent Weibo"
 msgstr ""
 
 #: ../admin/includes/defaults.php:573
-msgid "Users"
+msgid "Terminal"
 msgstr ""
 
 #: ../admin/includes/defaults.php:574
-msgid "Video Camera"
+msgid "Text Height"
 msgstr ""
 
 #: ../admin/includes/defaults.php:575
-msgid "Vimeo Square"
+msgid "Text Width"
 msgstr ""
 
 #: ../admin/includes/defaults.php:576
-msgid "Vine"
+msgid "Th"
 msgstr ""
 
 #: ../admin/includes/defaults.php:577
-msgid "Vk"
+msgid "Th Large"
 msgstr ""
 
 #: ../admin/includes/defaults.php:578
-msgid "Volume Down"
+msgid "Th List"
 msgstr ""
 
 #: ../admin/includes/defaults.php:579
-msgid "Volume Off"
+msgid "Thumb Tack"
 msgstr ""
 
 #: ../admin/includes/defaults.php:580
-msgid "Volume Up"
+msgid "Thumbs Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:581
-msgid "Weibo"
+msgid "Thumbs O Down"
 msgstr ""
 
 #: ../admin/includes/defaults.php:582
-msgid "Weixin"
+msgid "Thumbs O Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:583
-msgid "Wheelchair"
+msgid "Thumbs Up"
 msgstr ""
 
 #: ../admin/includes/defaults.php:584
-msgid "Wifi"
+msgid "Ticket"
 msgstr ""
 
 #: ../admin/includes/defaults.php:585
-msgid "Windows"
+msgid "Times"
 msgstr ""
 
 #: ../admin/includes/defaults.php:586
-msgid "Wordpress"
+msgid "Times Circle"
 msgstr ""
 
 #: ../admin/includes/defaults.php:587
-msgid "Wrench"
+msgid "Times Circle O"
 msgstr ""
 
 #: ../admin/includes/defaults.php:588
-msgid "Xing"
+msgid "Tint"
 msgstr ""
 
 #: ../admin/includes/defaults.php:589
-msgid "Xing Square"
+msgid "Toggle Off"
 msgstr ""
 
 #: ../admin/includes/defaults.php:590
-msgid "Yahoo"
+msgid "Toggle On"
 msgstr ""
 
 #: ../admin/includes/defaults.php:591
-msgid "Yelp"
+msgid "Train"
 msgstr ""
 
 #: ../admin/includes/defaults.php:592
-msgid "Youtube"
+msgid "Transgender"
 msgstr ""
 
 #: ../admin/includes/defaults.php:593
-msgid "Youtube Play"
+msgid "Transgender Alt"
 msgstr ""
 
 #: ../admin/includes/defaults.php:594
+msgid "Trash"
+msgstr ""
+
+#: ../admin/includes/defaults.php:595
+msgid "Trash O"
+msgstr ""
+
+#: ../admin/includes/defaults.php:596
+msgid "Tree"
+msgstr ""
+
+#: ../admin/includes/defaults.php:597
+msgid "Trello"
+msgstr ""
+
+#: ../admin/includes/defaults.php:598
+msgid "Trophy"
+msgstr ""
+
+#: ../admin/includes/defaults.php:599
+msgid "Truck"
+msgstr ""
+
+#: ../admin/includes/defaults.php:600
+msgid "Try"
+msgstr ""
+
+#: ../admin/includes/defaults.php:601
+msgid "Tty"
+msgstr ""
+
+#: ../admin/includes/defaults.php:602
+msgid "Tumblr"
+msgstr ""
+
+#: ../admin/includes/defaults.php:603
+msgid "Tumblr Square"
+msgstr ""
+
+#: ../admin/includes/defaults.php:604
+msgid "Twitch"
+msgstr ""
+
+#: ../admin/includes/defaults.php:605
+msgid "Twitter"
+msgstr ""
+
+#: ../admin/includes/defaults.php:606
+msgid "Twitter Square"
+msgstr ""
+
+#: ../admin/includes/defaults.php:607
+msgid "Umbrella"
+msgstr ""
+
+#: ../admin/includes/defaults.php:608
+msgid "Underline"
+msgstr ""
+
+#: ../admin/includes/defaults.php:609
+msgid "Undo"
+msgstr ""
+
+#: ../admin/includes/defaults.php:610
+msgid "University"
+msgstr ""
+
+#: ../admin/includes/defaults.php:611
+msgid "Unlock"
+msgstr ""
+
+#: ../admin/includes/defaults.php:612
+msgid "Unlock Alt"
+msgstr ""
+
+#: ../admin/includes/defaults.php:613
+msgid "Upload"
+msgstr ""
+
+#: ../admin/includes/defaults.php:614
+msgid "Usd"
+msgstr ""
+
+#: ../admin/includes/defaults.php:615
+msgid "User"
+msgstr ""
+
+#: ../admin/includes/defaults.php:616
+msgid "User Md"
+msgstr ""
+
+#: ../admin/includes/defaults.php:617
+msgid "User Plus"
+msgstr ""
+
+#: ../admin/includes/defaults.php:618
+msgid "User Secret"
+msgstr ""
+
+#: ../admin/includes/defaults.php:619
+msgid "User Times"
+msgstr ""
+
+#: ../admin/includes/defaults.php:620
+msgid "Users"
+msgstr ""
+
+#: ../admin/includes/defaults.php:621
+msgid "Venus"
+msgstr ""
+
+#: ../admin/includes/defaults.php:622
+msgid "Venus Double"
+msgstr ""
+
+#: ../admin/includes/defaults.php:623
+msgid "Venus Mars"
+msgstr ""
+
+#: ../admin/includes/defaults.php:624
+msgid "Viacoin"
+msgstr ""
+
+#: ../admin/includes/defaults.php:625
+msgid "Video Camera"
+msgstr ""
+
+#: ../admin/includes/defaults.php:626
+msgid "Vimeo Square"
+msgstr ""
+
+#: ../admin/includes/defaults.php:627
+msgid "Vine"
+msgstr ""
+
+#: ../admin/includes/defaults.php:628
+msgid "Vk"
+msgstr ""
+
+#: ../admin/includes/defaults.php:629
+msgid "Volume Down"
+msgstr ""
+
+#: ../admin/includes/defaults.php:630
+msgid "Volume Off"
+msgstr ""
+
+#: ../admin/includes/defaults.php:631
+msgid "Volume Up"
+msgstr ""
+
+#: ../admin/includes/defaults.php:632
+msgid "Weibo"
+msgstr ""
+
+#: ../admin/includes/defaults.php:633
+msgid "Weixin"
+msgstr ""
+
+#: ../admin/includes/defaults.php:634
+msgid "Whatsapp"
+msgstr ""
+
+#: ../admin/includes/defaults.php:635
+msgid "Wheelchair"
+msgstr ""
+
+#: ../admin/includes/defaults.php:636
+msgid "Wifi"
+msgstr ""
+
+#: ../admin/includes/defaults.php:637
+msgid "Windows"
+msgstr ""
+
+#: ../admin/includes/defaults.php:638
+msgid "Wordpress"
+msgstr ""
+
+#: ../admin/includes/defaults.php:639
+msgid "Wrench"
+msgstr ""
+
+#: ../admin/includes/defaults.php:640
+msgid "Xing"
+msgstr ""
+
+#: ../admin/includes/defaults.php:641
+msgid "Xing Square"
+msgstr ""
+
+#: ../admin/includes/defaults.php:642
+msgid "Yahoo"
+msgstr ""
+
+#: ../admin/includes/defaults.php:643
+msgid "Yelp"
+msgstr ""
+
+#: ../admin/includes/defaults.php:644
+msgid "Youtube"
+msgstr ""
+
+#: ../admin/includes/defaults.php:645
+msgid "Youtube Play"
+msgstr ""
+
+#: ../admin/includes/defaults.php:646
 msgid "Youtube Square"
 msgstr ""
 
-#: ../admin/includes/setup.php:33 ../admin/includes/setup.php:185
-#: ../admin/includes/setup.php:276 ../admin/includes/setup.php:297
+#: ../admin/includes/setup.php:27 ../admin/includes/setup.php:179
+#: ../admin/includes/setup.php:270 ../admin/includes/setup.php:286
 msgid "Width"
 msgstr ""
 
-#: ../admin/includes/setup.php:40 ../admin/includes/setup.php:49
-#: ../admin/includes/setup.php:86 ../admin/includes/setup.php:123
-#: ../admin/includes/setup.php:151 ../admin/includes/setup.php:168
+#: ../admin/includes/setup.php:34 ../admin/includes/setup.php:43
+#: ../admin/includes/setup.php:80 ../admin/includes/setup.php:117
+#: ../admin/includes/setup.php:145 ../admin/includes/setup.php:162
 msgid "Icon"
 msgstr ""
 
-#: ../admin/includes/setup.php:44 ../admin/includes/setup.php:81
-#: ../admin/includes/setup.php:118
+#: ../admin/includes/setup.php:38 ../admin/includes/setup.php:75
+#: ../admin/includes/setup.php:112
 msgid "Color"
 msgstr ""
 
-#: ../admin/includes/setup.php:54 ../admin/includes/setup.php:91
-#: ../admin/includes/setup.php:128
+#: ../admin/includes/setup.php:48 ../admin/includes/setup.php:85
+#: ../admin/includes/setup.php:122
 msgid "Size"
 msgstr ""
 
-#: ../admin/includes/setup.php:59 ../admin/includes/setup.php:96
-#: ../admin/includes/setup.php:133 ../admin/includes/setup.php:180
+#: ../admin/includes/setup.php:53 ../admin/includes/setup.php:90
+#: ../admin/includes/setup.php:127 ../admin/includes/setup.php:174
 msgid "Align"
 msgstr ""
 
-#: ../admin/includes/setup.php:64 ../admin/includes/setup.php:101
+#: ../admin/includes/setup.php:58 ../admin/includes/setup.php:95
 msgid "Link to"
 msgstr ""
 
-#: ../admin/includes/setup.php:65 ../admin/includes/setup.php:102
+#: ../admin/includes/setup.php:59 ../admin/includes/setup.php:96
 msgid "http://example.com"
 msgstr ""
 
-#: ../admin/includes/setup.php:69 ../admin/includes/setup.php:106
+#: ../admin/includes/setup.php:63 ../admin/includes/setup.php:100
 msgid "Target"
 msgstr ""
 
-#: ../admin/includes/setup.php:76
+#: ../admin/includes/setup.php:70
 msgid "Button"
 msgstr ""
 
-#: ../admin/includes/setup.php:113
+#: ../admin/includes/setup.php:107
 msgid "Panel"
 msgstr ""
 
-#: ../admin/includes/setup.php:140
+#: ../admin/includes/setup.php:134
 msgid "Tabs"
 msgstr ""
 
-#: ../admin/includes/setup.php:147 ../admin/includes/setup.php:164
+#: ../admin/includes/setup.php:141 ../admin/includes/setup.php:158
 msgid "Title"
 msgstr ""
 
-#: ../admin/includes/setup.php:158
+#: ../admin/includes/setup.php:152
 msgid "Accordion"
 msgstr ""
 
-#: ../admin/includes/setup.php:175
+#: ../admin/includes/setup.php:169
 msgid "Alignment"
 msgstr ""
 
-#: ../admin/includes/setup.php:192 ../admin/includes/setup.php:257
-#: ../public/generator.php:283
+#: ../admin/includes/setup.php:186 ../admin/includes/setup.php:251
+#: ../public/generator.php:345
 msgid "Posts"
 msgstr ""
 
-#: ../admin/includes/setup.php:196
-msgid "Categories"
+#: ../admin/includes/setup.php:190
+msgid "Category"
 msgstr ""
 
-#: ../admin/includes/setup.php:198
-msgid "i.e. news,other"
+#: ../admin/includes/setup.php:192
+msgid "i.e. News"
 msgstr ""
 
-#: ../admin/includes/setup.php:203
-msgid "i.e. featured"
+#: ../admin/includes/setup.php:197
+msgid "i.e. Featured"
 msgstr ""
 
-#: ../admin/includes/setup.php:206
+#: ../admin/includes/setup.php:200
 msgid "Number"
 msgstr ""
 
-#: ../admin/includes/setup.php:208
+#: ../admin/includes/setup.php:202
 msgid "5"
 msgstr ""
 
-#: ../admin/includes/setup.php:211
+#: ../admin/includes/setup.php:205
 msgid "Post Type"
 msgstr ""
 
-#: ../admin/includes/setup.php:216
+#: ../admin/includes/setup.php:210
 msgid "Show Date"
 msgstr ""
 
-#: ../admin/includes/setup.php:220
+#: ../admin/includes/setup.php:214
 msgid "Show Image"
 msgstr ""
 
-#: ../admin/includes/setup.php:226
+#: ../admin/includes/setup.php:220
 msgid "Login Form"
 msgstr ""
 
-#: ../admin/includes/setup.php:230
+#: ../admin/includes/setup.php:224
 msgid "Redirect To"
 msgstr ""
 
-#: ../admin/includes/setup.php:235
+#: ../admin/includes/setup.php:229
 msgid "Register Link"
 msgstr ""
 
-#: ../admin/includes/setup.php:239
+#: ../admin/includes/setup.php:233
 msgid "Style"
 msgstr ""
 
-#: ../admin/includes/setup.php:242
+#: ../admin/includes/setup.php:236
 msgid "Block"
 msgstr ""
 
-#: ../admin/includes/setup.php:243
+#: ../admin/includes/setup.php:237
 msgid "Inline"
 msgstr ""
 
-#: ../admin/includes/setup.php:253 ../public/generator.php:263
+#: ../admin/includes/setup.php:247 ../public/generator.php:325
 msgid "Menus"
 msgstr ""
 
-#: ../admin/includes/setup.php:261 ../public/generator.php:271
+#: ../admin/includes/setup.php:255 ../public/generator.php:333
 msgid "Pages"
 msgstr ""
 
-#: ../admin/includes/setup.php:267
+#: ../admin/includes/setup.php:261
 msgid "Google Map"
 msgstr ""
 
-#: ../admin/includes/setup.php:271
+#: ../admin/includes/setup.php:265
 msgid "Location"
 msgstr ""
 
-#: ../admin/includes/setup.php:281 ../admin/includes/setup.php:302
-msgid "Height"
-msgstr ""
-
-#: ../admin/includes/setup.php:288
+#: ../admin/includes/setup.php:277
 msgid "iFrame"
 msgstr ""
 
-#: ../admin/includes/setup.php:292
+#: ../admin/includes/setup.php:281
 msgid "Url"
 msgstr ""
 
-#: ../public/generator.php:25
+#: ../public/generator.php:27
 msgid "row"
 msgstr ""
 
-#: ../public/generator.php:26
+#: ../public/generator.php:28
 msgid "col"
 msgstr ""
 
-#: ../public/generator.php:27
+#: ../public/generator.php:29
 msgid "icon"
 msgstr ""
 
-#: ../public/generator.php:28
+#: ../public/generator.php:30
 msgid "button"
 msgstr ""
 
-#: ../public/generator.php:29
+#: ../public/generator.php:31
 msgid "panel"
 msgstr ""
 
-#: ../public/generator.php:30
+#: ../public/generator.php:32
 msgid "tabs"
 msgstr ""
 
-#: ../public/generator.php:31
+#: ../public/generator.php:33
 msgid "tab"
 msgstr ""
 
-#: ../public/generator.php:32
+#: ../public/generator.php:34
 msgid "accordion"
 msgstr ""
 
-#: ../public/generator.php:33
+#: ../public/generator.php:35
 msgid "align"
 msgstr ""
 
-#: ../public/generator.php:34
+#: ../public/generator.php:36
 msgid "posts"
 msgstr ""
 
-#: ../public/generator.php:35
+#: ../public/generator.php:37
 msgid "login"
 msgstr ""
 
-#: ../public/generator.php:36
+#: ../public/generator.php:38
 msgid "sitemap"
 msgstr ""
 
-#: ../public/generator.php:37
+#: ../public/generator.php:39
 msgid "map"
 msgstr ""
 
-#: ../public/generator.php:38
+#: ../public/generator.php:40
 msgid "iframe"
 msgstr ""
 
-#: ../public/generator.php:39
+#: ../public/generator.php:41
 msgid "image"
 msgstr ""
 
-#: ../public/generator.php:40
+#: ../public/generator.php:42
 msgid "link"
 msgstr ""
 
-#: ../public/generator.php:240
+#: ../public/generator.php:297
 msgid "Hello "
 msgstr ""
 
-#: ../public/generator.php:241
+#: ../public/generator.php:298
 msgid "Logout"
 msgstr ""
