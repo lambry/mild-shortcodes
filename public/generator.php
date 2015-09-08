@@ -294,7 +294,7 @@ class Generator {
                 $html .= ( $register ) ? wp_register( '<p><i class="fa fa-angle-double-right"></i> ', '</p>', false ) : '';
             } else {
                 $current_user = wp_get_current_user();
-                $html .= '<span class="loggedin-message">' . __( 'Hello ', 'mild-sc' ) . $current_user->user_login .'</span>, ';
+                $html .= '<span class="loggedin-message">' . __( 'Hello ', 'mild-sc' ) . $current_user->user_login .',</span> ';
                 $html .= '<a href="' . wp_logout_url() .'" title="Logout" class="logout-button">' . __( 'Logout', 'mild-sc' ) . '</a>';
             }
         $html .= '</div>';
