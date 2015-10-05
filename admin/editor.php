@@ -10,7 +10,7 @@ require 'includes/bootstrap.php'; ?>
     <meta charset="UTF-8">
     <title>Shortcodes</title>
     <!-- Load styles -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/styles/modal.css" rel="stylesheet">
 </head>
 <body>

@@ -34,6 +34,8 @@ class Generator {
 		add_shortcode( __( 'accordion', 'mild-sc' ), [ $this, 'accordion' ] );
 		add_shortcode( __( 'align', 'mild-sc' ),     [ $this, 'align' ] );
 		add_shortcode( __( 'posts', 'mild-sc' ),     [ $this, 'posts' ] );
+		add_shortcode( __( 'subpages', 'mild-sc' ),  [ $this, 'subpages' ] );
+		add_shortcode( __( 'restrict', 'mild-sc' ),  [ $this, 'restrict' ] );
 		add_shortcode( __( 'login', 'mild-sc' ),     [ $this, 'login' ] );
 		add_shortcode( __( 'sitemap', 'mild-sc' ),   [ $this, 'sitemap' ] );
 		add_shortcode( __( 'map', 'mild-sc' ),       [ $this, 'map' ] );
@@ -71,7 +73,7 @@ class Generator {
 	        'width' => '6',
 	        'class' => ''
 	    ], $params) );
-	    return "<div class='col col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
+	    return "<div class='col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
 	}
 
 	/*
@@ -79,7 +81,6 @@ class Generator {
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $icon
 	 */
 	public function icon( $params ) {
@@ -230,7 +231,6 @@ class Generator {
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $posts
 	 */
 	public function posts( $params ) {
@@ -268,11 +268,69 @@ class Generator {
 	}
 
 	/*
+	 * Subpages shortcode
+	 *
+	 * @access public
+	 * @param array  $params
+	 * @return string $posts
+	 */
+	public function subpages( $params ) {
+        global $post;
+	    extract( shortcode_atts([
+	        'title'  => '',
+	        'subsubs' => false,
+	        'class'  => ''
+	    ], $params) );
+	    $depth = ( $subsubs ) ? 0 : 1;
+
+	    $args = [
+	    	'child_of' => $post->ID,
+	    	'title_li' => $title,
+	        'depth'    => $depth,
+	        'echo'     => false
+	    ];
+	    $subpages = wp_list_pages( $args );
+
+	    $html = "<ul class='subpages {$class}'>";
+	        $html .= $subpages;
+	    $html .= '</ul>';
+
+	    return $html;
+	}
+
+	/*
+	 * Restrict shortcode
+	 *
+	 * @access public
+	 * @param array $params
+	 * @param array $content
+	 * @return string $posts
+	 */
+	public function restrict( $params, $content = null ) {
+
+        global $post;
+
+	    extract( shortcode_atts([
+	        'message' => '',
+	        'role'   => 'subscriber',
+	        'class' => ''
+	    ], $params) );
+
+	    $user = wp_get_current_user();
+
+	    if ( in_array( 'administrator', $user->roles ) || in_array( sanitize_title_with_dashes( $role ), $user->roles ) ) {
+	    	return $content;
+	    }
+
+		return "<div class='restrict {$class}'>{$message}</div>";
+
+	}
+
+	/*
 	 * Login shortcode
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $login
 	 */
 	public function login( $params ) {
@@ -307,7 +365,6 @@ class Generator {
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $sitemap
 	 */
 	public function sitemap( $params ) {
@@ -362,7 +419,6 @@ class Generator {
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $map
 	 */
 	public function map( $params ) {
@@ -381,7 +437,6 @@ class Generator {
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $iframe
 	 */
 	public function iframe( $params ) {
@@ -399,7 +454,6 @@ class Generator {
 	 *
 	 * @access public
 	 * @param array  $params
-	 * @param string $content
 	 * @return string $image
 	 */
 	public function image( $params ) {

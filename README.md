@@ -13,6 +13,8 @@ Note: This is a work in progress and can break at anytime.
 * Accordian
 * Alignment
 * Posts
+* Subpages
+* Restrict
 * Login
 * Sitemap
 * Google Map

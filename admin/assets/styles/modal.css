@@ -66,8 +66,8 @@ a {
 /* Form */
 .field-group {
 	width: 50%;
-	float: left;
-	margin-bottom: 1.25em;
+	display: inline-block;
+	margin: 0 -2px 1.25em;
 }
 .field {
 	width: 52%;
