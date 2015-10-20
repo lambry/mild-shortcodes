@@ -1,9 +1,7 @@
 /* =Editor
 -------------------------------------------------------------- */
 
-.mce-i-m_shortcodes {
+.mce-i-mild_shortcodes:before {
 	font-family: dashicons !important;
-}
-.mce-i-m_shortcodes:before {
     content: "\f475";
 }

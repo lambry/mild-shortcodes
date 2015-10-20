@@ -3,7 +3,7 @@
  * Plugin Name: Mild Shortcodes
  * Plugin URI: https://github.com/lambry/mild-shortcodes
  * Description: A set of simple shortcodes
- * Version: 1.0.1
+ * Version: 0.1.2
  * Author: David Featherston
  * Text Domain: mild-sc
  * Domain Path: /languages
@@ -67,9 +67,6 @@ class Init {
 	    // Add editor style sheet
 	    wp_enqueue_style( 'shortcodes', plugin_dir_url( __FILE__ ) . 'admin/assets/styles/editor.css' );
 
-        // Add editor content css
-	    add_editor_style( plugin_dir_url( __FILE__ ) . 'admin/assets/styles/content.css' );
-
 		// Add editor js
 	    add_filter( 'mce_external_plugins', function( $plugin_array ) {
 	        $plugin_array['mce_editor_shortcodes'] = plugin_dir_url( __FILE__ ) . 'admin/editor.js';
@@ -78,7 +75,7 @@ class Init {
 
 	    // Register editor button
 	    add_filter( 'mce_buttons', function( $buttons ) {
-	        array_push( $buttons, 'm_shortcodes' );
+	        array_push( $buttons, 'mild_shortcodes' );
 	        return $buttons;
 	    });
 

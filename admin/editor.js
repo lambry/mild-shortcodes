@@ -13,7 +13,7 @@
         init : function(ed, url) {
 
             // Add shortcodes button
-            ed.addButton('m_shortcodes', {
+            ed.addButton('mild_shortcodes', {
                 title : 'Insert shortcodes',
                 onclick : function() {
                     ed.windowManager.open({
