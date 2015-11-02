@@ -1,8 +1,8 @@
-#Mild Shortcodes
+#Shorts
 
 A simple set of shortcodes.
 
-Note: This is a work in progress and can break at anytime.
+If your theme already includes Font Awesome add: `add_theme_support( 'font-awesome' );`
 
 ###Main Shortcodes
 * Rows/Columns

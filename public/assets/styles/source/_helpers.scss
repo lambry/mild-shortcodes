@@ -1,0 +1,79 @@
+/* =Helpers
+-------------------------------------------------------------- */
+
+/* Background Colors */
+@each $color, $value in $colors {
+	.ls-background-#{$color} {
+		background-color: $value;
+	}
+}
+
+/* Text Colors */
+@each $color, $value in $colors {
+	.ls-text-#{$color} {
+		color: $value;
+	}
+}
+
+/* Sizes */
+@each $size, $value in $sizes {
+	.ls-#{$size} {
+		font-size: $value;
+		&:before {
+			font-size: $value * 2;
+		}
+	}
+}
+
+/* Alignment */
+.ls-alignleft {
+	display: inline;
+	float: left;
+	margin: 0 2.5em 1em 0;
+}
+.ls-alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 1em 2.5em;
+}
+.ls-aligncenter {
+	display: table;
+	clear: both;
+	margin: 0 auto 1em auto;
+}
+
+/* Responsive iFrames */
+.ls-fluid-iframe {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* General */
+.ls-button, .ls-panel, .ls-tab-item {
+	.fa {
+		margin-right: 0.5em;
+	}
+}
+.ls-row, .ls-tab-panes, .ls-login-inline {
+	> br {
+		display: none;
+	}
+}
+
+/* Clearing */
+.ls-clear:before, .ls-clear:after {
+	content: '';
+	display: table;
+}
+.ls-clear:after {
+	clear: both;
+}

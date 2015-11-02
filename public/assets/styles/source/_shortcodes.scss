@@ -1,0 +1,144 @@
+/* =Shortcodes
+-------------------------------------------------------------- */
+
+/* Buttons */
+.ls-button {
+	color: $color-white;
+	padding: 0.5em $layout-padding;
+	margin: 0.5em 0 $layout-margin 0;
+	display: inline-block;
+	background-color: $color-blue;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: $style-radius;
+	&:hover {
+		color: $color-white;
+		box-shadow: 0 -0.075em 0.1em rgba(255, 255, 255, 0.5) inset;
+	}
+	&:active, &:focus {
+		color: $color-white;
+		box-shadow: 0 -0.075em 0.1em rgba(255, 255, 255, 0.15) inset, 0 -0.1em 0.25em rgba(0, 0, 0, 0.25) inset;
+	}
+	&:visited {
+		color: darken($color-white, 10%);
+	}
+}
+.ls-background-yellow, 
+.ls-background-silver, 
+.ls-background-white {
+	color: $color-black;
+	&:hover, &:active, &:focus {
+		color: $color-black;
+	}
+	&:visited {
+		color: lighten($color-black, 10%);
+	}
+}
+
+/* Panels */
+.ls-panel {
+	color: $color-white;
+	padding: $layout-padding ($layout-padding * 2);
+	margin: 0.5em 0 $layout-margin 0;
+	background-color: $color-green;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.ls-tabs {
+	margin-bottom: $layout-margin;
+	.ls-tab-nav {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.ls-tab-item {
+		float: left;
+		cursor: pointer;
+		padding: 0.5em 0.75em;
+		margin: 0 0.25em -2px 0;
+		border: 1px solid $color-silver;
+		border-bottom-color: $color-white;
+		background-color: lighten($color-silver, 2.5%);
+		border-radius: $style-radius $style-radius 0 0;
+	}
+	.ls-tab-active {
+		background-color: $color-white;
+	}
+	.ls-tab-panes {
+		clear: both;
+	}
+	.ls-tab-pane {
+		padding: 1em 1.25em;
+		border: 1px solid $color-silver;
+	}
+}
+
+/* Accordions */
+.ls-accordion {
+	margin: 0.5em 0;
+	.fa {
+		padding: 0.2em 0.5em;
+		font-size: 0.8em;
+	}
+	.fa-plus {
+		float: right;
+	}
+	.ls-accordion-title {
+		margin: 0;
+		line-height: 1;
+		cursor: pointer;
+		border-bottom: 1px solid $color-silver;
+		a {
+			display: block;
+		}
+	}
+	.ls-accordion-content {
+		display: none;
+		padding: $layout-padding 0;
+	}
+}
+
+/* Posts */
+.ls-posts {
+	.ls-post {
+		margin-bottom: $layout-margin;
+	}
+	.ls-post-title {
+		margin-bottom: 0;
+	}
+	.ls-post-date {
+		font-size: 0.75rem;
+		font-style: italic;
+		color: lighten($color-grey, 10%);
+		margin-bottom: 0.5em;
+	}
+	.ls-post-image {
+		float: left;
+		margin: 0 $layout-padding 0.5em 0;
+	}
+}
+
+/* Login */
+.ls-login-inline {
+	.login-username,
+	.login-password {
+		color: $color-grey;
+		position: relative;
+		label {
+			top: 0.3em;
+			left: 0.3em;
+			position: absolute;
+			transition: all 0.2s ease;
+		}
+		input {
+			width: 100%;
+		}
+		.ls-is-hidden {
+			opacity: 0;
+			top: -0.3em;
+		}
+	}
+	.login-remember {
+		font-size: 0.9rem;
+	}
+}

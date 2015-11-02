@@ -1,0 +1,39 @@
+/* =Variables
+-------------------------------------------------------------- */
+
+/* Layout */
+$layout-margin: 1em;
+$layout-padding: 1em;
+$style-radius: 3px;
+
+/* Sizes */
+$sizes: (
+	'small': 0.75rem,
+	'medium': 1.25rem,
+	'large': 1.75rem,
+	'huge': 2.5rem
+);
+
+/* Colors */
+$color-blue: #1882f4;
+$color-green: #00b429;
+$color-orange: #d65015;
+$color-yellow: #ebdc2f;
+$color-red: #d31f16;
+$color-silver: #DDDDDD;
+$color-grey: #555555;
+$color-black: #222222;
+$color-white: #ffffff;
+
+/* Maps */
+$colors: (
+	'blue': #1882f4,
+	'green': #00b429,
+	'orange': #d65015,
+	'yellow': #ebdc2f,
+	'red': #d31f16,
+	'silver': #DDDDDD,
+	'grey': #555555,
+	'black': #222222,
+	'white': #FFFFFF
+);

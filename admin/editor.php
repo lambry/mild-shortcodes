@@ -1,55 +1,90 @@
 <?php
 /**
- * Generate shortcode views
+ * Generator
+ *
+ * @package Lambry\Shorts
  */
-require 'includes/bootstrap.php'; ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Shortcodes</title>
-    <!-- Load styles -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/styles/modal.css" rel="stylesheet">
-</head>
-<body>
-    <div class="shortcodes">
-        <div class="shortcode-links">
-            <?php foreach( $shortcodes as $id => $shortcode ) : ?>
-                <button class="shortcode-link" data-shortcode="<?php echo $id; ?>">
-                    <i class="fa fa-<?php echo $shortcode['icon']; ?>"></i>
-                    <?php echo $shortcode['heading']; ?>
-                </button>
-            <?php endforeach; ?>
-        </div><!-- .shortcode-links -->
-        <?php foreach( $shortcodes as $id => $shortcode ) : ?>
-            <form class="shortcode" id="<?php echo $id; ?>" data-code="<?php echo $id; ?>" data-wrap="<?php echo ( isset( $shortcode['wrap'] ) ) ? $shortcode['wrap'] : ''; ?>"  data-child="<?php echo ( isset( $shortcode['child'] ) ) ? $shortcode['child'] : ''; ?>">
-                <h2><?php echo $shortcode['heading']; ?> <i class="home fa fa-chevron-circle-left"></i></h2>
-                <div class="fields">
-                    <?php foreach( $shortcode['fields'] as $name => $field ) : ?>
-                        <div class="field-group">
-                            <label for="<?php echo $name; ?>">
-                                <?php echo $field['name']; ?><i></i>
-                            </label>
-                            <div class="field">
-                                <?php echo $fields::generate( $name, $field ); ?>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-                <?php if ( isset( $shortcode['clone'] ) ) : ?>
-                    <button class="clone" type="button"><?php _e( 'Add New', 'mild-sc'); ?></button>
-                <?php endif; ?>
-                <button type="submit" class="submit">
-                    <i class="fa fa-<?php echo $shortcode['icon']; ?>"></i>
-                    <?php _e( 'Insert Shortcode', 'mild-sc' ) ?>
-                </button>
-            </form><!-- .shortcode -->
-        <?php endforeach ?>
-    </div><!-- .shortcodes -->
-<!-- Load scripts -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="assets/scripts/modal.js"></script>
-</body>
-</html>
+namespace Lambry\Shorts;
+
+if ( ! defined( 'WPINC' ) ) die;
+
+/* Editor Class */
+class Editor {
+
+	/*
+	* Construct
+	*/
+    public function __construct() {
+
+	    if ( is_admin() && get_user_option( 'rich_editing' ) === 'true' ) {
+
+	    	$this->editor();
+
+	    }
+
+	}
+	
+	/*
+	 * Editor
+	 *
+	 * Include shortcodes editor.
+	 *
+	 * @access private
+     * @return null
+	 */
+	private function editor() {
+
+	    // Add editor button css
+		add_action( 'admin_head', function() {
+			echo '<style>.mce-i-lambry_shorts:before { font-family: dashicons !important; content: "\f475"; }</style>';
+		});
+
+		// Add editor popup scripts
+	    add_filter( 'mce_external_plugins', function( $plugin_array ) {
+	        $plugin_array['lambry_shorts'] = plugins_url( 'assets/scripts/editor.min.js', __FILE__ );
+	        return $plugin_array;
+	    });
+
+	    // Register editor button
+	    add_filter( 'mce_buttons', function( $buttons ) {
+	        array_push( $buttons, 'lambry_shorts' );
+	        return $buttons;
+	    });
+
+	    // Add AJAX action to generate html
+        add_action( 'wp_ajax_lambry_shorts', [ $this, 'generate_html' ] );
+
+	}
+
+	/*
+	 * Generate html
+	 *
+	 * Generate the shortcodes html.
+	 *
+	 * @access public
+     * @return string $html
+	 */
+	public function generate_html() {
+		
+		if ( $_POST['action'] !== 'lambry_shorts' ) {
+			echo '<div class="error"><p>' . __( 'Sorry, there was an error fetching shortcodes.', 'lambry-shorts' ) . '</p></div>';
+			die();
+		}
+
+		// Require necessities
+		require_once 'includes/defaults.php';
+		require_once 'includes/setup.php';
+		require_once 'includes/create.php';
+
+		// Set variables
+		$shortcodes = Setup::shortcodes();
+		
+		// Generate the html
+		require_once 'generate.php';
+
+		die();
+
+	}
+
+}
