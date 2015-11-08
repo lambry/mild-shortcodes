@@ -4,7 +4,7 @@
 
 ( function( $ ) {
 
-    tinymce.create('tinymce.plugins.lambry_shorts', {
+    tinymce.create('tinymce.plugins.shorts', {
         
         /**
          * @param {tinymce.Editor} ed Editor instance.
@@ -13,7 +13,7 @@
         init : function(ed, url) {
 
             // Add shortcodes button
-            ed.addButton( 'lambry_shorts', {
+            ed.addButton( 'shorts', {
                 title : 'Insert Shortcode',
                 onclick : function() {
 
@@ -24,7 +24,7 @@
                         inline: true,
                         body: [{
                             type: 'container',
-                            html: '<div id="lambry-shorts"><span class="ls-loading"></span></div>'
+                            html: '<div id="shorts"><span class="loading"></span></div>'
                         }],
                         buttons: [{
                             text: 'Insert Shortcode',
@@ -34,7 +34,7 @@
                         }]
                     });
 
-                    var shortsHTML = $.post(ajaxurl, { action: 'lambry_shorts' }, function( html ) {
+                    var shortsHTML = $.post(ajaxurl, { action: 'shorts_generate' }, function( html ) {
                         Lambry.Shorts.init( html );
                     });
                 }
@@ -56,6 +56,6 @@
     });
 
     // Register plugin
-    tinymce.PluginManager.add( 'lambry_shorts', tinymce.plugins.lambry_shorts );
+    tinymce.PluginManager.add( 'shorts', tinymce.plugins.shorts );
 
 } )( jQuery );

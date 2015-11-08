@@ -2,10 +2,12 @@
 /**
  * Generate View
  *
- * @package Lambry\Shorts
+ * @package Shorts
  */
 
-namespace Lambry\Shorts; ?>
+namespace Lambry\Shorts; 
+
+defined( 'ABSPATH' ) || exit; ?>
 
 <div class="shortcode-links">
 
@@ -36,7 +38,7 @@ namespace Lambry\Shorts; ?>
                             <?php echo $field['name']; ?><i></i>
                         </label>
                         <div class="field">
-                            <?php echo Create::field( $name, $field ); ?>
+                            <?php echo Fields::create( $name, $field ); ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -45,7 +47,7 @@ namespace Lambry\Shorts; ?>
 
         <?php if ( isset( $shortcode['clone'] ) ) : ?>
             <button class="clone button" type="button">
-                <?php _e( 'Add New', 'lambry-shorts'); ?>
+                <?php _e( 'Add New', 'shorts' ); ?>
             </button>
         <?php endif; ?>
 

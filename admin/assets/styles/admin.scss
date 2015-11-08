@@ -2,7 +2,7 @@
 -------------------------------------------------------------- */
 
 /* General */
-#lambry-shorts {
+#shorts {
 	* {
 		position: relative;
 		white-space: normal;
@@ -120,7 +120,7 @@
 	}
 
 	/* Loading */
-	.ls-loading {
+	.loading {
 		display: block;
 		width: 5rem;
 		height: 5rem;
@@ -131,7 +131,7 @@
 		border-color: #555 transparent;
 		border-radius: 50%;
 		transition: all 0.1s ease;
-		animation: lsLoading 1s ease-in-out infinite;
+		animation: shortsSpin 1s ease-in-out infinite;
 	}
 
 	/* Sortable */
@@ -149,7 +149,7 @@
 			cursor: move;
 		}
 	}
-	.clone-gap {
+	.sort-gap {
 		height: 2em;
 		margin-bottom: 1.5em;
 		background-color: #fafafa;
@@ -178,7 +178,7 @@
 	z-index: 999999;
 }
 
-@keyframes lsLoading {
+@keyframes shortsSpin {
     to { 
     	transform: rotate(360deg); 
     }

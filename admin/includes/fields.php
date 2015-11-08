@@ -1,19 +1,19 @@
 <?php
 /**
- * Shortcodes Create
+ * Shortcode Fields
  *
- * @package Lambry\Shorts
+ * @package Shorts
  */
 
 namespace Lambry\Shorts;
 
-if ( ! defined( 'WPINC' ) ) die;
+defined( 'ABSPATH' ) || exit;
 
-/* Create Class */
-class Create {
+/* Fields Class */
+class Fields {
 
     /**
-     * Field
+     * Create
      *
      * Create the required field.
      *
@@ -22,7 +22,7 @@ class Create {
      * @param  array  $field
      * @return null
      */
-	public static function field( $name, $field ) {
+	public static function create( $name, $field ) {
 
         switch ( $field['type'] ) {
             case 'text':
@@ -78,7 +78,7 @@ class Create {
 
         $html = "<select name='{$name}' class='input {$name}' type='text' {$attr}>";
             if ( $attr !== 'multiple' ) {
-                $html .= '<option value="">' . __( '-- select --', 'lambry-shorts' ) . '</option>';
+                $html .= '<option value="">' . __( '-- select --', 'shorts' ) . '</option>';
             }
             foreach ( $field['values'] as $value => $name ) {
                 $html .= "<option value='{$value}'>{$name}</option>";

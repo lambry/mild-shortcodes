@@ -3,45 +3,45 @@
 (function( $ ) {
 
     // Tabs
-    var tabs = $( '.ls-tabs' );
+    var tabs = $( '.shorts-tabs' );
     if ( tabs.length > 0 ) {
 
-        var tabNav = tabs.find( '.ls-tab-nav li' ),
-            tabPanes = $( '.ls-tab-pane' );
+        var tabNav = tabs.find( '.shorts-tab-nav li' ),
+            tabPanes = $( '.shorts-tab-pane' );
 
-        tabNav.first().addClass( 'ls-tab-active' );
-        tabPanes.hide().first().show().addClass( 'ls-tab-active' );
+        tabNav.first().addClass( 'shorts-tab-active' );
+        tabPanes.hide().first().show().addClass( 'shorts-tab-active' );
 
         tabNav.on( 'click', function() {
-            tabNav.removeClass( 'ls-tab-active' );
-            $(this).addClass( 'ls-tab-active' );
-            tabPanes.removeClass( 'ls-tab-active' ).hide();
-            $( '#' + $(this).data( 'tab' ) ).addClass( 'ls-tab-active' ).show();
+            tabNav.removeClass( 'shorts-tab-active' );
+            $(this).addClass( 'shorts-tab-active' );
+            tabPanes.removeClass( 'shorts-tab-active' ).hide();
+            $( '#' + $(this).data( 'tab' ) ).addClass( 'shorts-tab-active' ).show();
         });
 
     }
 
     // Accordion
-    var accordion = $( '.ls-accordion' );
+    var accordion = $( '.shorts-accordion' );
     if ( accordion.length > 0 ) {
 
-        accordion.on( 'click', '.ls-accordion-title a', function(e) {
+        accordion.on( 'click', '.shorts-accordion-title a', function(e) {
             e.preventDefault();
-            $( this ).parents( '.ls-accordion' ).find( '.ls-accordion-content' ).slideToggle();
+            $( this ).parents( '.shorts-accordion' ).find( '.shorts-accordion-content' ).slideToggle();
         });
 
     }
 
     // Inline login
-    var login = $( '.ls-login-inline' );
+    var login = $( '.shorts-login-inline' );
     if ( login.length > 0 ) {
 
         login.find( '.input' ).focusin( function() {
-            $(this).parent( 'p' ).find( 'label' ).addClass( 'ls-is-hidden' );
+            $(this).parent( 'p' ).find( 'label' ).addClass( 'shorts-is-hidden' );
         });
         login.find( '.input' ).focusout( function() {
             if ( $(this).val() === '' ) {
-                $(this).parent( 'p' ).find( 'label' ).removeClass( 'ls-is-hidden' );
+                $(this).parent( 'p' ).find( 'label' ).removeClass( 'shorts-is-hidden' );
             }
         });
 

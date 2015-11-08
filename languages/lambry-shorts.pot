@@ -1,8 +1,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: lambry-shorts\n"
-"POT-Creation-Date: 2015-11-02 19:18+1100\n"
+"Project-Id-Version: shorts\n"
+"POT-Creation-Date: 2015-11-05 20:36+1100\n"
 "PO-Revision-Date: 2015-03-07 14:04+1000\n"
 "Last-Translator: BSO\n"
 "Language-Team: \n"
@@ -21,12 +21,8 @@ msgstr ""
 msgid "Sorry, there was an error fetching shortcodes."
 msgstr ""
 
-#: admin/generate.php:48
+#: admin/generate.php:50
 msgid "Add New"
-msgstr ""
-
-#: admin/includes/create.php:81
-msgid "-- select --"
 msgstr ""
 
 #: admin/includes/defaults.php:24
@@ -2484,6 +2480,10 @@ msgstr ""
 
 #: admin/includes/defaults.php:747
 msgid "Youtube Square"
+msgstr ""
+
+#: admin/includes/fields.php:81
+msgid "-- select --"
 msgstr ""
 
 #: admin/includes/setup.php:29 admin/includes/setup.php:181

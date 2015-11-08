@@ -2,12 +2,12 @@
 /**
  * Shortcodes Setup
  *
- * @package Lambry\Shorts
+ * @package Shorts
  */
 
 namespace Lambry\Shorts;
 
-if ( ! defined( 'WPINC' ) ) die;
+defined( 'ABSPATH' ) || exit;
 
 /* Setup Class */
 class Setup {
@@ -19,240 +19,240 @@ class Setup {
 
         $shortcodes = [
             'row' => [
-                'heading' => __( 'Columns', 'lambry-shorts' ),
+                'heading' => __( 'Columns', 'shorts' ),
                 'icon' => 'columns',
                 'child' => 'col',
                 'clone' => true,
                 'wrap' => true,
                 'fields' => [
                     'width' => [
-                        'name' => __( 'Width', 'lambry-shorts' ),
+                        'name' => __( 'Width', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::grid()
                     ]
                 ]
             ],
             'icon' => [
-                'heading' => __( 'Icon', 'lambry-shorts' ),
+                'heading' => __( 'Icon', 'shorts' ),
                 'icon' => 'star',
                 'fields' => [
                     'color' => [
-                        'name' => __( 'Color', 'lambry-shorts' ),
+                        'name' => __( 'Color', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::colors()
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'lambry-shorts' ),
+                        'name' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ],
                     'size' => [
-                        'name' => __( 'Size', 'lambry-shorts' ),
+                        'name' => __( 'Size', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::sizes()
                     ],
 					'align' => [
-						'name' => __( 'Align', 'lambry-shorts' ),
+						'name' => __( 'Align', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::align()
 					],
                     'target' => [
-                        'name' => __( 'Target', 'lambry-shorts' ),
+                        'name' => __( 'Target', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::target()
                     ],
                     'link' => [
-                        'name' => __( 'Link to', 'lambry-shorts' ),
+                        'name' => __( 'Link to', 'shorts' ),
                         'type' => 'text',
-                        'placeholder' => __( 'i.e. http://example.com', 'lambry-shorts' )
+                        'placeholder' => __( 'i.e. http://example.com', 'shorts' )
                     ]
                 ]
             ],
             'button' => [
-                'heading' => __( 'Button', 'lambry-shorts' ),
+                'heading' => __( 'Button', 'shorts' ),
                 'icon' => 'plus-circle',
                 'wrap' => true,
                 'fields' => [
                     'color' => [
-                        'name' => __( 'Color', 'lambry-shorts' ),
+                        'name' => __( 'Color', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::colors()
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'lambry-shorts' ),
+                        'name' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ],
                     'size' => [
-                        'name' => __( 'Size', 'lambry-shorts' ),
+                        'name' => __( 'Size', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::sizes()
                     ],
 					'align' => [
-						'name' => __( 'Align', 'lambry-shorts' ),
+						'name' => __( 'Align', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::align()
 					],
                     'target' => [
-                        'name' => __( 'Target', 'lambry-shorts' ),
+                        'name' => __( 'Target', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::target()
                     ],
                     'link' => [
-                        'name' => __( 'Link to', 'lambry-shorts' ),
+                        'name' => __( 'Link to', 'shorts' ),
                         'type' => 'text',
-                        'placeholder' => __( 'i.e. http://example.com', 'lambry-shorts' )
+                        'placeholder' => __( 'i.e. http://example.com', 'shorts' )
                     ]
                 ]
             ],
             'panel' => [
-                'heading' => __( 'Panel', 'lambry-shorts' ),
+                'heading' => __( 'Panel', 'shorts' ),
                 'icon' => 'info-circle',
                 'wrap' => true,
                 'fields' => [
                     'color' => [
-                        'name' => __( 'Color', 'lambry-shorts' ),
+                        'name' => __( 'Color', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::colors()
                     ],
 					'icon' => [
-						'name' => __( 'Icon', 'lambry-shorts' ),
+						'name' => __( 'Icon', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::icons()
 					],
                     'size' => [
-                        'name' => __( 'Size', 'lambry-shorts' ),
+                        'name' => __( 'Size', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::sizes()
                     ],
 					'align' => [
-						'name' => __( 'Align', 'lambry-shorts' ),
+						'name' => __( 'Align', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::align()
 					]
                 ]
             ],
             'tabs' => [
-                'heading' => __( 'Tabs', 'lambry-shorts' ),
+                'heading' => __( 'Tabs', 'shorts' ),
                 'icon' => 'folder',
                 'child' => 'tab',
                 'clone' => true,
                 'wrap' => true,
                 'fields' => [
                     'title' => [
-                        'name' => __( 'Title', 'lambry-shorts' ),
+                        'name' => __( 'Title', 'shorts' ),
                         'type' => 'text'
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'lambry-shorts' ),
+                        'name' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ]
                 ]
             ],
             'accordion' => [
-                'heading' => __( 'Accordion', 'lambry-shorts' ),
+                'heading' => __( 'Accordion', 'shorts' ),
                 'icon' => 'plus',
                 'child' => 'accordion',
                 'clone' => true,
                 'fields' => [
                     'title' => [
-                        'name' => __( 'Title', 'lambry-shorts' ),
+                        'name' => __( 'Title', 'shorts' ),
                         'type' => 'text'
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'lambry-shorts' ),
+                        'name' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ]
                 ]
             ],
             'align' => [
-                'heading' => __( 'Alignment', 'lambry-shorts' ),
+                'heading' => __( 'Alignment', 'shorts' ),
                 'icon' => 'angle-double-right',
                 'wrap' => true,
                 'fields' => [
                     'align' => [
-                        'name' => __( 'Align', 'lambry-shorts' ),
+                        'name' => __( 'Align', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::align()
                     ],
                     'width' => [
-                        'name' => __( 'Width', 'lambry-shorts' ),
+                        'name' => __( 'Width', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::grid()
                     ]
                 ]
             ],
             'posts'=> [
-                'heading' => __( 'Posts', 'lambry-shorts' ),
+                'heading' => __( 'Posts', 'shorts' ),
                 'icon' => 'newspaper-o',
                 'fields' => [
                     'no' => [
-                        'name' => __( 'Number', 'lambry-shorts' ),
+                        'name' => __( 'Number', 'shorts' ),
                         'type' => 'text',
-                        'placeholder' => __( 'default: 5', 'lambry-shorts' )
+                        'placeholder' => __( 'default: 5', 'shorts' )
                     ],
                     'date' => [
-                        'name' => __( 'Show Date', 'lambry-shorts' ),
+                        'name' => __( 'Show Date', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'image' => [
-                        'name' => __( 'Show Image', 'lambry-shorts' ),
+                        'name' => __( 'Show Image', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'cat' => [
-                        'name' => __( 'Category', 'lambry-shorts' ),
+                        'name' => __( 'Category', 'shorts' ),
                         'type' => 'text',
-                        'placeholder' => __( 'i.e. News', 'lambry-shorts' )
+                        'placeholder' => __( 'i.e. News', 'shorts' )
                     ],
                     'tag' => [
-                        'name' => __( 'Tag', 'lambry-shorts' ),
+                        'name' => __( 'Tag', 'shorts' ),
                         'type' => 'text',
-                        'placeholder' => __( 'i.e. Featured', 'lambry-shorts' )
+                        'placeholder' => __( 'i.e. Featured', 'shorts' )
                     ],
                     'type' => [
-                        'name' => __( 'Post Type', 'lambry-shorts' ),
+                        'name' => __( 'Post Type', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::types()
                     ],
                     'tax' => [
-                        'name' => __( 'Custom Taxomomy', 'lambry-shorts' ),
+                        'name' => __( 'Custom Taxomomy', 'shorts' ),
                         'type' => 'text',
-                        'placeholder' => __( 'i.e. Genre:Jazz', 'lambry-shorts' )
+                        'placeholder' => __( 'i.e. genre:jazz', 'shorts' )
                     ]
                 ]
             ],
             'subpages' => [
-                'heading' => __( 'Subpages', 'lambry-shorts' ),
+                'heading' => __( 'Subpages', 'shorts' ),
                 'icon' => 'level-down',
                 'fields' => [
                     'title' => [
-                        'name' => __( 'Title', 'lambry-shorts' ),
+                        'name' => __( 'Title', 'shorts' ),
                         'type' => 'text'
                     ],
                     'direct' => [
-                        'name' => __( 'Direct Subs Only', 'lambry-shorts' ),
+                        'name' => __( 'Direct Subs Only', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'flatten' => [
-                        'name' => __( 'Flatten All Subs', 'lambry-shorts' ),
+                        'name' => __( 'Flatten All Subs', 'shorts' ),
                         'type' => 'checkbox'
                     ]
                 ]
             ],
             'restrict' => [
-                'heading' => __( 'Restrict', 'lambry-shorts' ),
+                'heading' => __( 'Restrict', 'shorts' ),
                 'icon' => 'eye-slash',
                 'wrap' => true,
                 'fields' => [
                     'message' => [
-                        'name' => __( 'Message', 'lambry-shorts' ),
+                        'name' => __( 'Message', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e Please login.'
                     ],
                     'roles' => [
-                        'name' => __( 'Roles', 'lambry-shorts' ),
+                        'name' => __( 'Roles', 'shorts' ),
                         'type' => 'select',
                         'attr' => 'multiple',
                         'values' => Defaults::roles()
@@ -260,38 +260,38 @@ class Setup {
                 ]
             ],
             'login' => [
-                'heading' => __( 'Login Form', 'lambry-shorts' ),
+                'heading' => __( 'Login Form', 'shorts' ),
                 'icon' => 'lock',
                 'fields' => [
                     'redirect' => [
-                        'name' => __( 'Redirect To', 'lambry-shorts' ),
+                        'name' => __( 'Redirect To', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e. http://example-url.com'
                     ],
                     'register' => [
-                        'name' => __( 'Register Link', 'lambry-shorts' ),
+                        'name' => __( 'Register Link', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'display' => [
-                        'name' => __( 'Style', 'lambry-shorts' ),
+                        'name' => __( 'Style', 'shorts' ),
                         'type' => 'select',
                         'values' => [
-                            'block' => __( 'Block', 'lambry-shorts' ),
-                            'inline' => __( 'Inline', 'lambry-shorts' )
+                            'block' => __( 'Block', 'shorts' ),
+                            'inline' => __( 'Inline', 'shorts' )
                         ]
                     ]
                 ]
             ],
             'sitemap' => [
-                'heading' => __( 'Sitemap', 'lambry-shorts' ),
+                'heading' => __( 'Sitemap', 'shorts' ),
                 'icon' => 'sitemap',
                 'fields' => [
                     'menus' => [
-                        'name' => __( 'Menus', 'lambry-shorts' ),
+                        'name' => __( 'Menus', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'types' => [
-                        'name' => __( 'Post Types', 'lambry-shorts' ),
+                        'name' => __( 'Post Types', 'shorts' ),
                         'type' => 'select',
                         'attr' => 'multiple',
                         'values' => Defaults::types()
@@ -299,32 +299,32 @@ class Setup {
                 ]
             ],
             'map' => [
-                'heading' => __( 'Google Map', 'lambry-shorts' ),
+                'heading' => __( 'Google Map', 'shorts' ),
                 'icon' => 'map-marker',
                 'fields' => [
                     'location' => [
-                        'name' => __( 'Location', 'lambry-shorts' ),
+                        'name' => __( 'Location', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e. 123 The Street, Melbourne'
                     ],
                     'width' => [
-                        'name' => __( 'Width', 'lambry-shorts' ),
+                        'name' => __( 'Width', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'default: 100%'
                     ]
                 ]
             ],
             'iframe' => [
-                'heading' => __( 'iFrame', 'lambry-shorts' ),
+                'heading' => __( 'iFrame', 'shorts' ),
                 'icon' => 'square-o',
                 'fields' => [
                     'url' => [
-                        'name' => __( 'Url', 'lambry-shorts' ),
+                        'name' => __( 'Url', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e. http://iframe.com'
                     ],
                     'width' => [
-                        'name' => __( 'Width', 'lambry-shorts' ),
+                        'name' => __( 'Width', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'default: 100%'
                     ]
@@ -332,7 +332,7 @@ class Setup {
             ]
         ];
 
-        return apply_filters( 'lambry-shorts', $shortcodes );
+        return apply_filters( 'shorts/shortcodes', $shortcodes );
 
     }
 

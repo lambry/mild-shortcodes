@@ -2,7 +2,7 @@
 -------------------------------------------------------------- */
 
 /* Buttons */
-.ls-button {
+.shorts-button {
 	color: $color-white;
 	padding: 0.5em $layout-padding;
 	margin: 0.5em 0 $layout-margin 0;
@@ -22,9 +22,9 @@
 		color: darken($color-white, 10%);
 	}
 }
-.ls-background-yellow, 
-.ls-background-silver, 
-.ls-background-white {
+.shorts-background-yellow, 
+.shorts-background-silver, 
+.shorts-background-white {
 	color: $color-black;
 	&:hover, &:active, &:focus {
 		color: $color-black;
@@ -35,7 +35,7 @@
 }
 
 /* Panels */
-.ls-panel {
+.shorts-panel {
 	color: $color-white;
 	padding: $layout-padding ($layout-padding * 2);
 	margin: 0.5em 0 $layout-margin 0;
@@ -44,14 +44,14 @@
 }
 
 /* Tabs */
-.ls-tabs {
+.shorts-tabs {
 	margin-bottom: $layout-margin;
-	.ls-tab-nav {
+	.shorts-tab-nav {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
-	.ls-tab-item {
+	.shorts-tab-item {
 		float: left;
 		cursor: pointer;
 		padding: 0.5em 0.75em;
@@ -61,20 +61,20 @@
 		background-color: lighten($color-silver, 2.5%);
 		border-radius: $style-radius $style-radius 0 0;
 	}
-	.ls-tab-active {
+	.shorts-tab-active {
 		background-color: $color-white;
 	}
-	.ls-tab-panes {
+	.shorts-tab-panes {
 		clear: both;
 	}
-	.ls-tab-pane {
+	.shorts-tab-pane {
 		padding: 1em 1.25em;
 		border: 1px solid $color-silver;
 	}
 }
 
 /* Accordions */
-.ls-accordion {
+.shorts-accordion {
 	margin: 0.5em 0;
 	.fa {
 		padding: 0.2em 0.5em;
@@ -83,7 +83,7 @@
 	.fa-plus {
 		float: right;
 	}
-	.ls-accordion-title {
+	.shorts-accordion-title {
 		margin: 0;
 		line-height: 1;
 		cursor: pointer;
@@ -92,34 +92,34 @@
 			display: block;
 		}
 	}
-	.ls-accordion-content {
+	.shorts-accordion-content {
 		display: none;
 		padding: $layout-padding 0;
 	}
 }
 
 /* Posts */
-.ls-posts {
-	.ls-post {
+.shorts-posts {
+	.shorts-post {
 		margin-bottom: $layout-margin;
 	}
-	.ls-post-title {
+	.shorts-post-title {
 		margin-bottom: 0;
 	}
-	.ls-post-date {
+	.shorts-post-date {
 		font-size: 0.75rem;
 		font-style: italic;
 		color: lighten($color-grey, 10%);
 		margin-bottom: 0.5em;
 	}
-	.ls-post-image {
+	.shorts-post-image {
 		float: left;
 		margin: 0 $layout-padding 0.5em 0;
 	}
 }
 
 /* Login */
-.ls-login-inline {
+.shorts-login-inline {
 	.login-username,
 	.login-password {
 		color: $color-grey;
@@ -133,7 +133,7 @@
 		input {
 			width: 100%;
 		}
-		.ls-is-hidden {
+		.shorts-is-hidden {
 			opacity: 0;
 			top: -0.3em;
 		}

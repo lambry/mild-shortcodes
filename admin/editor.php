@@ -2,12 +2,12 @@
 /**
  * Generator
  *
- * @package Lambry\Shorts
+ * @package Shorts
  */
 
 namespace Lambry\Shorts;
 
-if ( ! defined( 'WPINC' ) ) die;
+defined( 'ABSPATH' ) || exit;
 
 /* Editor Class */
 class Editor {
@@ -37,23 +37,23 @@ class Editor {
 
 	    // Add editor button css
 		add_action( 'admin_head', function() {
-			echo '<style>.mce-i-lambry_shorts:before { font-family: dashicons !important; content: "\f475"; }</style>';
+			echo '<style>.mce-i-shorts:before { font-family: dashicons !important; content: "\f475"; }</style>';
 		});
 
 		// Add editor popup scripts
 	    add_filter( 'mce_external_plugins', function( $plugin_array ) {
-	        $plugin_array['lambry_shorts'] = plugins_url( 'assets/scripts/editor.min.js', __FILE__ );
+	        $plugin_array['shorts'] = plugins_url( 'assets/scripts/editor.min.js', __FILE__ );
 	        return $plugin_array;
 	    });
 
 	    // Register editor button
 	    add_filter( 'mce_buttons', function( $buttons ) {
-	        array_push( $buttons, 'lambry_shorts' );
+	        array_push( $buttons, 'shorts' );
 	        return $buttons;
 	    });
 
 	    // Add AJAX action to generate html
-        add_action( 'wp_ajax_lambry_shorts', [ $this, 'generate_html' ] );
+        add_action( 'wp_ajax_shorts_generate', [ $this, 'generate_html' ] );
 
 	}
 
@@ -67,21 +67,21 @@ class Editor {
 	 */
 	public function generate_html() {
 		
-		if ( $_POST['action'] !== 'lambry_shorts' ) {
-			echo '<div class="error"><p>' . __( 'Sorry, there was an error fetching shortcodes.', 'lambry-shorts' ) . '</p></div>';
+		if ( $_POST['action'] !== 'shorts_generate' ) {
+			echo '<div class="error"><p>' . __( 'Sorry, there was an error fetching shortcodes.', 'shorts' ) . '</p></div>';
 			die();
 		}
 
 		// Require necessities
-		require_once 'includes/defaults.php';
-		require_once 'includes/setup.php';
-		require_once 'includes/create.php';
+		require 'includes/defaults.php';
+		require 'includes/fields.php';
+		require 'includes/setup.php';
 
 		// Set variables
 		$shortcodes = Setup::shortcodes();
 		
 		// Generate the html
-		require_once 'generate.php';
+		require 'generate.php';
 
 		die();
 

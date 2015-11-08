@@ -2,7 +2,7 @@
 
 A simple set of shortcodes.
 
-If your theme already includes Font Awesome add: `add_theme_support( 'font-awesome' );`
+If your theme already includes Font Awesome use: `add_theme_support( 'font-awesome' );`
 
 ###Main Shortcodes
 * Rows/Columns

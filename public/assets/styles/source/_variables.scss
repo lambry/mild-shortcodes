@@ -20,20 +20,20 @@ $color-green: #00b429;
 $color-orange: #d65015;
 $color-yellow: #ebdc2f;
 $color-red: #d31f16;
-$color-silver: #DDDDDD;
+$color-silver: #efefef;
 $color-grey: #555555;
 $color-black: #222222;
 $color-white: #ffffff;
 
 /* Maps */
 $colors: (
-	'blue': #1882f4,
-	'green': #00b429,
-	'orange': #d65015,
-	'yellow': #ebdc2f,
-	'red': #d31f16,
-	'silver': #DDDDDD,
-	'grey': #555555,
-	'black': #222222,
-	'white': #FFFFFF
+	'blue': $color-blue,
+	'green': $color-green,
+	'orange': $color-orange,
+	'yellow': $color-yellow,
+	'red': $color-red,
+	'silver': $color-silver,
+	'grey': $color-grey,
+	'black': $color-black,
+	'white': $color-white
 );

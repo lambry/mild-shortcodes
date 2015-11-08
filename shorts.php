@@ -6,16 +6,17 @@
  * Version: 0.2.0
  * Author: Lambry
  * Author URI: http://lambry.com
- * Text Domain: lambry-shorts
+ * Text Domain: shorts
  * Domain Path: /languages
  */
 
 namespace Lambry\Shorts;
 
-if ( ! defined( 'WPINC' ) ) die;
+defined( 'ABSPATH' ) || exit;
 
 /* Init Class */
 class Init {
+
 	/*
 	* Construct
 	*/
@@ -26,7 +27,7 @@ class Init {
 		$this->shortcodes();
 
         // Load text domain
-        load_plugin_textdomain( 'lambry-shorts', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+        load_plugin_textdomain( 'shorts', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 		// Add admin assets
         add_action( 'admin_enqueue_scripts', [ $this, 'admin_assets'] );
@@ -78,11 +79,11 @@ class Init {
 
 		// Add styles
         wp_enqueue_style( 'font-awesome', plugin_dir_url( __FILE__ ) . 'includes/font-awesome/css/font-awesome.min.css', [], '4.4.0' );
-        wp_enqueue_style( 'select2', plugin_dir_url( __FILE__ ) . 'includes/select2/css/select2.min.css', [], '4.0.0' );
-        wp_enqueue_style( 'ls-admin', plugin_dir_url( __FILE__ ) . 'admin/assets/styles/admin.css', ['font-awesome', 'select2'], '0.2.0' );
+        wp_enqueue_style( 'select2-css', plugin_dir_url( __FILE__ ) . 'includes/select2/css/select2.min.css', [], '4.0.0' );
+        wp_enqueue_style( 'shorts-admin-styles', plugin_dir_url( __FILE__ ) . 'admin/assets/styles/admin.css', ['font-awesome', 'select2-css'], '0.2.0' );
 		// Add scripts
-        wp_enqueue_script( 'select2', plugin_dir_url( __FILE__ ) . 'includes/select2/js/select2.min.js', ['jquery'], '4.0.0', true );
-        wp_enqueue_script( 'ls-admin', plugin_dir_url( __FILE__ ) . 'admin/assets/scripts/admin.min.js', ['jquery'], '0.2.0', true );
+        wp_enqueue_script( 'select2-js', plugin_dir_url( __FILE__ ) . 'includes/select2/js/select2.min.js', ['jquery'], '4.0.0', true );
+        wp_enqueue_script( 'shorts-admin-scripts', plugin_dir_url( __FILE__ ) . 'admin/assets/scripts/admin.min.js', ['jquery'], '0.2.0', true );
 
 	}
 
@@ -100,9 +101,9 @@ class Init {
         	wp_enqueue_style( 'font-awesome', plugin_dir_url( __FILE__ ) . 'includes/font-awesome/css/font-awesome.min.css', [], '4.4.0' );
         }
 		// Add styles
-        wp_enqueue_style( 'ls-public', plugin_dir_url( __FILE__ ) . 'public/assets/styles/public.css', [], '0.2.0' );
+        wp_enqueue_style( 'shorts-public-styles', plugin_dir_url( __FILE__ ) . 'public/assets/styles/public.css', [], '0.2.0' );
 		// Add scripts
-        wp_enqueue_script( 'ls-public', plugin_dir_url( __FILE__ ) . 'public/assets/scripts/public.min.js', ['jquery'], '0.2.0', true );
+        wp_enqueue_script( 'shorts-public-scripts', plugin_dir_url( __FILE__ ) . 'public/assets/scripts/public.min.js', ['jquery'], '0.2.0', true );
 
 	}
 

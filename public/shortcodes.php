@@ -2,12 +2,12 @@
 /**
  * Shortcodes
  *
- * @package Lambry\Shorts
+ * @package Shorts
  */
 
 namespace Lambry\Shorts;
 
-if ( ! defined( 'WPINC' ) ) die;
+defined( 'ABSPATH' ) || exit;
 
 /* Shortcodes Class */
 class Shortcodes {
@@ -25,24 +25,24 @@ class Shortcodes {
     	if ( is_admin() ) return;
 
 		// Add shortcodes
-		add_shortcode( __( 'row', 'lambry-shorts' ),       [ $this, 'row' ] );
-		add_shortcode( __( 'col', 'lambry-shorts' ),       [ $this, 'col' ] );
-		add_shortcode( __( 'icon', 'lambry-shorts' ),      [ $this, 'icon' ] );
-		add_shortcode( __( 'button', 'lambry-shorts' ),    [ $this, 'button' ] );
-		add_shortcode( __( 'panel', 'lambry-shorts' ),     [ $this, 'panel' ] );
-		add_shortcode( __( 'tabs', 'lambry-shorts' ),      [ $this, 'tabs' ] );
-		add_shortcode( __( 'tab', 'lambry-shorts' ),       [ $this, 'tab' ] );
-		add_shortcode( __( 'accordion', 'lambry-shorts' ), [ $this, 'accordion' ] );
-		add_shortcode( __( 'align', 'lambry-shorts' ),     [ $this, 'align' ] );
-		add_shortcode( __( 'posts', 'lambry-shorts' ),     [ $this, 'posts' ] );
-		add_shortcode( __( 'subpages', 'lambry-shorts' ),  [ $this, 'subpages' ] );
-		add_shortcode( __( 'restrict', 'lambry-shorts' ),  [ $this, 'restrict' ] );
-		add_shortcode( __( 'login', 'lambry-shorts' ),     [ $this, 'login' ] );
-		add_shortcode( __( 'sitemap', 'lambry-shorts' ),   [ $this, 'sitemap' ] );
-		add_shortcode( __( 'map', 'lambry-shorts' ),       [ $this, 'map' ] );
-		add_shortcode( __( 'iframe', 'lambry-shorts' ),    [ $this, 'iframe' ] );
-		add_shortcode( __( 'image', 'lambry-shorts' ),     [ $this, 'image' ] );
-		add_shortcode( __( 'link', 'lambry-shorts' ),      [ $this, 'link' ] );
+		add_shortcode( __( 'row', 'shorts' ),       [ $this, 'row' ] );
+		add_shortcode( __( 'col', 'shorts' ),       [ $this, 'col' ] );
+		add_shortcode( __( 'icon', 'shorts' ),      [ $this, 'icon' ] );
+		add_shortcode( __( 'button', 'shorts' ),    [ $this, 'button' ] );
+		add_shortcode( __( 'panel', 'shorts' ),     [ $this, 'panel' ] );
+		add_shortcode( __( 'tabs', 'shorts' ),      [ $this, 'tabs' ] );
+		add_shortcode( __( 'tab', 'shorts' ),       [ $this, 'tab' ] );
+		add_shortcode( __( 'accordion', 'shorts' ), [ $this, 'accordion' ] );
+		add_shortcode( __( 'align', 'shorts' ),     [ $this, 'align' ] );
+		add_shortcode( __( 'posts', 'shorts' ),     [ $this, 'posts' ] );
+		add_shortcode( __( 'subpages', 'shorts' ),  [ $this, 'subpages' ] );
+		add_shortcode( __( 'restrict', 'shorts' ),  [ $this, 'restrict' ] );
+		add_shortcode( __( 'login', 'shorts' ),     [ $this, 'login' ] );
+		add_shortcode( __( 'sitemap', 'shorts' ),   [ $this, 'sitemap' ] );
+		add_shortcode( __( 'map', 'shorts' ),       [ $this, 'map' ] );
+		add_shortcode( __( 'iframe', 'shorts' ),    [ $this, 'iframe' ] );
+		add_shortcode( __( 'image', 'shorts' ),     [ $this, 'image' ] );
+		add_shortcode( __( 'link', 'shorts' ),      [ $this, 'link' ] );
 
     }
 
@@ -60,7 +60,7 @@ class Shortcodes {
 	        'class' => ''
 	    ], $params) );
 
-	    return "<div class='ls-row {$class}'>" . do_shortcode( $content ) . "</div>";
+	    return "<div class='shorts-row {$class}'>" . do_shortcode( $content ) . "</div>";
 
 	}
 
@@ -79,7 +79,7 @@ class Shortcodes {
 	        'class' => ''
 	    ], $params) );
 
-	    return "<div class='ls-col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
+	    return "<div class='shorts-col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
 
 	}
 
@@ -102,7 +102,7 @@ class Shortcodes {
 	        'class'  => ''
 	    ], $params) );
 
-	    $html = "<i class='ls-icon fa fa-{$icon} ls-text-{$color} ls-{$size} ls-align{$align} align{$align} {$class}'></i>";
+	    $html = "<i class='shorts-icon fa fa-{$icon} shorts-text-{$color} shorts-{$size} shorts-align{$align} align{$align} {$class}'></i>";
 
 	    return self::wrap_with_anchor( $link, $target, $html );
 
@@ -132,7 +132,7 @@ class Shortcodes {
 	    $el = ( $link ) ? 'a' : 'button';
 	    $href = ( $link ) ? " href='{$link}' target='_{$target}'" : '';
 
-	    return "<{$el}{$href} class='ls-button ls-background-{$color} ls-{$size} ls-align{$align} align{$align} {$class}'>{$icon}" . do_shortcode( $content ) . "</{$el}>";
+	    return "<{$el}{$href} class='shorts-button shorts-background-{$color} shorts-{$size} shorts-align{$align} align{$align} {$class}'>{$icon}" . do_shortcode( $content ) . "</{$el}>";
 	
 	}
 
@@ -156,7 +156,7 @@ class Shortcodes {
 
 	    $icon = self::create_icon( $icon );
 
-	    return "<div class='ls-panel ls-background-{$color} ls-{$size} ls-align{$align} align{$align} {$class}'>{$icon}" . do_shortcode( $content ) . "</div>";
+	    return "<div class='shorts-panel shorts-background-{$color} shorts-{$size} shorts-align{$align} align{$align} {$class}'>{$icon}" . do_shortcode( $content ) . "</div>";
 
 	}
 
@@ -176,14 +176,14 @@ class Shortcodes {
 
 		$panes = do_shortcode( $content );
 
-		$nav = '<ul class="ls-tab-nav">';
+		$nav = '<ul class="shorts-tab-nav">';
 			foreach ( self::$tabs as $tab ) {
 				$icon = self::create_icon( $tab['icon'] );
-				$nav .= "<li class='{$tab['class']} ls-tab-item' data-tab='{$tab['id']}'>{$icon}{$tab['title']}</li>";
+				$nav .= "<li class='{$tab['class']} shorts-tab-item' data-tab='{$tab['id']}'>{$icon}{$tab['title']}</li>";
 			}
 		$nav .= '</ul>';
 
-		return "<div class='ls-tabs {$class}'>{$nav}<div class='ls-tab-panes'>{$panes}</div></div>";
+		return "<div class='shorts-tabs {$class}'>{$nav}<div class='shorts-tab-panes'>{$panes}</div></div>";
 
 	}
 
@@ -212,7 +212,8 @@ class Shortcodes {
 			'class' => $class
 	    ];
 
-	    return "<div id='{$id}' class='ls-tab-pane {$class}'>" . do_shortcode( $content ) . "</div>";
+	    return "<div id='{$id}' class='shorts-tab-pane {$class}'>" . do_shortcode( $content ) . "</div>";
+
 	}
 
 	/*
@@ -235,9 +236,9 @@ class Shortcodes {
 	    $icon = self::create_icon( $icon );
 	    $icon_plus = self::create_icon( 'plus' );
 
-	    $accordion = "<div id='{$id}' class='ls-accordion {$class}'>
-    		<h3 class='ls-accordion-title'><a href='#{$id}'>{$icon}{$title}{$icon_plus}</a></h3>
-            <div class='ls-accordion-content'>" . do_shortcode( $content ) . "</div>
+	    $accordion = "<div id='{$id}' class='shorts-accordion {$class}'>
+    		<h3 class='shorts-accordion-title'><a href='#{$id}'>{$icon}{$title}{$icon_plus}</a></h3>
+            <div class='shorts-accordion-content'>" . do_shortcode( $content ) . "</div>
         </div>";
 
         return $accordion;
@@ -260,7 +261,7 @@ class Shortcodes {
 	        'class' => ''
 	    ], $params) );
 	    
-	    return "<div class='ls-align ls-align{$align} align{$align} col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
+	    return "<div class='shorts-align shorts-align{$align} align{$align} col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
 	
 	}
 
@@ -295,13 +296,13 @@ class Shortcodes {
 	    // Post specific args
 	    if ( $type === 'post' && ( $cat || $tag ) ) {
 		    $post_args = [
-		        'category_name'  => sanitize_title_with_dashes( $cat ),
-		        'tag'            => sanitize_title_with_dashes( $tag )
+		        'category_name' => sanitize_title_with_dashes( $cat ),
+		        'tag'           => sanitize_title_with_dashes( $tag )
 		    ];
 		    $args = array_merge( $args, $post_args );
 	    }
 
-	    // Custom post specific args
+	    // Custom post type specific args
 	    if ( $type !== 'post' && $tax ) {
 	    	$taxonomy = explode( ':', $tax );
 	    	if ( count( $taxonomy ) === 2 ) {
@@ -311,17 +312,17 @@ class Shortcodes {
 
 	    $posts = get_posts( $args );
 
-	    $html = "<div class='ls-posts ls-post-{$type} {$class}'>";
+	    $html = "<div class='shorts-posts shorts-post-{$type} {$class}'>";
 	        foreach ( $posts as $post ) : setup_postdata( $post );
-	            $html .= '<div class="ls-post">';
+	            $html .= '<div class="shorts-post">';
 	            if ( $image && has_post_thumbnail( $post->ID ) ) {
-	            	$html .= '<a href="' . get_permalink() . '" class="ls-post-image">' . get_the_post_thumbnail( $post->ID, $size ) . '</a>';
+	            	$html .= '<a href="' . get_permalink() . '" class="shorts-post-image">' . get_the_post_thumbnail( $post->ID, $size ) . '</a>';
 	            }
-	            $html .= '<h4 class="ls-post-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4>';
+	            $html .= '<h4 class="shorts-post-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4>';
 	            if ( $date ) {
-	            	$html .= "<div class='ls-post-date'>" . get_the_date() . "</div>";
+	            	$html .= "<div class='shorts-post-date'>" . get_the_date() . "</div>";
 	            }
-	            $html .= '<div class="ls-post-content">' . get_the_excerpt() . '</div></div>';
+	            $html .= '<div class="shorts-post-content">' . get_the_excerpt() . '</div></div>';
 	        endforeach; wp_reset_postdata();
 	    $html .= '</div>';
 
@@ -358,7 +359,7 @@ class Shortcodes {
 	    ];
 	    $subpages = wp_list_pages( $args );
 
-	    $html = "<nav class='ls-subpages {$class}'>";
+	    $html = "<nav class='shorts-subpages {$class}'>";
 	    	$html .= "<h4>{$title}</h4>";
 	        $html .= "<ul>{$subpages}</ul>";
 	    $html .= '</nav>';
@@ -394,7 +395,7 @@ class Shortcodes {
 	    	return $content;
 	    }
 
-		return "<div class='ls-restrict {$class}'>{$message}</div>";
+		return "<div class='shorts-restrict {$class}'>{$message}</div>";
 
 	}
 
@@ -419,14 +420,14 @@ class Shortcodes {
             'redirect' => $redirect
         ];
 
-        $html = "<div class='ls-login ls-login-{$display} {$class}'>";
+        $html = "<div class='shorts-login shorts-login-{$display} {$class}'>";
             if ( ! is_user_logged_in() ) {
                 $html .= wp_login_form( $login_options );
                 $html .= ( $register ) ? wp_register( '<p><i class="fa fa-angle-double-right"></i> ', '</p>', false ) : '';
             } else {
                 $current_user = wp_get_current_user();
-                $html .= '<span class="ls-loggedin-message">' . __( 'Hello ', 'lambry-shorts' ) . ' ' . $current_user->user_login .',</span> ';
-                $html .= '<a href="' . wp_logout_url() .'" title="Logout" class="ls-logout-button">' . __( 'Logout', 'lambry-shorts' ) . '</a>';
+                $html .= '<span class="shorts-loggedin-message">' . __( 'Hello ', 'shorts' ) . ' ' . $current_user->user_login .',</span> ';
+                $html .= '<a href="' . wp_logout_url() .'" title="Logout" class="shorts-logout-button">' . __( 'Logout', 'shorts' ) . '</a>';
             }
         $html .= '</div>';
 
@@ -449,14 +450,14 @@ class Shortcodes {
 			'class' => ''
 	    ], $params) );
 
-	    $html = "<nav class='ls-site-map {$class}'>";
+	    $html = "<nav class='shorts-site-map {$class}'>";
 
 	    if ( $menus ) {
 
 	        $menus = get_terms( 'nav_menu', [ 'hide_empty' => true ] );
-	        $html .= '<h4>' . __( 'Menu Sitemap', 'lambry-shorts' ) . '</h4>';
+	        $html .= '<h4>' . __( 'Menu Sitemap', 'shorts' ) . '</h4>';
 	        foreach ( $menus as $menu ) {
-	            $html .= wp_nav_menu( [ 'menu' => $menu->name, 'container_class' => 'ls-sitemap ls-sitemap-meus', 'echo' => false ] );
+	            $html .= wp_nav_menu( [ 'menu' => $menu->name, 'container_class' => 'shorts-sitemap shorts-sitemap-meus', 'echo' => false ] );
 	        }
 
 	    }
@@ -467,8 +468,8 @@ class Shortcodes {
 
 	    	foreach ( $types as $type ) {
 		        $posts = get_posts( [ 'posts_per_page' => -1, 'post_type' => $type ] );
-		        $html .= '<h4>' . ucfirst( $type ) . ' ' . __( 'Sitemap', 'lambry-shorts' )  . '</h4>';
-		        $html .= "<ul class='ls-sitemap ls-sitemap-{$type}'>";
+		        $html .= '<h4>' . ucfirst( $type ) . ' ' . __( 'Sitemap', 'shorts' )  . '</h4>';
+		        $html .= "<ul class='shorts-sitemap shorts-sitemap-{$type}'>";
 		            foreach ( $posts as $post ) {
 		                $html .= "<li><a href='" . get_permalink( $post->ID ) . "'>{$post->post_title}</a></li>";
 		            }
@@ -501,7 +502,7 @@ class Shortcodes {
 	    $location = str_replace( ' ', '+', $location );
 	    $width = ( is_numeric( $width ) ) ? $width . 'px' : $width;
 
-	    $map = "<div class='ls-map {$class}' style='max-width:{$width};'><div class='ls-fluid-iframe'>
+	    $map = "<div class='shorts-map {$class}' style='max-width:{$width};'><div class='shorts-fluid-iframe'>
 	    	<iframe src='https://maps.google.com/maps?q={$location}&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
 	    </div></div>";
 
@@ -526,7 +527,7 @@ class Shortcodes {
 
 	    $width = ( is_numeric( $width ) ) ? $width . 'px' : $width;
 
-	    $iframe = "<div class='ls-iframe {$class}' style='max-width:{$width};'><div class='ls-fluid-iframe'>
+	    $iframe = "<div class='shorts-iframe {$class}' style='max-width:{$width};'><div class='shorts-fluid-iframe'>
 	    	<iframe src='{$url}' frameborder='0' marginheight='0' marginwidth='0'></iframe>
 	    </div></div>";
 	
@@ -551,7 +552,7 @@ class Shortcodes {
 	        'target' => 'self',
 	    ], $params) );
 
-	    $html = "<img src='{$url}' class='ls-image ls-align{$align} align{$align} {$class}'>";
+	    $html = "<img src='{$url}' class='shorts-image shorts-align{$align} align{$align} {$class}'>";
 
 	    return self::wrap_with_anchor( $link, $target, $html );
 	
@@ -573,7 +574,7 @@ class Shortcodes {
 	        'target' => 'self'
 	    ], $params) );
 
-	    return "<a href='{$to}' target='_{$target}' class='ls-link {$class}'>" . do_shortcode( $content ) . "</a>";
+	    return "<a href='{$to}' target='_{$target}' class='shorts-link {$class}'>" . do_shortcode( $content ) . "</a>";
 	
 	}
 

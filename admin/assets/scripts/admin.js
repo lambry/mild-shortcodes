@@ -11,12 +11,12 @@ var Lambry = {};
 		init: function( html ) {
 			_this = Lambry.Shorts;
 			// Setup display
-			this.$wrap = $( '#lambry-shorts' );
-			this.$wrap.find( '.ls-loading' ).addClass( 'is-hidden' );
+			this.$wrap = $( '#shorts' );
+			this.$wrap.find( '.loading' ).addClass( 'is-hidden' );
 			this.$wrap.append( html );
 			// Initialize libraries
 			this.initSelect( this.$wrap.find( 'select' ) );
-			this.$wrap.find( '.sortable' ).sortable( { placeholder : 'clone-gap' } );
+			this.$wrap.find( '.sortable' ).sortable( { placeholder : 'sort-gap' } );
 			// Run functions
 			this.cache();
 			this.events();
