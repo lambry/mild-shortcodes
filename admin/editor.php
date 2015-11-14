@@ -17,60 +17,41 @@ class Editor {
 	*/
     public function __construct() {
 
-	    if ( is_admin() && get_user_option( 'rich_editing' ) === 'true' ) {
-
-	    	$this->editor();
-
-	    }
+        // Add shortcodes to admin
+        add_action( 'media_buttons', [ $this, 'setup' ] );
 
 	}
-	
+
 	/*
-	 * Editor
+	 * Setup
 	 *
-	 * Include shortcodes editor.
+	 * Setup shortcode button and html.
 	 *
-	 * @access private
-     * @return null
+	 * @access public
+     * @return void
 	 */
-	private function editor() {
+	public function setup() {
 
-	    // Add editor button css
-		add_action( 'admin_head', function() {
-			echo '<style>.mce-i-shorts:before { font-family: dashicons !important; content: "\f475"; }</style>';
-		});
+		// Generate popup
+        add_action( 'admin_footer', [ $this, 'generate' ] );
 
-		// Add editor popup scripts
-	    add_filter( 'mce_external_plugins', function( $plugin_array ) {
-	        $plugin_array['shorts'] = plugins_url( 'assets/scripts/editor.min.js', __FILE__ );
-	        return $plugin_array;
-	    });
+        $button = '<button type="button" class="shorts-launch button">';
+        	$button .= '<i class="fa fa-code"></i> ' . __( 'Shortcodes', 'shorts' ) . '</a>';
+        $button .= '</button>';
 
-	    // Register editor button
-	    add_filter( 'mce_buttons', function( $buttons ) {
-	        array_push( $buttons, 'shorts' );
-	        return $buttons;
-	    });
-
-	    // Add AJAX action to generate html
-        add_action( 'wp_ajax_shorts_generate', [ $this, 'generate_html' ] );
+        echo $button;
 
 	}
 
 	/*
-	 * Generate html
+	 * Generate
 	 *
 	 * Generate the shortcodes html.
 	 *
 	 * @access public
-     * @return string $html
+     * @return void
 	 */
-	public function generate_html() {
-		
-		if ( $_POST['action'] !== 'shorts_generate' ) {
-			echo '<div class="error"><p>' . __( 'Sorry, there was an error fetching shortcodes.', 'shorts' ) . '</p></div>';
-			die();
-		}
+	public function generate() {
 
 		// Require necessities
 		require 'includes/defaults.php';
@@ -82,8 +63,6 @@ class Editor {
 		
 		// Generate the html
 		require 'generate.php';
-
-		die();
 
 	}
 

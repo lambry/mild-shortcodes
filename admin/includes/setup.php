@@ -19,240 +19,240 @@ class Setup {
 
         $shortcodes = [
             'row' => [
-                'heading' => __( 'Columns', 'shorts' ),
+                'title' => __( 'Columns', 'shorts' ),
                 'icon' => 'columns',
                 'child' => 'col',
                 'clone' => true,
                 'wrap' => true,
                 'fields' => [
                     'width' => [
-                        'name' => __( 'Width', 'shorts' ),
+                        'label' => __( 'Width', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::grid()
                     ]
                 ]
             ],
             'icon' => [
-                'heading' => __( 'Icon', 'shorts' ),
+                'title' => __( 'Icon', 'shorts' ),
                 'icon' => 'star',
                 'fields' => [
                     'color' => [
-                        'name' => __( 'Color', 'shorts' ),
+                        'label' => __( 'Color', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::colors()
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'shorts' ),
+                        'label' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ],
                     'size' => [
-                        'name' => __( 'Size', 'shorts' ),
+                        'label' => __( 'Size', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::sizes()
                     ],
 					'align' => [
-						'name' => __( 'Align', 'shorts' ),
+						'label' => __( 'Align', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::align()
 					],
                     'target' => [
-                        'name' => __( 'Target', 'shorts' ),
+                        'label' => __( 'Target', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::target()
                     ],
                     'link' => [
-                        'name' => __( 'Link to', 'shorts' ),
+                        'label' => __( 'Link to', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => __( 'i.e. http://example.com', 'shorts' )
                     ]
                 ]
             ],
             'button' => [
-                'heading' => __( 'Button', 'shorts' ),
+                'title' => __( 'Button', 'shorts' ),
                 'icon' => 'plus-circle',
                 'wrap' => true,
                 'fields' => [
                     'color' => [
-                        'name' => __( 'Color', 'shorts' ),
+                        'label' => __( 'Color', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::colors()
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'shorts' ),
+                        'label' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ],
                     'size' => [
-                        'name' => __( 'Size', 'shorts' ),
+                        'label' => __( 'Size', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::sizes()
                     ],
 					'align' => [
-						'name' => __( 'Align', 'shorts' ),
+						'label' => __( 'Align', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::align()
 					],
                     'target' => [
-                        'name' => __( 'Target', 'shorts' ),
+                        'label' => __( 'Target', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::target()
                     ],
                     'link' => [
-                        'name' => __( 'Link to', 'shorts' ),
+                        'label' => __( 'Link to', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => __( 'i.e. http://example.com', 'shorts' )
                     ]
                 ]
             ],
             'panel' => [
-                'heading' => __( 'Panel', 'shorts' ),
+                'title' => __( 'Panel', 'shorts' ),
                 'icon' => 'info-circle',
                 'wrap' => true,
                 'fields' => [
                     'color' => [
-                        'name' => __( 'Color', 'shorts' ),
+                        'label' => __( 'Color', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::colors()
                     ],
 					'icon' => [
-						'name' => __( 'Icon', 'shorts' ),
+						'label' => __( 'Icon', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::icons()
 					],
                     'size' => [
-                        'name' => __( 'Size', 'shorts' ),
+                        'label' => __( 'Size', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::sizes()
                     ],
 					'align' => [
-						'name' => __( 'Align', 'shorts' ),
+						'label' => __( 'Align', 'shorts' ),
 						'type' => 'select',
 						'values' => Defaults::align()
 					]
                 ]
             ],
             'tabs' => [
-                'heading' => __( 'Tabs', 'shorts' ),
+                'title' => __( 'Tabs', 'shorts' ),
                 'icon' => 'folder',
                 'child' => 'tab',
                 'clone' => true,
                 'wrap' => true,
                 'fields' => [
                     'title' => [
-                        'name' => __( 'Title', 'shorts' ),
+                        'label' => __( 'Title', 'shorts' ),
                         'type' => 'text'
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'shorts' ),
+                        'label' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ]
                 ]
             ],
             'accordion' => [
-                'heading' => __( 'Accordion', 'shorts' ),
+                'title' => __( 'Accordion', 'shorts' ),
                 'icon' => 'plus',
                 'child' => 'accordion',
                 'clone' => true,
                 'fields' => [
                     'title' => [
-                        'name' => __( 'Title', 'shorts' ),
+                        'label' => __( 'Title', 'shorts' ),
                         'type' => 'text'
                     ],
                     'icon' => [
-                        'name' => __( 'Icon', 'shorts' ),
+                        'label' => __( 'Icon', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::icons()
                     ]
                 ]
             ],
             'align' => [
-                'heading' => __( 'Alignment', 'shorts' ),
+                'title' => __( 'Alignment', 'shorts' ),
                 'icon' => 'angle-double-right',
                 'wrap' => true,
                 'fields' => [
                     'align' => [
-                        'name' => __( 'Align', 'shorts' ),
+                        'label' => __( 'Align', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::align()
                     ],
                     'width' => [
-                        'name' => __( 'Width', 'shorts' ),
+                        'label' => __( 'Width', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::grid()
                     ]
                 ]
             ],
             'posts'=> [
-                'heading' => __( 'Posts', 'shorts' ),
+                'title' => __( 'Posts', 'shorts' ),
                 'icon' => 'newspaper-o',
                 'fields' => [
                     'no' => [
-                        'name' => __( 'Number', 'shorts' ),
+                        'label' => __( 'Number', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => __( 'default: 5', 'shorts' )
                     ],
                     'date' => [
-                        'name' => __( 'Show Date', 'shorts' ),
+                        'label' => __( 'Show Date', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'image' => [
-                        'name' => __( 'Show Image', 'shorts' ),
+                        'label' => __( 'Show Image', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'cat' => [
-                        'name' => __( 'Category', 'shorts' ),
+                        'label' => __( 'Category', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => __( 'i.e. News', 'shorts' )
                     ],
                     'tag' => [
-                        'name' => __( 'Tag', 'shorts' ),
+                        'label' => __( 'Tag', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => __( 'i.e. Featured', 'shorts' )
                     ],
                     'type' => [
-                        'name' => __( 'Post Type', 'shorts' ),
+                        'label' => __( 'Post Type', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::types()
                     ],
                     'tax' => [
-                        'name' => __( 'Custom Taxomomy', 'shorts' ),
+                        'label' => __( 'Custom Taxomomy', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => __( 'i.e. genre:jazz', 'shorts' )
                     ]
                 ]
             ],
             'subpages' => [
-                'heading' => __( 'Subpages', 'shorts' ),
+                'title' => __( 'Subpages', 'shorts' ),
                 'icon' => 'level-down',
                 'fields' => [
                     'title' => [
-                        'name' => __( 'Title', 'shorts' ),
+                        'label' => __( 'Title', 'shorts' ),
                         'type' => 'text'
                     ],
                     'direct' => [
-                        'name' => __( 'Direct Subs Only', 'shorts' ),
+                        'label' => __( 'Direct Subs Only', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'flatten' => [
-                        'name' => __( 'Flatten All Subs', 'shorts' ),
+                        'label' => __( 'Flatten All Subs', 'shorts' ),
                         'type' => 'checkbox'
                     ]
                 ]
             ],
             'restrict' => [
-                'heading' => __( 'Restrict', 'shorts' ),
+                'title' => __( 'Restrict', 'shorts' ),
                 'icon' => 'eye-slash',
                 'wrap' => true,
                 'fields' => [
                     'message' => [
-                        'name' => __( 'Message', 'shorts' ),
+                        'label' => __( 'Message', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e Please login.'
                     ],
                     'roles' => [
-                        'name' => __( 'Roles', 'shorts' ),
+                        'label' => __( 'Roles', 'shorts' ),
                         'type' => 'select',
                         'attr' => 'multiple',
                         'values' => Defaults::roles()
@@ -260,20 +260,20 @@ class Setup {
                 ]
             ],
             'login' => [
-                'heading' => __( 'Login Form', 'shorts' ),
+                'title' => __( 'Login Form', 'shorts' ),
                 'icon' => 'lock',
                 'fields' => [
                     'redirect' => [
-                        'name' => __( 'Redirect To', 'shorts' ),
+                        'label' => __( 'Redirect To', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e. http://example-url.com'
                     ],
                     'register' => [
-                        'name' => __( 'Register Link', 'shorts' ),
+                        'label' => __( 'Register Link', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'display' => [
-                        'name' => __( 'Style', 'shorts' ),
+                        'label' => __( 'Style', 'shorts' ),
                         'type' => 'select',
                         'values' => [
                             'block' => __( 'Block', 'shorts' ),
@@ -283,15 +283,15 @@ class Setup {
                 ]
             ],
             'sitemap' => [
-                'heading' => __( 'Sitemap', 'shorts' ),
+                'title' => __( 'Sitemap', 'shorts' ),
                 'icon' => 'sitemap',
                 'fields' => [
                     'menus' => [
-                        'name' => __( 'Menus', 'shorts' ),
+                        'label' => __( 'Menus', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'types' => [
-                        'name' => __( 'Post Types', 'shorts' ),
+                        'label' => __( 'Post Types', 'shorts' ),
                         'type' => 'select',
                         'attr' => 'multiple',
                         'values' => Defaults::types()
@@ -299,32 +299,32 @@ class Setup {
                 ]
             ],
             'map' => [
-                'heading' => __( 'Google Map', 'shorts' ),
+                'title' => __( 'Google Map', 'shorts' ),
                 'icon' => 'map-marker',
                 'fields' => [
                     'location' => [
-                        'name' => __( 'Location', 'shorts' ),
+                        'label' => __( 'Location', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e. 123 The Street, Melbourne'
                     ],
                     'width' => [
-                        'name' => __( 'Width', 'shorts' ),
+                        'label' => __( 'Width', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'default: 100%'
                     ]
                 ]
             ],
             'iframe' => [
-                'heading' => __( 'iFrame', 'shorts' ),
+                'title' => __( 'iFrame', 'shorts' ),
                 'icon' => 'square-o',
                 'fields' => [
                     'url' => [
-                        'name' => __( 'Url', 'shorts' ),
+                        'label' => __( 'Url', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'i.e. http://iframe.com'
                     ],
                     'width' => [
-                        'name' => __( 'Width', 'shorts' ),
+                        'label' => __( 'Width', 'shorts' ),
                         'type' => 'text',
                         'placeholder' => 'default: 100%'
                     ]

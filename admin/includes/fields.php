@@ -58,7 +58,7 @@ class Fields {
 
         if ( ! isset( $field['placeholder'] ) ) $field['placeholder'] = '';
 
-        return "<input name='{$name}' class='input' placeholder='{$field['placeholder']}' type='text'>";
+        return "<input name='{$name}' class='shorts-input' placeholder='{$field['placeholder']}' type='text'>";
 
     }
 
@@ -76,7 +76,7 @@ class Fields {
 
         $attr = ( isset( $field['attr'] ) ) ? $field['attr'] : '';        
 
-        $html = "<select name='{$name}' class='input {$name}' type='text' {$attr}>";
+        $html = "<select name='{$name}' class='shorts-select {$name}' type='text' {$attr}>";
             if ( $attr !== 'multiple' ) {
                 $html .= '<option value="">' . __( '-- select --', 'shorts' ) . '</option>';
             }
@@ -101,7 +101,7 @@ class Fields {
      */
     private static function checkbox( $name, $field ) {
 
-        return "<input name='{$name}' class='check' type='checkbox'>";
+        return "<input name='{$name}' class='shorts-checkbox' type='checkbox'>";
 
     }
 

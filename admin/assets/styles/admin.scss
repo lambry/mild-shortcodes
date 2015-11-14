@@ -1,185 +1,195 @@
-/* =Editor window
+/* =Admin Popup
 -------------------------------------------------------------- */
 
-/* General */
-#shorts {
+/* Variables */
+$color-red: #ff5959;
+$color-blue: #21759B;
+$color-grey: #505050;
+$color-silver: #f5f5f5;
+$color-white: #fff;
+
+/* Main Styles */
+#shorts-generate {
+	height: 490px;
+	max-width: 600px;
+	margin: 5em auto;
+	padding: 1.5em 2em;
+	background-color: $color-white;
+	position: relative;
+	overflow: scroll;
 	* {
-		position: relative;
-		white-space: normal;
 		box-sizing: border-box;
 	}
 
-	/* Icons */
-	.fa {
-		padding: 0.25em 1em 0.25em 0;
-		&:before {
-			font-family: FontAwesome;
-		}
-	}
-
 	/* Typography */
-	h2 {
+	.shorts-heading, 
+	.shorts-title {
 		font-size: 1.5rem;
-		margin: 0 0 1em;
+		margin: 0 0 2em;
 		padding: 0.25em;
 		text-align: center;
 	}
-	a {
-		color: #606060;
-		font-size: 0.9em;
-		text-decoration: none;
+	.shorts-heading {
+		margin-bottom: 0.75em;
 	}
-	.home {
+	.shorts-home {
 		cursor: pointer;
 		font-size: 1.25rem;
 		position: absolute;
 		left: 0;
 		&:hover {
-			color: #21759B;
+			color: $color-blue;
 		}
+	}
+	.fa {
+		padding: 0 1em 0;
 	}
 
 	/* Shortcode links */
 	.shortcode {
 		display: none;
-		overflow-y: scroll;
-		height: 445px;
 	}
 	.shortcode, 
-	.shortcode-links {
+	.shorts-links {
 		opacity: 0;
-		transition: all 0.3s ease;
-		transform: translateX(-1em);
+		transition: all 0.2s ease;
+		transform: translateX(-0.75em);
 	}
-	.shortcode-link {
-		margin: 0.25em 1.25% 0.75em;
+	.shorts-link,
+	.shorts-insert {
+		margin: 0.5em 0.3em;
 		padding: 0.75em;
 		font-weight: bold;
 		height: auto;
 	}
-	.is-visible {
-		opacity: 1;
-		transform: translateX(0);
-	}
-	.is-hidden {
-		opacity: 0;
-	}
 
 	/* Form */
-	.fields {
+	.shorts-fields {
+		position: relative;
 		margin-bottom: 1.5em;
 	}
-	.field-group {
+	.shorts-field-group {
 		width: 100%;
 		margin: 0 0 0.75em;
 		position: relative;
 	}
-	.field {
-		width: calc(70% - 0.5em);
-		color: #505050;
+	.shorts-field {
 		line-height: 1.4;
+		color: $color-grey;
+		width: 70%;
 		margin: 0 -2px;
-		display: inline-block;
 		padding: 0.3em 0.5em;
-		border-bottom: 1px solid #ccc;
+		display: inline-block;
+		border-bottom: 1px solid darken($color-silver, 10%);
 	}
-	.select .field {
+	.select .shorts-field {
 		border-bottom-color: transparent;
 	}
-	label {
-		width: 30%;
-		margin: 0 0.5em 0px -2px;
+	.shorts-label {
+		width: 28%;
+		margin: 0 2% 0 0;
 	    padding: 0.7em 1em;
 		font-size: 0.9em;
 	    display: inline-block;
-		background-color: #f5f5f5;
-	    border-bottom: 1px solid #ccc;
+		background-color: $color-silver;
+	    border-bottom: 1px solid darken($color-silver, 10%);
 	}
-	input[type=text], select {
+	.shorts-input, .shorts-select {
 		width: 100%;
 		margin: 0;
 		padding: 0.25em;
-		border: 1px solid #fff;
+		border: 1px solid transparent;
 		box-shadow: none;
 	}
-	input[type=checkbox], input[type=radio] {
+	.shorts-checkbox {
 		margin: 0.45em;
 	}
-	button {
+	.shorts-button {
 		text-align: center;
 		width: 47.5%;
-		float: left;
+		display: inline-block;
 	}
-	.clone {
-		float: none;
+	.shorts-clone {
 		margin-bottom: 1em;
 	}
-	.submit {
+	.shorts-insert {
 	    width: 100%;
-	    float: none;
-	}
-
-	/* Loading */
-	.loading {
-		display: block;
-		width: 5rem;
-		height: 5rem;
-		position: absolute;
-		left: calc(50% - 2.5rem);
-		margin-top: 5rem;
-		border: solid 0.25em;
-		border-color: #555 transparent;
-		border-radius: 50%;
-		transition: all 0.1s ease;
-		animation: shortsSpin 1s ease-in-out infinite;
+	    margin: 1.25em 0;
 	}
 
 	/* Sortable */
-	.sortable .fields {
+	.shorts-sortable .shorts-fields {
 		&:before {
-			color: #bbb;
-			content: "\f0c9";
+			color: lighten($color-grey, 10%);
 			font-family: FontAwesome;
 			position: absolute;
-			top: -0.2em;
-			left: -0.5em;
+			content: "\f0c9";
+			top: 0.15em;
+			left: 0;
+			width: 5px;
 			z-index: 1;
+			overflow: hidden;
 		}
-		label {
+		.shorts-label {
 			cursor: move;
 		}
 	}
-	.sort-gap {
-		height: 2em;
+	.shorts-remove {
+		position: absolute;
+		top: 2.75em;
+		width: 100%;
+		opacity: 0;
+		height: 2.5em;
+		background-color: $color-red;
+		border: 1px dashed darken($color-red, 20%);
+		border-radius: 3px;
+		transition: all 0.2s ease;
+		&-hover {
+			border-color: darken($color-red, 40%);
+			background-color: darken($color-red, 20%);
+		}
+	}
+	.shorts-gap {
+		height: 2.75em;
 		margin-bottom: 1.5em;
-		background-color: #fafafa;
-		border: 1px dashed #ddd;
+		background-color: $color-silver;
+		border: 1px dashed darken($color-silver, 5%);
 		border-radius: 3px;
 	}
-	.ui-sortable-helper {
-		transform: scale(0.85);
+
+	/* Helpers */
+	.shorts-visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.shorts-hidden {
+		opacity: 0;
 	}
 
 	/* Select2 */
-	.select2 {
-		padding: 0.1em 0;
+	.select2-container {
+		.select2-selection--single {
+			border-color: darken($color-silver, 10%);
+		}
+		.select2-selection--multiple {
+			min-height: 28px;
+			line-height: 0.75;
+			.select2-search__field {
+				margin: 0;
+			}
+			.select2-selection__rendered {
+				padding: 1px 2px;
+				line-height: 1.4;
+			}
+			.select2-search, .select2-selection__choice {
+				margin: 2px;
+			}
+		}
 	}
-	.select2-selection__rendered {
-		white-space: nowrap;
-	}
-	.select2-selection__arrow,
-	.select2-selection__arrow b {
-		position: absolute;
-	}
+
 }
 
-/* Select2 / TinyMCE Fix */
-.select2-container {
-	z-index: 999999;
-}
-
-@keyframes shortsSpin {
-    to { 
-    	transform: rotate(360deg); 
-    }
+/* Magnific Styles */
+.shorts-popup {
+	overflow: hidden !important;
 }

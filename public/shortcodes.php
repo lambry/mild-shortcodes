@@ -234,10 +234,10 @@ class Shortcodes {
 
 	    $id = sanitize_title_with_dashes( $title );
 	    $icon = self::create_icon( $icon );
-	    $icon_plus = self::create_icon( 'plus' );
+	    $icon_plus = self::create_icon( 'plus shorts-accordion-toggle' );
 
 	    $accordion = "<div id='{$id}' class='shorts-accordion {$class}'>
-    		<h3 class='shorts-accordion-title'><a href='#{$id}'>{$icon}{$title}{$icon_plus}</a></h3>
+    		<h4 class='shorts-accordion-title'><a href='#{$id}'>{$icon}{$title}{$icon_plus}</a></h4>
             <div class='shorts-accordion-content'>" . do_shortcode( $content ) . "</div>
         </div>";
 

@@ -3,7 +3,7 @@
  * Plugin Name: Shorts
  * Plugin URI: https://github.com/lambry/shorts
  * Description: A simple set of shortcodes.
- * Version: 0.2.0
+ * Version: 0.2.1
  * Author: Lambry
  * Author URI: http://lambry.com
  * Text Domain: shorts
@@ -29,8 +29,8 @@ class Init {
         // Load text domain
         load_plugin_textdomain( 'shorts', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-		// Add admin assets
-        add_action( 'admin_enqueue_scripts', [ $this, 'admin_assets'] );
+        // Add admin assets
+        add_action( 'wp_enqueue_editor', [ $this, 'admin_assets'] );
 
         // Add public assets
         add_action( 'wp_enqueue_scripts', [ $this, 'public_assets'] );
@@ -80,10 +80,12 @@ class Init {
 		// Add styles
         wp_enqueue_style( 'font-awesome', plugin_dir_url( __FILE__ ) . 'includes/font-awesome/css/font-awesome.min.css', [], '4.4.0' );
         wp_enqueue_style( 'select2-css', plugin_dir_url( __FILE__ ) . 'includes/select2/css/select2.min.css', [], '4.0.0' );
-        wp_enqueue_style( 'shorts-admin-styles', plugin_dir_url( __FILE__ ) . 'admin/assets/styles/admin.css', ['font-awesome', 'select2-css'], '0.2.0' );
+        wp_enqueue_style( 'magnific-popup-css', plugin_dir_url( __FILE__ ) . 'includes/magnific-popup/css/magnific-popup.min.css', [], '1.0.0' );
+        wp_enqueue_style( 'shorts-admin-styles', plugin_dir_url( __FILE__ ) . 'admin/assets/styles/admin.css', ['font-awesome', 'select2-css', 'magnific-popup-css'], '0.2.1' );
 		// Add scripts
         wp_enqueue_script( 'select2-js', plugin_dir_url( __FILE__ ) . 'includes/select2/js/select2.min.js', ['jquery'], '4.0.0', true );
-        wp_enqueue_script( 'shorts-admin-scripts', plugin_dir_url( __FILE__ ) . 'admin/assets/scripts/admin.min.js', ['jquery'], '0.2.0', true );
+        wp_enqueue_script( 'magnific-popup-js', plugin_dir_url( __FILE__ ) . 'includes/magnific-popup/js/jquery.magnific-popup.min.js', ['jquery'], '1.0.0', true );
+        wp_enqueue_script( 'shorts-admin-scripts', plugin_dir_url( __FILE__ ) . 'admin/assets/scripts/admin.min.js', ['jquery', 'select2-js', 'magnific-popup-js', 'jquery-ui-draggable', 'jquery-ui-droppable'], '0.2.1', true );
 
 	}
 
@@ -97,13 +99,11 @@ class Init {
 	 */
 	public function public_assets() {
 
-        if ( ! current_theme_supports( 'font-awesome' ) ) {
-        	wp_enqueue_style( 'font-awesome', plugin_dir_url( __FILE__ ) . 'includes/font-awesome/css/font-awesome.min.css', [], '4.4.0' );
-        }
 		// Add styles
-        wp_enqueue_style( 'shorts-public-styles', plugin_dir_url( __FILE__ ) . 'public/assets/styles/public.css', [], '0.2.0' );
+        wp_enqueue_style( 'font-awesome', plugin_dir_url( __FILE__ ) . 'includes/font-awesome/css/font-awesome.min.css', [], '4.4.0' );
+        wp_enqueue_style( 'shorts-public-styles', plugin_dir_url( __FILE__ ) . 'public/assets/styles/public.css', [], '0.2.1' );
 		// Add scripts
-        wp_enqueue_script( 'shorts-public-scripts', plugin_dir_url( __FILE__ ) . 'public/assets/scripts/public.min.js', ['jquery'], '0.2.0', true );
+        wp_enqueue_script( 'shorts-public-scripts', plugin_dir_url( __FILE__ ) . 'public/assets/scripts/public.min.js', ['jquery'], '0.2.1', true );
 
 	}
 

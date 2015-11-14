@@ -77,11 +77,11 @@
 .shorts-accordion {
 	margin: 0.5em 0;
 	.fa {
-		padding: 0.2em 0.5em;
-		font-size: 0.8em;
+		padding: 0 0.5em 0.25em 0;
 	}
-	.fa-plus {
+	.shorts-accordion-toggle {
 		float: right;
+		padding: 0 0 0.25em 0.5em;
 	}
 	.shorts-accordion-title {
 		margin: 0;

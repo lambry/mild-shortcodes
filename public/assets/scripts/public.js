@@ -27,7 +27,8 @@
 
         accordion.on( 'click', '.shorts-accordion-title a', function(e) {
             e.preventDefault();
-            $( this ).parents( '.shorts-accordion' ).find( '.shorts-accordion-content' ).slideToggle();
+            $(this).find( '.shorts-accordion-toggle' ).toggleClass( 'fa-plus fa-minus' );
+            $(this).parents( '.shorts-accordion' ).find( '.shorts-accordion-content' ).slideToggle();
         });
 
     }

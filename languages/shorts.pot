@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shorts\n"
-"POT-Creation-Date: 2015-11-05 20:36+1100\n"
+"POT-Creation-Date: 2015-11-15 10:22+1100\n"
 "PO-Revision-Date: 2015-03-07 14:04+1000\n"
 "Last-Translator: BSO\n"
 "Language-Team: \n"
@@ -17,12 +17,16 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: includes\n"
 
-#: admin/editor.php:71
-msgid "Sorry, there was an error fetching shortcodes."
+#: admin/editor.php:39 admin/generate.php:16
+msgid "Shortcodes"
 msgstr ""
 
-#: admin/generate.php:50
+#: admin/generate.php:56
 msgid "Add New"
+msgstr ""
+
+#: admin/generate.php:62
+msgid "Insert"
 msgstr ""
 
 #: admin/includes/defaults.php:24
@@ -1946,7 +1950,7 @@ msgid "Simplybuilt"
 msgstr ""
 
 #: admin/includes/defaults.php:614 admin/includes/setup.php:286
-#: public/shortcodes.php:470
+#: public/shortcodes.php:471
 msgid "Sitemap"
 msgstr ""
 
@@ -2590,7 +2594,7 @@ msgid "Custom Taxomomy"
 msgstr ""
 
 #: admin/includes/setup.php:222
-msgid "i.e. Genre:Jazz"
+msgid "i.e. genre:jazz"
 msgstr ""
 
 #: admin/includes/setup.php:227
@@ -2737,14 +2741,14 @@ msgstr ""
 msgid "link"
 msgstr ""
 
-#: public/shortcodes.php:428
+#: public/shortcodes.php:429
 msgid "Hello "
 msgstr ""
 
-#: public/shortcodes.php:429
+#: public/shortcodes.php:430
 msgid "Logout"
 msgstr ""
 
-#: public/shortcodes.php:457
+#: public/shortcodes.php:458
 msgid "Menu Sitemap"
 msgstr ""

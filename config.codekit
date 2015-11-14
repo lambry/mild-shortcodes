@@ -10,7 +10,7 @@
 		"outputAbbreviatedPath": "\/admin\/assets\/scripts\/admin.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/assets\/scripts\/admin.min.js": {
@@ -19,28 +19,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/assets\/scripts\/admin.min.js",
 		"outputAbbreviatedPath": "\/admin\/assets\/scripts\/min\/admin.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/admin\/assets\/scripts\/editor.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/scripts\/editor.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/scripts\/editor.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/admin\/assets\/scripts\/editor.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/scripts\/editor.min.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/scripts\/min\/editor.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -133,6 +111,46 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/magnific-popup\/css\/magnific-popup.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/magnific-popup\/css\/magnific-popup.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/magnific-popup\/css\/magnific-popup.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/magnific-popup\/css\/magnific-popup.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/magnific-popup\/js\/jquery.magnific-popup.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/magnific-popup\/js\/jquery.magnific-popup.js",
+		"outputAbbreviatedPath": "\/includes\/magnific-popup\/js\/min\/jquery.magnific-popup-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/includes\/magnific-popup\/js\/jquery.magnific-popup.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/magnific-popup\/js\/jquery.magnific-popup.min.js",
+		"outputAbbreviatedPath": "\/includes\/magnific-popup\/js\/min\/jquery.magnific-popup.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/includes\/select2\/css\/select2.css": {
 		"fileType": 16,
@@ -677,7 +695,7 @@
 		"outputAbbreviatedPath": "\/public\/assets\/scripts\/public.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
 	"\/public\/assets\/scripts\/public.min.js": {
