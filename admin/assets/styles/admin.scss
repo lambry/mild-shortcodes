@@ -25,12 +25,9 @@ $color-white: #fff;
 	.shorts-heading, 
 	.shorts-title {
 		font-size: 1.5rem;
-		margin: 0 0 2em;
+		margin: 0 0 0.75em;
 		padding: 0.25em;
 		text-align: center;
-	}
-	.shorts-heading {
-		margin-bottom: 0.75em;
 	}
 	.shorts-home {
 		cursor: pointer;
@@ -136,10 +133,11 @@ $color-white: #fff;
 	}
 	.shorts-remove {
 		position: absolute;
-		top: 2.75em;
-		width: 100%;
+		top: 0;
+		left: 7.5%;
+		width: 85%;
 		opacity: 0;
-		height: 2.5em;
+		height: 3em;
 		background-color: $color-red;
 		border: 1px dashed darken($color-red, 20%);
 		border-radius: 3px;
@@ -168,7 +166,7 @@ $color-white: #fff;
 
 	/* Select2 */
 	.select2-container {
-		.select2-selection--single {
+		.select2-selection {
 			border-color: darken($color-silver, 10%);
 		}
 		.select2-selection--multiple {

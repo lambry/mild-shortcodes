@@ -2,8 +2,6 @@
 
 A simple set of shortcodes.
 
-If your theme already includes Font Awesome use: `add_theme_support( 'font-awesome' );`
-
 ###Main Shortcodes
 * Rows/Columns
 * Icons
@@ -23,3 +21,10 @@ If your theme already includes Font Awesome use: `add_theme_support( 'font-aweso
 ####Supplementary Shortcodes (handy in widgets)
 * Image
 * Link
+
+If your theme already includes Font Awesome just dequeue the shorts version:
+```
+add_action( 'wp_print_styles', function() {
+	wp_dequeue_style( 'font-awesome' ); 
+});
+```
