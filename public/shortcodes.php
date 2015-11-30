@@ -33,8 +33,10 @@ class Shortcodes {
 		add_shortcode( __( 'tabs', 'shorts' ),      [ $this, 'tabs' ] );
 		add_shortcode( __( 'tab', 'shorts' ),       [ $this, 'tab' ] );
 		add_shortcode( __( 'accordion', 'shorts' ), [ $this, 'accordion' ] );
+		add_shortcode( __( 'popup', 'shorts' ),     [ $this, 'popup' ] );
 		add_shortcode( __( 'align', 'shorts' ),     [ $this, 'align' ] );
 		add_shortcode( __( 'posts', 'shorts' ),     [ $this, 'posts' ] );
+		add_shortcode( __( 'meta', 'shorts' ),      [ $this, 'meta' ] );
 		add_shortcode( __( 'subpages', 'shorts' ),  [ $this, 'subpages' ] );
 		add_shortcode( __( 'restrict', 'shorts' ),  [ $this, 'restrict' ] );
 		add_shortcode( __( 'login', 'shorts' ),     [ $this, 'login' ] );
@@ -246,6 +248,37 @@ class Shortcodes {
 	}
 
 	/*
+	 * Popup Shortcode
+	 *
+	 * @access public
+	 * @param  array  $params
+	 * @param  string $content
+	 * @return string $popup
+	 */
+	public function popup( $params, $content = null ) {
+
+	    extract( shortcode_atts([
+	        'title'  => '',
+	        'icon'   => '',
+	        'onload' => '',
+	        'once'   => '',
+	        'class'  => ''
+	    ], $params) );
+
+	    global $post;
+	    $id = sanitize_title_with_dashes( $title );
+	    $icon = self::create_icon( $icon );
+
+	    $accordion = "<div class='shorts-popup onload-{$onload} once-{$once} {$class}' data-id='{$post->ID}-{$id}'>
+    		<div class='shorts-popup-title'><a href='#{$id}'>{$icon}{$title}</a></div>
+            <div id='{$id}' class='shorts-popup-content mfp-hide'>" . do_shortcode( $content ) . "</div>
+        </div>";
+
+        return $accordion;
+
+	}
+
+	/*
 	 * Align Shortcode
 	 *
 	 * @access public
@@ -331,6 +364,29 @@ class Shortcodes {
 	}
 
 	/*
+	 * Meta Shortcode
+	 *
+	 * @access public
+	 * @param  array  $params
+	 * @return string $meta
+	 */
+	public function meta( $params ) {
+
+		global $post;
+
+	    extract( shortcode_atts([
+	        'key'  => '',
+	        'id'  => '',
+	        'class'  => ''
+	    ], $params) );
+
+	    $id || $id = $post->ID;
+
+	    return get_post_meta( (int) $id, $key, true );
+
+	}
+
+	/*
 	 * Subpages Shortcode
 	 *
 	 * @access public
@@ -410,6 +466,7 @@ class Shortcodes {
 
 	    extract( shortcode_atts([
 	        'register' => false,
+	        'reset' => false,
 	        'redirect' => home_url(),
 	        'display'  => 'block',
 	        'class'    => ''
@@ -424,6 +481,7 @@ class Shortcodes {
             if ( ! is_user_logged_in() ) {
                 $html .= wp_login_form( $login_options );
                 $html .= ( $register ) ? wp_register( '<p><i class="fa fa-angle-double-right"></i> ', '</p>', false ) : '';
+				$html .= ( $reset ) ? '<p><i class="fa fa-angle-double-right"></i> <a href="' . wp_lostpassword_url() . '">' . __( 'Lost password?', 'shorts' ) . '</a></p>' : '';
             } else {
                 $current_user = wp_get_current_user();
                 $html .= '<span class="shorts-loggedin-message">' . __( 'Hello ', 'shorts' ) . ' ' . $current_user->user_login .',</span> ';

@@ -167,6 +167,30 @@ class Setup {
                     ]
                 ]
             ],
+            'popup' => [
+                'title' => __( 'Popup', 'shorts' ),
+                'icon' => 'clone',
+                'wrap' => true,
+                'fields' => [
+                    'title' => [
+                        'label' => __( 'Title', 'shorts' ),
+                        'type' => 'text'
+                    ],
+                    'icon' => [
+                        'label' => __( 'Icon', 'shorts' ),
+                        'type' => 'select',
+                        'values' => Defaults::icons()
+                    ],
+                    'onload' => [
+                        'label' => __( 'Launch Onload', 'shorts' ),
+                        'type' => 'checkbox'
+                    ],
+                    'once' => [
+                        'label' => __( 'Show Once', 'shorts' ),
+                        'type' => 'checkbox'
+                    ]
+                ]
+            ],
             'align' => [
                 'title' => __( 'Alignment', 'shorts' ),
                 'icon' => 'angle-double-right',
@@ -223,6 +247,21 @@ class Setup {
                     ]
                 ]
             ],
+            'meta' => [
+                'title' => __( 'Meta', 'shorts' ),
+                'icon' => 'th-list',
+                'fields' => [
+                    'key' => [
+                        'label' => __( 'Key', 'shorts' ),
+                        'type' => 'text'
+                    ],
+                    'id' => [
+                        'label' => __( 'Post ID', 'shorts' ),
+                        'type' => 'text',
+                        'placeholder' => __( 'e.g. to get data from another post', 'shorts' )
+                    ]
+                ]
+            ],
             'subpages' => [
                 'title' => __( 'Subpages', 'shorts' ),
                 'icon' => 'level-down',
@@ -270,6 +309,10 @@ class Setup {
                     ],
                     'register' => [
                         'label' => __( 'Register Link', 'shorts' ),
+                        'type' => 'checkbox'
+                    ],
+                    'reset' => [
+                        'label' => __( 'Reset Password', 'shorts' ),
                         'type' => 'checkbox'
                     ],
                     'display' => [

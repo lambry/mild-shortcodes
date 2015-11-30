@@ -98,6 +98,16 @@
 	}
 }
 
+/* Popups */
+.shorts-popup-content {
+	position: relative;
+	width: auto;
+	max-width: 50em;
+	margin: 2em auto;
+	padding: $layout-padding ($layout-padding * 2);
+	background: $color-white;
+}
+
 /* Posts */
 .shorts-posts {
 	.shorts-post {
@@ -119,6 +129,15 @@
 }
 
 /* Login */
+.shorts-login {
+	margin: $layout-margin 0 ($layout-margin * 2);
+	p {
+		margin: 0;
+	}
+	.login-submit {
+		margin: $layout-margin 0;
+	}
+}
 .shorts-login-inline {
 	.login-username,
 	.login-password {

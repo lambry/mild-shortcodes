@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shorts\n"
-"POT-Creation-Date: 2015-11-21 14:17+1100\n"
+"POT-Creation-Date: 2015-11-30 20:22+1100\n"
 "PO-Revision-Date: 2015-03-07 14:04+1000\n"
 "Last-Translator: BSO\n"
 "Language-Team: \n"
@@ -1365,7 +1365,7 @@ msgstr ""
 msgid "Jsfiddle"
 msgstr ""
 
-#: admin/includes/defaults.php:467
+#: admin/includes/defaults.php:467 admin/includes/setup.php:255
 msgid "Key"
 msgstr ""
 
@@ -1949,8 +1949,8 @@ msgstr ""
 msgid "Simplybuilt"
 msgstr ""
 
-#: admin/includes/defaults.php:614 admin/includes/setup.php:286
-#: public/shortcodes.php:471
+#: admin/includes/defaults.php:614 admin/includes/setup.php:329
+#: public/shortcodes.php:529
 msgid "Sitemap"
 msgstr ""
 
@@ -2146,7 +2146,7 @@ msgstr ""
 msgid "Tachometer"
 msgstr ""
 
-#: admin/includes/defaults.php:663 admin/includes/setup.php:210
+#: admin/includes/defaults.php:663 admin/includes/setup.php:234
 msgid "Tag"
 msgstr ""
 
@@ -2490,14 +2490,15 @@ msgstr ""
 msgid "-- select --"
 msgstr ""
 
-#: admin/includes/setup.php:29 admin/includes/setup.php:181
-#: admin/includes/setup.php:311 admin/includes/setup.php:327
+#: admin/includes/setup.php:29 admin/includes/setup.php:205
+#: admin/includes/setup.php:354 admin/includes/setup.php:370
 msgid "Width"
 msgstr ""
 
 #: admin/includes/setup.php:36 admin/includes/setup.php:45
 #: admin/includes/setup.php:82 admin/includes/setup.php:119
 #: admin/includes/setup.php:147 admin/includes/setup.php:164
+#: admin/includes/setup.php:180
 msgid "Icon"
 msgstr ""
 
@@ -2512,7 +2513,7 @@ msgid "Size"
 msgstr ""
 
 #: admin/includes/setup.php:55 admin/includes/setup.php:92
-#: admin/includes/setup.php:129 admin/includes/setup.php:176
+#: admin/includes/setup.php:129 admin/includes/setup.php:200
 msgid "Align"
 msgstr ""
 
@@ -2541,7 +2542,7 @@ msgid "Tabs"
 msgstr ""
 
 #: admin/includes/setup.php:143 admin/includes/setup.php:160
-#: admin/includes/setup.php:231
+#: admin/includes/setup.php:176 admin/includes/setup.php:270
 msgid "Title"
 msgstr ""
 
@@ -2550,122 +2551,150 @@ msgid "Accordion"
 msgstr ""
 
 #: admin/includes/setup.php:171
+msgid "Popup"
+msgstr ""
+
+#: admin/includes/setup.php:185
+msgid "Launch Onload"
+msgstr ""
+
+#: admin/includes/setup.php:189
+msgid "Show Once"
+msgstr ""
+
+#: admin/includes/setup.php:195
 msgid "Alignment"
 msgstr ""
 
-#: admin/includes/setup.php:188
+#: admin/includes/setup.php:212
 msgid "Posts"
 msgstr ""
 
-#: admin/includes/setup.php:192
+#: admin/includes/setup.php:216
 msgid "Number"
 msgstr ""
 
-#: admin/includes/setup.php:194
+#: admin/includes/setup.php:218
 msgid "default: 5"
 msgstr ""
 
-#: admin/includes/setup.php:197
+#: admin/includes/setup.php:221
 msgid "Show Date"
 msgstr ""
 
-#: admin/includes/setup.php:201
+#: admin/includes/setup.php:225
 msgid "Show Image"
 msgstr ""
 
-#: admin/includes/setup.php:205
+#: admin/includes/setup.php:229
 msgid "Category"
 msgstr ""
 
-#: admin/includes/setup.php:207
+#: admin/includes/setup.php:231
 msgid "i.e. News"
 msgstr ""
 
-#: admin/includes/setup.php:212
+#: admin/includes/setup.php:236
 msgid "i.e. Featured"
 msgstr ""
 
-#: admin/includes/setup.php:215
+#: admin/includes/setup.php:239
 msgid "Post Type"
 msgstr ""
 
-#: admin/includes/setup.php:220
+#: admin/includes/setup.php:244
 msgid "Custom Taxomomy"
 msgstr ""
 
-#: admin/includes/setup.php:222
+#: admin/includes/setup.php:246
 msgid "i.e. genre:jazz"
 msgstr ""
 
-#: admin/includes/setup.php:227
+#: admin/includes/setup.php:251
+msgid "Meta"
+msgstr ""
+
+#: admin/includes/setup.php:259
+msgid "Post ID"
+msgstr ""
+
+#: admin/includes/setup.php:261
+msgid "e.g. to get data from another post"
+msgstr ""
+
+#: admin/includes/setup.php:266
 msgid "Subpages"
 msgstr ""
 
-#: admin/includes/setup.php:235
+#: admin/includes/setup.php:274
 msgid "Direct Subs Only"
 msgstr ""
 
-#: admin/includes/setup.php:239
+#: admin/includes/setup.php:278
 msgid "Flatten All Subs"
 msgstr ""
 
-#: admin/includes/setup.php:245
+#: admin/includes/setup.php:284
 msgid "Restrict"
 msgstr ""
 
-#: admin/includes/setup.php:250
+#: admin/includes/setup.php:289
 msgid "Message"
 msgstr ""
 
-#: admin/includes/setup.php:255
+#: admin/includes/setup.php:294
 msgid "Roles"
 msgstr ""
 
-#: admin/includes/setup.php:263
+#: admin/includes/setup.php:302
 msgid "Login Form"
 msgstr ""
 
-#: admin/includes/setup.php:267
+#: admin/includes/setup.php:306
 msgid "Redirect To"
 msgstr ""
 
-#: admin/includes/setup.php:272
+#: admin/includes/setup.php:311
 msgid "Register Link"
 msgstr ""
 
-#: admin/includes/setup.php:276
+#: admin/includes/setup.php:315
+msgid "Reset Password"
+msgstr ""
+
+#: admin/includes/setup.php:319
 msgid "Style"
 msgstr ""
 
-#: admin/includes/setup.php:279
+#: admin/includes/setup.php:322
 msgid "Block"
 msgstr ""
 
-#: admin/includes/setup.php:280
+#: admin/includes/setup.php:323
 msgid "Inline"
 msgstr ""
 
-#: admin/includes/setup.php:290
+#: admin/includes/setup.php:333
 msgid "Menus"
 msgstr ""
 
-#: admin/includes/setup.php:294
+#: admin/includes/setup.php:337
 msgid "Post Types"
 msgstr ""
 
-#: admin/includes/setup.php:302
+#: admin/includes/setup.php:345
 msgid "Google Map"
 msgstr ""
 
-#: admin/includes/setup.php:306
+#: admin/includes/setup.php:349
 msgid "Location"
 msgstr ""
 
-#: admin/includes/setup.php:318
+#: admin/includes/setup.php:361
 msgid "iFrame"
 msgstr ""
 
-#: admin/includes/setup.php:322
+#: admin/includes/setup.php:365
 msgid "Url"
 msgstr ""
 
@@ -2702,53 +2731,65 @@ msgid "accordion"
 msgstr ""
 
 #: public/shortcodes.php:36
-msgid "align"
+msgid "popup"
 msgstr ""
 
 #: public/shortcodes.php:37
-msgid "posts"
+msgid "align"
 msgstr ""
 
 #: public/shortcodes.php:38
-msgid "subpages"
+msgid "posts"
 msgstr ""
 
 #: public/shortcodes.php:39
-msgid "restrict"
+msgid "meta"
 msgstr ""
 
 #: public/shortcodes.php:40
-msgid "login"
+msgid "subpages"
 msgstr ""
 
 #: public/shortcodes.php:41
-msgid "sitemap"
+msgid "restrict"
 msgstr ""
 
 #: public/shortcodes.php:42
-msgid "map"
+msgid "login"
 msgstr ""
 
 #: public/shortcodes.php:43
-msgid "iframe"
+msgid "sitemap"
 msgstr ""
 
 #: public/shortcodes.php:44
-msgid "image"
+msgid "map"
 msgstr ""
 
 #: public/shortcodes.php:45
+msgid "iframe"
+msgstr ""
+
+#: public/shortcodes.php:46
+msgid "image"
+msgstr ""
+
+#: public/shortcodes.php:47
 msgid "link"
 msgstr ""
 
-#: public/shortcodes.php:429
+#: public/shortcodes.php:484
+msgid "Lost password?"
+msgstr ""
+
+#: public/shortcodes.php:487
 msgid "Hello "
 msgstr ""
 
-#: public/shortcodes.php:430
+#: public/shortcodes.php:488
 msgid "Logout"
 msgstr ""
 
-#: public/shortcodes.php:458
+#: public/shortcodes.php:516
 msgid "Menu Sitemap"
 msgstr ""
