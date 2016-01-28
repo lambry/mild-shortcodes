@@ -22,8 +22,8 @@
 		color: darken($color-white, 10%);
 	}
 }
-.shorts-background-yellow, 
-.shorts-background-silver, 
+.shorts-background-yellow,
+.shorts-background-silver,
 .shorts-background-white {
 	color: $color-black;
 	&:hover, &:active, &:focus {
@@ -144,8 +144,8 @@
 		color: $color-grey;
 		position: relative;
 		label {
-			top: 0.3em;
-			left: 0.3em;
+			top: 0.4em;
+			left: 0.5em;
 			position: absolute;
 			transition: all 0.2s ease;
 		}

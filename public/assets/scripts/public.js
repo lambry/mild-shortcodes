@@ -64,11 +64,11 @@
     var login = $( '.shorts-login-inline' );
     if ( login.length > 0 ) {
 
-        var _this = $(this);
         login.find( '.input' ).focusin( function() {
-            _this.parent( 'p' ).find( 'label' ).addClass( 'shorts-is-hidden' );
+            $(this).parent( 'p' ).find( 'label' ).addClass( 'shorts-is-hidden' );
         });
         login.find( '.input' ).focusout( function() {
+            var _this = $(this);
             if ( _this.val() === '' ) {
                 _this.parent( 'p' ).find( 'label' ).removeClass( 'shorts-is-hidden' );
             }
