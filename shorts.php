@@ -3,7 +3,7 @@
  * Plugin Name: Shorts
  * Plugin URI: https://github.com/lambry/shorts
  * Description: A simple set of shortcodes.
- * Version: 0.2.2
+ * Version: 0.2.3
  * Author: Lambry
  * Author URI: http://lambry.com
  * Text Domain: shorts

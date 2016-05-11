@@ -135,7 +135,7 @@ class Shortcodes {
 	    $href = ( $link ) ? " href='{$link}' target='_{$target}'" : '';
 
 	    return "<{$el}{$href} class='shorts-button shorts-background-{$color} shorts-{$size} shorts-align{$align} align{$align} {$class}'>{$icon}" . do_shortcode( $content ) . "</{$el}>";
-	
+
 	}
 
 	/*
@@ -293,9 +293,9 @@ class Shortcodes {
 	        'width' => '4',
 	        'class' => ''
 	    ], $params) );
-	    
+
 	    return "<div class='shorts-align shorts-align{$align} align{$align} col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
-	
+
 	}
 
 	/*
@@ -565,7 +565,7 @@ class Shortcodes {
 	    </div></div>";
 
 	    return $map;
-	
+
 	}
 
 	/*
@@ -588,7 +588,7 @@ class Shortcodes {
 	    $iframe = "<div class='shorts-iframe {$class}' style='max-width:{$width};'><div class='shorts-fluid-iframe'>
 	    	<iframe src='{$url}' frameborder='0' marginheight='0' marginwidth='0'></iframe>
 	    </div></div>";
-	
+
 		return $iframe;
 
 	}
@@ -613,7 +613,7 @@ class Shortcodes {
 	    $html = "<img src='{$url}' class='shorts-image shorts-align{$align} align{$align} {$class}'>";
 
 	    return self::wrap_with_anchor( $link, $target, $html );
-	
+
 	}
 
 	/*
@@ -633,7 +633,7 @@ class Shortcodes {
 	    ], $params) );
 
 	    return "<a href='{$to}' target='_{$target}' class='shorts-link {$class}'>" . do_shortcode( $content ) . "</a>";
-	
+
 	}
 
 	/*
@@ -648,7 +648,7 @@ class Shortcodes {
 	private function wrap_with_anchor( $link, $target, $html ) {
 
 	    return ( $link ) ? "<a href='{$link}' target='_{$target}'>{$html}</a>" : $html;
-	
+
 	}
 
 	/*
@@ -661,7 +661,7 @@ class Shortcodes {
 	private function create_icon( $icon ) {
 
 	    return ( $icon ) ? "<i class='fa fa-{$icon}'></i>" : '';
-	
+
 	}
 
 }

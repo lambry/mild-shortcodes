@@ -2,14 +2,16 @@
 
 A simple set of shortcodes.
 
+![Shorts](demo.gif?raw=true)
+
 ###Main Shortcodes
 * Rows/Columns
 * Icons
 * Buttons
 * Panels
 * Tabs
-* Accordian
-* Popup
+* Accordions
+* Popups
 * Alignment
 * Posts
 * Meta
@@ -27,8 +29,8 @@ A simple set of shortcodes.
 If your theme already includes Font Awesome or Magnific Popup just dequeue the shorts versions:
 ```
 add_action( 'wp_print_styles', function() {
-    wp_dequeue_style( 'font-awesome' ); 
-    wp_dequeue_style( 'magnific-popup-css' ); 
-    wp_dequeue_script( 'magnific-popup-js' ); 
+    wp_dequeue_style( 'font-awesome' );
+    wp_dequeue_style( 'magnific-popup-css' );
+    wp_dequeue_script( 'magnific-popup-js' );
 });
 ```

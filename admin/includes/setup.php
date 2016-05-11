@@ -252,7 +252,7 @@ class Setup {
                 'icon' => 'th-list',
                 'fields' => [
                     'key' => [
-                        'label' => __( 'Key', 'shorts' ),
+                        'label' => __( 'Meta Key', 'shorts' ),
                         'type' => 'text'
                     ],
                     'id' => [

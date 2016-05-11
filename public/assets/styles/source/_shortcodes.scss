@@ -87,7 +87,7 @@
 		margin: 0;
 		line-height: 1;
 		cursor: pointer;
-		border-bottom: 1px solid $color-silver;
+		border-bottom: 1px solid;
 		a {
 			display: block;
 		}
@@ -117,9 +117,9 @@
 		margin-bottom: 0;
 	}
 	.shorts-post-date {
+		opacity: 0.75;
 		font-size: 0.75rem;
 		font-style: italic;
-		color: lighten($color-grey, 10%);
 		margin-bottom: 0.5em;
 	}
 	.shorts-post-image {
@@ -133,6 +133,9 @@
 	margin: $layout-margin 0 ($layout-margin * 2);
 	p {
 		margin: 0;
+	}
+	label {
+		display: block;
 	}
 	.login-submit {
 		margin: $layout-margin 0;
