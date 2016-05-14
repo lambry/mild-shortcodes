@@ -1,6 +1,6 @@
 <?php
 /**
- * Generator
+ * Editor
  *
  * @package Shorts
  */
@@ -60,7 +60,7 @@ class Editor {
 
 		// Set variables
 		$shortcodes = Setup::shortcodes();
-		
+
 		// Generate the html
 		require 'generate.php';
 

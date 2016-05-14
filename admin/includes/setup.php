@@ -1,6 +1,6 @@
 <?php
 /**
- * Shortcodes Setup
+ * Shortcode Setup
  *
  * @package Shorts
  */
@@ -25,8 +25,13 @@ class Setup {
                 'clone' => true,
                 'wrap' => true,
                 'fields' => [
-                    'width' => [
-                        'label' => __( 'Width', 'shorts' ),
+                    'desktop' => [
+                        'label' => __( 'Desktop', 'shorts' ),
+                        'type' => 'select',
+                        'values' => Defaults::grid()
+                    ],
+                    'tablet' => [
+                        'label' => __( 'Tablet', 'shorts' ),
                         'type' => 'select',
                         'values' => Defaults::grid()
                     ]

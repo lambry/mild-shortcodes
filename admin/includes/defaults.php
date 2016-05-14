@@ -1,6 +1,6 @@
 <?php
 /**
- * Shortcodes Defaults
+ * Shortcode Defaults
  *
  * @package Shorts
  */

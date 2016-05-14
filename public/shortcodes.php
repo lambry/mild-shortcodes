@@ -78,10 +78,14 @@ class Shortcodes {
 
 	    extract( shortcode_atts([
 	        'width' => '6',
+	        'desktop' => '',
+	        'tablet' => '',
 	        'class' => ''
 	    ], $params) );
 
-	    return "<div class='shorts-col-{$width} {$class}'>" . do_shortcode( $content ) . "</div>";
+		$desktop || $desktop = $width;
+
+	    return "<div class='shorts-col-{$desktop} shorts-md-{$tablet} {$class}'>" . do_shortcode( $content ) . "</div>";
 
 	}
 
