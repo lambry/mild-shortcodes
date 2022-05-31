@@ -1,10 +1,10 @@
-#Shorts
+# Shorts
 
-A simple set of shortcodes.
+A simple set of shortcodes (no longer supported).
 
 ![Shorts](demo.gif?raw=true)
 
-###Main Shortcodes
+### Main Shortcodes
 * Rows/Columns
 * Icons
 * Buttons
@@ -22,7 +22,7 @@ A simple set of shortcodes.
 * Google Map
 * iFrame
 
-####Supplementary Shortcodes (handy in widgets)
+#### Supplementary Shortcodes (handy in widgets)
 * Image
 * Link
 
